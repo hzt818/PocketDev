@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.pocketdev.app-merged_res-63:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.pocketdev.app-main-65:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.pocketdev.app-merged_res-63:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.pocketdev.app-main-65:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.pocketdev.app-merged_res-63:/mipmap-hdpi_ic_launcher_round.xml.flat",
+        "source": "com.pocketdev.app-main-65:/mipmap-hdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.pocketdev.app-merged_res-63:/mipmap-hdpi_ic_launcher.xml.flat",
+        "source": "com.pocketdev.app-main-65:/mipmap-hdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.pocketdev.app-merged_res-63:/mipmap-hdpi_ic_launcher_foreground.xml.flat",
+        "source": "com.pocketdev.app-main-65:/mipmap-hdpi/ic_launcher_foreground.xml"
+    }
+]
