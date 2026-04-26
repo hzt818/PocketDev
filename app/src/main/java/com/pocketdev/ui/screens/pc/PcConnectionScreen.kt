@@ -17,6 +17,7 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.Computer
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Edit
@@ -26,6 +27,7 @@ import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
@@ -110,8 +112,10 @@ fun PcConnectionScreen(
                     PcConnectionItem(
                         connection = connection,
                         isActive = connection.id == uiState.activeConnection?.id,
+                        isTesting = uiState.testingConnection == connection.id,
                         onSetActive = { viewModel.onEvent(PcConnectionEvent.SetActive(connection.id)) },
-                        onDelete = { viewModel.onEvent(PcConnectionEvent.RemoveConnection(connection.id)) }
+                        onDelete = { viewModel.onEvent(PcConnectionEvent.RemoveConnection(connection.id)) },
+                        onTest = { viewModel.onEvent(PcConnectionEvent.TestConnection(connection.id)) }
                     )
                 }
             }
@@ -161,8 +165,10 @@ private fun EmptyConnectionState(modifier: Modifier = Modifier) {
 private fun PcConnectionItem(
     connection: PcConnectionConfig,
     isActive: Boolean,
+    isTesting: Boolean,
     onSetActive: () -> Unit,
-    onDelete: () -> Unit
+    onDelete: () -> Unit,
+    onTest: () -> Unit
 ) {
     Card(
         modifier = Modifier.fillMaxWidth(),
@@ -198,10 +204,21 @@ private fun PcConnectionItem(
                 Spacer(modifier = Modifier.width(8.dp))
 
                 Column {
-                    Text(
-                        text = connection.name,
-                        style = MaterialTheme.typography.titleMedium
-                    )
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Text(
+                            text = connection.name,
+                            style = MaterialTheme.typography.titleMedium
+                        )
+                        if (isActive) {
+                            Spacer(modifier = Modifier.width(8.dp))
+                            Icon(
+                                imageVector = Icons.Default.CheckCircle,
+                                contentDescription = "Connected",
+                                modifier = Modifier.size(16.dp),
+                                tint = MaterialTheme.colorScheme.primary
+                            )
+                        }
+                    }
                     Text(
                         text = "${connection.host}:${connection.port}",
                         style = MaterialTheme.typography.bodySmall,
@@ -210,12 +227,29 @@ private fun PcConnectionItem(
                 }
             }
 
-            IconButton(onClick = onDelete) {
-                Icon(
-                    imageVector = Icons.Default.Delete,
-                    contentDescription = "Delete",
-                    tint = MaterialTheme.colorScheme.error
-                )
+            Row {
+                IconButton(onClick = onTest, enabled = !isTesting) {
+                    if (isTesting) {
+                        CircularProgressIndicator(
+                            modifier = Modifier.size(24.dp),
+                            strokeWidth = 2.dp
+                        )
+                    } else {
+                        Icon(
+                            imageVector = Icons.Default.Computer,
+                            contentDescription = "Test Connection",
+                            tint = MaterialTheme.colorScheme.primary
+                        )
+                    }
+                }
+
+                IconButton(onClick = onDelete) {
+                    Icon(
+                        imageVector = Icons.Default.Delete,
+                        contentDescription = "Delete",
+                        tint = MaterialTheme.colorScheme.error
+                    )
+                }
             }
         }
     }

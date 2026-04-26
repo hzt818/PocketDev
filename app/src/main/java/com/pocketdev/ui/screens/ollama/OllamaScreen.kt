@@ -113,8 +113,7 @@ fun OllamaScreen(
                     model = model,
                     progress = uiState.downloadProgress[model.name],
                     isDownloading = uiState.downloadingModel == model.name,
-                    onPull = { viewModel.onEvent(OllamaEvent.PullModel(model.name)) },
-                    onDelete = { viewModel.onEvent(OllamaEvent.DeleteModel(model.name)) }
+                    onPull = { viewModel.onEvent(OllamaEvent.PullModel(model.name)) }
                 )
             }
 
@@ -185,8 +184,7 @@ private fun OllamaModelCard(
     model: OllamaModelWithStatus,
     progress: Float?,
     isDownloading: Boolean,
-    onPull: () -> Unit,
-    onDelete: () -> Unit
+    onPull: () -> Unit
 ) {
     Card(
         modifier = Modifier.fillMaxWidth()

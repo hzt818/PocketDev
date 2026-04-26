@@ -1,5 +1,7 @@
 package com.pocketdev.ui.navigation
 
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Build
@@ -25,6 +27,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import com.pocketdev.ui.components.DefaultFloatingActionMenu
 import com.pocketdev.ui.screens.chat.ChatScreen
 import com.pocketdev.ui.screens.editor.EditorScreen
 import com.pocketdev.ui.screens.ollama.OllamaScreen
@@ -76,47 +79,63 @@ fun PocketDevNavHost() {
                     )
                 }
             }
+        },
+        floatingActionButton = {
+            DefaultFloatingActionMenu(
+                onNavigateToChat = { navController.navigate(Screen.Chat.route) },
+                onNavigateToEditor = { navController.navigate(Screen.Editor.route) },
+                onNavigateToOllama = { navController.navigate(Screen.Ollama.route) },
+                onNavigateToPcConnection = { navController.navigate(Screen.PcConnection.route) },
+                onNavigateToTerminal = { navController.navigate(Screen.Terminal.route) }
+            )
         }
     ) { innerPadding ->
-        NavHost(
-            navController = navController,
-            startDestination = Screen.Chat.route,
-            modifier = Modifier.padding(innerPadding)
-        ) {
-            composable(Screen.Chat.route) { ChatScreen() }
-            composable(Screen.Settings.route) { SettingsScreen() }
-            composable(Screen.Repos.route) { ReposScreen() }
-            composable(Screen.Ollama.route) { OllamaScreen() }
-            composable(Screen.PcConnection.route) { PcConnectionScreen() }
-            composable(Screen.Editor.route) { EditorScreen() }
-            composable(Screen.Build.route) { BuildScreen() }
-            composable(Screen.Terminal.route) { TerminalScreen() }
-            composable(Screen.RepoDetail.route) { backStackEntry ->
-                val repoFullName = backStackEntry.arguments?.getString("repoFullName")?.replace("_", "/") ?: ""
-                val repoId = backStackEntry.arguments?.getString("repoId")?.toLongOrNull() ?: 0L
-                val repoOwner = backStackEntry.arguments?.getString("repoOwner") ?: ""
-                val repoDefaultBranch = backStackEntry.arguments?.getString("repoDefaultBranch") ?: "main"
-                RepoDetailScreen(
-                    onNavigateBack = { navController.popBackStack() },
-                    onNavigateToEditor = { fullName, branch, path, sha ->
-                        navController.navigate(
-                            Screen.RemoteEditor.createRoute(fullName, branch, path, sha)
-                        )
-                    }
-                )
-            }
-            composable(Screen.RemoteEditor.route) { backStackEntry ->
-                val repoFullName = backStackEntry.arguments?.getString("repoFullName")?.replace("_", "/") ?: ""
-                val branch = backStackEntry.arguments?.getString("branch") ?: "main"
-                val path = backStackEntry.arguments?.getString("path")?.replace("_", "/") ?: ""
-                val sha = backStackEntry.arguments?.getString("sha") ?: ""
-                com.pocketdev.ui.screens.editor.RemoteEditorScreen(
-                    repoFullName = repoFullName,
-                    branch = branch,
-                    filePath = path,
-                    fileSha = sha,
-                    onNavigateBack = { navController.popBackStack() }
-                )
+        Box(modifier = Modifier.fillMaxSize()) {
+            NavHost(
+                navController = navController,
+                startDestination = Screen.Chat.route,
+                modifier = Modifier.padding(innerPadding)
+            ) {
+                composable(Screen.Chat.route) { ChatScreen() }
+                composable(Screen.Settings.route) {
+                    SettingsScreen(
+                        onNavigateToOllama = { navController.navigate(Screen.Ollama.route) },
+                        onNavigateToPcConnection = { navController.navigate(Screen.PcConnection.route) }
+                    )
+                }
+                composable(Screen.Repos.route) { ReposScreen() }
+                composable(Screen.Ollama.route) { OllamaScreen() }
+                composable(Screen.PcConnection.route) { PcConnectionScreen() }
+                composable(Screen.Editor.route) { EditorScreen() }
+                composable(Screen.Build.route) { BuildScreen() }
+                composable(Screen.Terminal.route) { TerminalScreen() }
+                composable(Screen.RepoDetail.route) { backStackEntry ->
+                    val repoFullName = backStackEntry.arguments?.getString("repoFullName")?.replace("_", "/") ?: ""
+                    val repoId = backStackEntry.arguments?.getString("repoId")?.toLongOrNull() ?: 0L
+                    val repoOwner = backStackEntry.arguments?.getString("repoOwner") ?: ""
+                    val repoDefaultBranch = backStackEntry.arguments?.getString("repoDefaultBranch") ?: "main"
+                    RepoDetailScreen(
+                        onNavigateBack = { navController.popBackStack() },
+                        onNavigateToEditor = { fullName, branch, path, sha ->
+                            navController.navigate(
+                                Screen.RemoteEditor.createRoute(fullName, branch, path, sha)
+                            )
+                        }
+                    )
+                }
+                composable(Screen.RemoteEditor.route) { backStackEntry ->
+                    val repoFullName = backStackEntry.arguments?.getString("repoFullName")?.replace("_", "/") ?: ""
+                    val branch = backStackEntry.arguments?.getString("branch") ?: "main"
+                    val path = backStackEntry.arguments?.getString("path")?.replace("_", "/") ?: ""
+                    val sha = backStackEntry.arguments?.getString("sha") ?: ""
+                    com.pocketdev.ui.screens.editor.RemoteEditorScreen(
+                        repoFullName = repoFullName,
+                        branch = branch,
+                        filePath = path,
+                        fileSha = sha,
+                        onNavigateBack = { navController.popBackStack() }
+                    )
+                }
             }
         }
     }

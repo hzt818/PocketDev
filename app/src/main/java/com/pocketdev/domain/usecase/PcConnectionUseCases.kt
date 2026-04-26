@@ -44,6 +44,14 @@ class SetActivePcConnectionUseCase @Inject constructor(
     }
 }
 
+class TestPcConnectionUseCase @Inject constructor(
+    private val repository: PcConnectionRepository
+) {
+    suspend operator fun invoke(id: String): Result<Boolean> {
+        return repository.testConnection(id)
+    }
+}
+
 class ReadPcFileUseCase @Inject constructor(
     private val repository: PcConnectionRepository
 ) {

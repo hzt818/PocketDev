@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.NavigateNext
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -22,7 +23,9 @@ import com.pocketdev.ui.screens.settings.components.*
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SettingsScreen(
-    viewModel: SettingsViewModel = hiltViewModel()
+    viewModel: SettingsViewModel = hiltViewModel(),
+    onNavigateToOllama: () -> Unit = {},
+    onNavigateToPcConnection: () -> Unit = {}
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
     val snackbarHostState = remember { SnackbarHostState() }
@@ -165,7 +168,7 @@ fun SettingsScreen(
                     icon = Icons.Default.Memory,
                     title = "Ollama Models",
                     subtitle = "Download and manage local AI models",
-                    onClick = { }
+                    onClick = onNavigateToOllama
                 )
             }
 
@@ -183,7 +186,7 @@ fun SettingsScreen(
                     icon = Icons.Default.Computer,
                     title = "PC Connections",
                     subtitle = "Connect to your computer for file editing",
-                    onClick = { }
+                    onClick = onNavigateToPcConnection
                 )
             }
 
@@ -443,7 +446,7 @@ private fun SettingsNavigationCard(
                 }
             }
             Icon(
-                imageVector = Icons.Default.NavigateNext,
+                imageVector = Icons.AutoMirrored.Filled.NavigateNext,
                 contentDescription = null,
                 tint = MaterialTheme.colorScheme.onSurfaceVariant
             )

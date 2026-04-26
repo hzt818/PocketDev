@@ -7,6 +7,7 @@ import com.pocketdev.domain.usecase.AddPcConnectionUseCase
 import com.pocketdev.domain.usecase.GetPcConnectionsUseCase
 import com.pocketdev.domain.usecase.RemovePcConnectionUseCase
 import com.pocketdev.domain.usecase.SetActivePcConnectionUseCase
+import com.pocketdev.domain.usecase.TestPcConnectionUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -34,6 +35,7 @@ sealed interface PcConnectionEvent {
     ) : PcConnectionEvent
     data class RemoveConnection(val id: String) : PcConnectionEvent
     data class SetActive(val id: String) : PcConnectionEvent
+    data class TestConnection(val id: String) : PcConnectionEvent
     data object ShowAddDialog : PcConnectionEvent
     data object HideAddDialog : PcConnectionEvent
     data object ClearError : PcConnectionEvent
@@ -44,7 +46,8 @@ class PcConnectionViewModel @Inject constructor(
     private val getPcConnections: GetPcConnectionsUseCase,
     private val addPcConnection: AddPcConnectionUseCase,
     private val removePcConnection: RemovePcConnectionUseCase,
-    private val setActivePcConnection: SetActivePcConnectionUseCase
+    private val setActivePcConnection: SetActivePcConnectionUseCase,
+    private val testPcConnection: TestPcConnectionUseCase
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(PcConnectionUiState())
@@ -77,9 +80,24 @@ class PcConnectionViewModel @Inject constructor(
             )
             is PcConnectionEvent.RemoveConnection -> removeConnection(event.id)
             is PcConnectionEvent.SetActive -> setActive(event.id)
+            is PcConnectionEvent.TestConnection -> testConnection(event.id)
             is PcConnectionEvent.ShowAddDialog -> _uiState.update { it.copy(showAddDialog = true) }
             is PcConnectionEvent.HideAddDialog -> _uiState.update { it.copy(showAddDialog = false) }
             is PcConnectionEvent.ClearError -> _uiState.update { it.copy(error = null) }
+        }
+    }
+
+    private fun testConnection(id: String) {
+        viewModelScope.launch {
+            _uiState.update { it.copy(testingConnection = id) }
+            testPcConnection(id).fold(
+                onSuccess = {
+                    _uiState.update { it.copy(testingConnection = null, error = null) }
+                },
+                onFailure = { error ->
+                    _uiState.update { it.copy(testingConnection = null, error = error.message) }
+                }
+            )
         }
     }
 

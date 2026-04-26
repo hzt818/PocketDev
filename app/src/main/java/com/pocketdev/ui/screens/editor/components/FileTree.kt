@@ -179,6 +179,7 @@ private fun FileTreeItem(
     }
 }
 
+@Suppress("UNUSED_PARAMETER")
 private fun getFileIcon(extension: String?): ImageVector {
     return Icons.Default.Description
 }
