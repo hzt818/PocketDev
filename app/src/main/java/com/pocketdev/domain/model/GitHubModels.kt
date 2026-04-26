@@ -31,13 +31,30 @@ data class GitHubCommitRequest(
 
 @Serializable
 data class GitHubCommitResponse(
+    val sha: String,
+    val htmlUrl: String,
     val commit: GitHubCommitInfo
 )
 
 @Serializable
 data class GitHubCommitInfo(
     val sha: String,
-    val htmlUrl: String
+    val htmlUrl: String,
+    val message: String,
+    val author: GitHubCommitAuthor,
+    val tree: GitHubCommitTree
+)
+
+@Serializable
+data class GitHubCommitAuthor(
+    val name: String,
+    val email: String,
+    val date: String
+)
+
+@Serializable
+data class GitHubCommitTree(
+    val sha: String
 )
 
 data class GitHubUser(

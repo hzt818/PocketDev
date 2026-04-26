@@ -135,7 +135,26 @@ enum class AgentType {
     SEARCH,
 
     @SerialName("general")
-    GENERAL
+    GENERAL,
+
+    // Subagent types
+    @SerialName("file_search")
+    FILE_SEARCH,
+
+    @SerialName("code_generator")
+    CODE_GENERATOR,
+
+    @SerialName("test_writer")
+    TEST_WRITER,
+
+    @SerialName("doc_writer")
+    DOC_WRITER,
+
+    @SerialName("git_operator")
+    GIT_OPERATOR,
+
+    @SerialName("shell_executor")
+    SHELL_EXECUTOR
 }
 
 @Serializable
@@ -146,7 +165,8 @@ data class AgentContext(
     val relevantFiles: List<String> = emptyList(),
     val recentChanges: List<String> = emptyList(),
     val taskHistory: List<String> = emptyList(),
-    val metadata: Map<String, String> = emptyMap()
+    val metadata: Map<String, String> = emptyMap(),
+    val parentTaskId: String? = null
 )
 
 @Serializable

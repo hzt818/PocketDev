@@ -5,6 +5,8 @@ import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
 import java.util.UUID
 import java.util.concurrent.ConcurrentHashMap
+import com.pocketdev.agent.protocol.SubagentRequest
+import com.pocketdev.agent.protocol.SubagentResult
 
 /**
  * AgentExecutor - Manages execution of agents and task orchestration.
@@ -114,6 +116,75 @@ class AgentExecutor(
             // Cancellation handled by structured concurrency
         }
     }
+
+    /**
+     * Execute a request as a subagent (lightweight, no execution tracking).
+     */
+    suspend fun executeAsSubagent(request: SubagentRequest): SubagentResult {
+        val startTime = System.currentTimeMillis()
+
+        try {
+            val agent = registry.getAgent(request.agentType)
+                ?: return createSubagentErrorResult(request, "Agent not found: ${request.agentType}")
+
+            val response = withTimeout(config.defaultTimeout) {
+                agent.execute(
+                    ImplementationRequest(
+                        id = request.id,
+                        context = request.context,
+                        requirements = request.task
+                    )
+                )
+            }
+
+            return SubagentResult(
+                requestId = request.id,
+                parentTaskId = request.parentTaskId,
+                agentType = request.agentType,
+                success = response.success,
+                findings = response.findings,
+                output = extractFindingsAsOutput(response),
+                executionTimeMs = System.currentTimeMillis() - startTime
+            )
+        } catch (e: Exception) {
+            return createSubagentErrorResult(
+                request,
+                e.message ?: "Subagent execution failed",
+                System.currentTimeMillis() - startTime
+            )
+        }
+    }
+
+    private fun createSubagentErrorResult(
+        request: SubagentRequest,
+        error: String,
+        executionTimeMs: Long = 0
+    ): SubagentResult {
+        return SubagentResult(
+            requestId = request.id,
+            parentTaskId = request.parentTaskId,
+            agentType = request.agentType,
+            success = false,
+            findings = listOf(
+                Finding(
+                    type = FindingType.BUG,
+                    severity = Severity.HIGH,
+                    file = "",
+                    message = error
+                )
+            ),
+            error = error,
+            executionTimeMs = executionTimeMs
+        )
+    }
+
+    private fun extractFindingsAsOutput(response: AgentResponse): String {
+        return response.findings.joinToString("\n") { finding ->
+            "${finding.severity.name}: ${finding.message}"
+        }
+    }
+
+    fun getActiveSubagentCount(): Int = 0 // Tracked by SubagentExecutor
 
     private fun startExecution(request: AgentRequest): AgentExecution {
         val execution = AgentExecution(

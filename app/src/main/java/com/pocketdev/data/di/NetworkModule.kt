@@ -4,6 +4,7 @@ import com.pocketdev.data.local.UserSettingsDataStore
 import com.pocketdev.data.remote.api.AnthropicApi
 import com.pocketdev.data.remote.api.GeminiApi
 import com.pocketdev.data.remote.api.GitHubApi
+import com.pocketdev.data.remote.api.GitLabApi
 import com.pocketdev.data.remote.api.LlmApi
 import com.pocketdev.data.remote.api.OllamaApi
 import com.pocketdev.data.remote.interceptor.DynamicHostInterceptor
@@ -162,5 +163,67 @@ object NetworkModule {
             .addConverterFactory(json.asConverterFactory(contentType))
             .build()
             .create(GitHubApi::class.java)
+    }
+
+    @Provides
+    @Singleton
+    @Named("gitlab_token_provider")
+    fun provideGitLabTokenProvider(userSettingsDataStore: UserSettingsDataStore): () -> String? {
+        return { runBlocking { userSettingsDataStore.getGitLabToken() } }
+    }
+
+    @Provides
+    @Singleton
+    fun provideGitLabApi(
+        userSettingsDataStore: UserSettingsDataStore,
+        @Named("gitlab_token_provider") tokenProvider: () -> String?
+    ): GitLabApi {
+        val loggingInterceptor = HttpLoggingInterceptor().apply {
+            level = HttpLoggingInterceptor.Level.BODY
+        }
+
+        val authInterceptor = okhttp3.Interceptor { chain ->
+            val originalRequest = chain.request()
+            val token = tokenProvider()
+
+            val newRequest = if (token != null) {
+                originalRequest.newBuilder()
+                    .header("Authorization", "Bearer $token")
+                    .header("Accept", "application/json")
+                    .build()
+            } else {
+                originalRequest.newBuilder()
+                    .header("Accept", "application/json")
+                    .build()
+            }
+            chain.proceed(newRequest)
+        }
+
+        val client = OkHttpClient.Builder()
+            .addInterceptor(authInterceptor)
+            .addInterceptor(loggingInterceptor)
+            .connectTimeout(30, TimeUnit.SECONDS)
+            .readTimeout(30, TimeUnit.SECONDS)
+            .build()
+
+        val contentType = "application/json".toMediaType()
+        return Retrofit.Builder()
+            .baseUrl("https://gitlab.com/api/v4/")
+            .client(client)
+            .addConverterFactory(json.asConverterFactory(contentType))
+            .build()
+            .create(GitLabApi::class.java)
+    }
+
+    @Provides
+    @Singleton
+    @Named("collaboration")
+    fun provideOkHttpClientForCollaboration(): OkHttpClient {
+        return OkHttpClient.Builder()
+            .connectTimeout(30, TimeUnit.SECONDS)
+            .readTimeout(30, TimeUnit.SECONDS)
+            .writeTimeout(30, TimeUnit.SECONDS)
+            .pingInterval(30, java.util.concurrent.TimeUnit.SECONDS)
+            .build()
     }
 }

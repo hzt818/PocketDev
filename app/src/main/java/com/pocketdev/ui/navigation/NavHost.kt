@@ -2,12 +2,14 @@ package com.pocketdev.ui.navigation
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Build
 import androidx.compose.material.icons.filled.Chat
 import androidx.compose.material.icons.filled.Code
 import androidx.compose.material.icons.filled.Memory
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.filled.Source
 import androidx.compose.material.icons.filled.Computer
+import androidx.compose.material.icons.filled.Terminal
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
@@ -27,8 +29,11 @@ import com.pocketdev.ui.screens.chat.ChatScreen
 import com.pocketdev.ui.screens.editor.EditorScreen
 import com.pocketdev.ui.screens.ollama.OllamaScreen
 import com.pocketdev.ui.screens.pc.PcConnectionScreen
+import com.pocketdev.ui.screens.repos.RepoDetailScreen
 import com.pocketdev.ui.screens.repos.ReposScreen
 import com.pocketdev.ui.screens.settings.SettingsScreen
+import com.pocketdev.ui.screens.build.BuildScreen
+import com.pocketdev.ui.screens.terminal.TerminalScreen
 
 data class BottomNavItem(
     val screen: Screen,
@@ -40,6 +45,8 @@ val bottomNavItems = listOf(
     BottomNavItem(Screen.Chat, Icons.Default.Chat, "Chat"),
     BottomNavItem(Screen.Repos, Icons.Default.Source, "Repos"),
     BottomNavItem(Screen.Editor, Icons.Default.Code, "Editor"),
+    BottomNavItem(Screen.Build, Icons.Default.Build, "Build"),
+    BottomNavItem(Screen.Terminal, Icons.Default.Terminal, "Terminal"),
     BottomNavItem(Screen.Settings, Icons.Default.Settings, "Settings")
 )
 
@@ -82,6 +89,35 @@ fun PocketDevNavHost() {
             composable(Screen.Ollama.route) { OllamaScreen() }
             composable(Screen.PcConnection.route) { PcConnectionScreen() }
             composable(Screen.Editor.route) { EditorScreen() }
+            composable(Screen.Build.route) { BuildScreen() }
+            composable(Screen.Terminal.route) { TerminalScreen() }
+            composable(Screen.RepoDetail.route) { backStackEntry ->
+                val repoFullName = backStackEntry.arguments?.getString("repoFullName")?.replace("_", "/") ?: ""
+                val repoId = backStackEntry.arguments?.getString("repoId")?.toLongOrNull() ?: 0L
+                val repoOwner = backStackEntry.arguments?.getString("repoOwner") ?: ""
+                val repoDefaultBranch = backStackEntry.arguments?.getString("repoDefaultBranch") ?: "main"
+                RepoDetailScreen(
+                    onNavigateBack = { navController.popBackStack() },
+                    onNavigateToEditor = { fullName, branch, path, sha ->
+                        navController.navigate(
+                            Screen.RemoteEditor.createRoute(fullName, branch, path, sha)
+                        )
+                    }
+                )
+            }
+            composable(Screen.RemoteEditor.route) { backStackEntry ->
+                val repoFullName = backStackEntry.arguments?.getString("repoFullName")?.replace("_", "/") ?: ""
+                val branch = backStackEntry.arguments?.getString("branch") ?: "main"
+                val path = backStackEntry.arguments?.getString("path")?.replace("_", "/") ?: ""
+                val sha = backStackEntry.arguments?.getString("sha") ?: ""
+                com.pocketdev.ui.screens.editor.RemoteEditorScreen(
+                    repoFullName = repoFullName,
+                    branch = branch,
+                    filePath = path,
+                    fileSha = sha,
+                    onNavigateBack = { navController.popBackStack() }
+                )
+            }
         }
     }
 }

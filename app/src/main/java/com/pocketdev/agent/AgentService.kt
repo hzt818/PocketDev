@@ -16,6 +16,7 @@ import javax.inject.Singleton
  * Provides:
  * - Single entry point for all agent operations
  * - Pre-configured agents
+ * - Subagent execution support
  * - Loop execution for autonomous tasks
  * - Execution history and metrics
  */
@@ -25,6 +26,8 @@ class AgentService @Inject constructor() {
 
     private val registry = DefaultAgentRegistry()
     private val executor = AgentExecutor(registry)
+    private val subagentRegistry = DefaultSubagentRegistry()
+    private val subagentExecutor = SubagentExecutor(subagentRegistry, executor)
     private val loopOperator = AgentLoopOperator(executor)
 
     init {
@@ -61,6 +64,23 @@ class AgentService @Inject constructor() {
     }
 
     /**
+     * Execute a subagent request.
+     */
+    suspend fun executeSubagent(request: SubagentRequest): SubagentResult {
+        return subagentExecutor.executeSubagent(request)
+    }
+
+    /**
+     * Execute multiple subagent requests.
+     */
+    suspend fun executeSubagents(
+        requests: List<SubagentRequest>,
+        parallel: Boolean = true
+    ): List<SubagentResult> {
+        return subagentExecutor.executeSubagents(requests, parallel)
+    }
+
+    /**
      * Start an autonomous loop for complex tasks.
      */
     suspend fun startAutonomousLoop(goal: String, context: AgentContext): Flow<LoopProgress> {
@@ -79,6 +99,13 @@ class AgentService @Inject constructor() {
      */
     fun getAvailableAgents(): List<AgentType> {
         return registry.getAllAgents().map { it.type }
+    }
+
+    /**
+     * Get all available subagent types.
+     */
+    fun getAvailableSubagents(): List<SubagentDefinition> {
+        return subagentRegistry.getAllSubagents()
     }
 
     /**
@@ -181,5 +208,25 @@ object AgentExtensions {
      */
     fun parallel(tasks: List<AgentTask>): List<AgentTask> {
         return tasks.map { it.copy(parallelizable = true) }
+    }
+
+    /**
+     * Creates a subagent request.
+     */
+    fun subagentRequest(
+        parentTaskId: String,
+        agentType: AgentType,
+        task: String,
+        context: AgentContext,
+        priority: SubagentPriority = SubagentPriority.NORMAL
+    ): SubagentRequest {
+        return SubagentRequest(
+            id = java.util.UUID.randomUUID().toString(),
+            parentTaskId = parentTaskId,
+            agentType = agentType,
+            task = task,
+            context = context,
+            priority = priority
+        )
     }
 }
