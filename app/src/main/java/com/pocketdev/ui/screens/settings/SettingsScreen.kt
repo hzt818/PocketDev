@@ -14,8 +14,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.pocketdev.domain.model.AiActionMode
 import com.pocketdev.domain.model.AiProviderConfig
 import com.pocketdev.domain.model.AiProviderType
+import com.pocketdev.ui.screens.settings.components.*
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -52,7 +54,56 @@ fun SettingsScreen(
                 .padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
+            // User Profile Section
             item {
+                UserProfileCard(
+                    profile = uiState.userProfile,
+                    onSignOut = { viewModel.onEvent(SettingsEvent.SignOut) }
+                )
+                Spacer(modifier = Modifier.height(16.dp))
+            }
+
+            // Appearance Section
+            item {
+                Text(
+                    text = "Appearance",
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.Bold
+                )
+                Spacer(modifier = Modifier.height(8.dp))
+            }
+
+            item {
+                ThemeSettingsCard(
+                    currentMode = uiState.appSettings.themeMode,
+                    dynamicColorEnabled = uiState.appSettings.dynamicColor,
+                    onThemeModeChange = { viewModel.onEvent(SettingsEvent.UpdateThemeMode(it)) },
+                    onDynamicColorChange = { viewModel.onEvent(SettingsEvent.UpdateDynamicColor(it)) }
+                )
+            }
+
+            item {
+                Spacer(modifier = Modifier.height(16.dp))
+                Text(
+                    text = "Editor",
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.Bold
+                )
+                Spacer(modifier = Modifier.height(8.dp))
+            }
+
+            item {
+                EditorSettingsCard(
+                    preferences = uiState.appSettings.editorPreferences,
+                    onFontSizeChange = { viewModel.onEvent(SettingsEvent.UpdateFontSize(it)) },
+                    onTabSizeChange = { viewModel.onEvent(SettingsEvent.UpdateTabSize(it)) },
+                    onShowLineNumbersChange = { viewModel.onEvent(SettingsEvent.UpdateShowLineNumbers(it)) },
+                    onWordWrapChange = { viewModel.onEvent(SettingsEvent.UpdateWordWrap(it)) }
+                )
+            }
+
+            item {
+                Spacer(modifier = Modifier.height(16.dp))
                 Text(
                     text = "AI Providers",
                     style = MaterialTheme.typography.titleMedium,
@@ -75,7 +126,29 @@ fun SettingsScreen(
 
             item {
                 Spacer(modifier = Modifier.height(16.dp))
-                Divider()
+                HorizontalDivider()
+                Spacer(modifier = Modifier.height(16.dp))
+            }
+
+            item {
+                Text(
+                    text = "AI Action Mode",
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.Bold
+                )
+                Spacer(modifier = Modifier.height(8.dp))
+            }
+
+            item {
+                ActionModeSelector(
+                    selectedMode = uiState.actionMode,
+                    onModeSelected = { viewModel.onEvent(SettingsEvent.SetActionMode(it)) }
+                )
+            }
+
+            item {
+                Spacer(modifier = Modifier.height(16.dp))
+                HorizontalDivider()
                 Spacer(modifier = Modifier.height(16.dp))
             }
 
@@ -115,6 +188,36 @@ fun SettingsScreen(
             }
 
             item {
+                Spacer(modifier = Modifier.height(16.dp))
+                Text(
+                    text = "Storage",
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.Bold
+                )
+            }
+
+            item {
+                CacheSettingsCard(
+                    cacheSize = uiState.cacheSize,
+                    isClearing = uiState.isClearingCache,
+                    onClearCache = { viewModel.onEvent(SettingsEvent.ClearCache) }
+                )
+            }
+
+            item {
+                Spacer(modifier = Modifier.height(16.dp))
+                Text(
+                    text = "About",
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.Bold
+                )
+            }
+
+            item {
+                AboutCard()
+            }
+
+            item {
                 Spacer(modifier = Modifier.height(24.dp))
                 HelpCard()
             }
@@ -134,6 +237,52 @@ fun SettingsScreen(
             onSave = { viewModel.onEvent(SettingsEvent.SaveProvider) },
             isSaving = uiState.isSaving
         )
+    }
+}
+
+@Composable
+private fun ActionModeSelector(
+    selectedMode: AiActionMode,
+    onModeSelected: (AiActionMode) -> Unit
+) {
+    Card(
+        modifier = Modifier.fillMaxWidth()
+    ) {
+        Column(
+            modifier = Modifier.padding(16.dp)
+        ) {
+            AiActionMode.entries.forEach { mode ->
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .clickable { onModeSelected(mode) }
+                        .padding(vertical = 8.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    RadioButton(
+                        selected = mode == selectedMode,
+                        onClick = { onModeSelected(mode) }
+                    )
+                    Spacer(modifier = Modifier.width(12.dp))
+                    Column {
+                        Text(
+                            text = mode.name.lowercase().replaceFirstChar { it.uppercase() },
+                            style = MaterialTheme.typography.bodyLarge,
+                            fontWeight = FontWeight.Medium
+                        )
+                        Text(
+                            text = when (mode) {
+                                AiActionMode.PLAN -> "Review each change before it happens"
+                                AiActionMode.AUTOEDIT -> "Changes happen automatically"
+                                AiActionMode.BYPASS -> "Skip permission prompts"
+                            },
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                }
+            }
+        }
     }
 }
 

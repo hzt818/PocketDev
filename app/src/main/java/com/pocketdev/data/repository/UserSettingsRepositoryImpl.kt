@@ -1,9 +1,12 @@
 package com.pocketdev.data.repository
 
 import com.pocketdev.data.local.UserSettingsDataStore
+import com.pocketdev.domain.model.AiActionMode
 import com.pocketdev.domain.model.AiProviderConfig
 import com.pocketdev.domain.model.AiProviderType
+import com.pocketdev.domain.model.AppSettings
 import com.pocketdev.domain.model.LlmConfig
+import com.pocketdev.domain.model.UserProfile
 import com.pocketdev.domain.repository.UserSettingsRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine
@@ -69,5 +72,33 @@ class UserSettingsRepositoryImpl @Inject constructor(
 
     override suspend fun setActiveProvider(type: AiProviderType) {
         userSettingsDataStore.setActiveProvider(type)
+    }
+
+    override suspend fun getActionMode(): AiActionMode {
+        return userSettingsDataStore.getActionMode()
+    }
+
+    override suspend fun setActionMode(mode: AiActionMode) {
+        userSettingsDataStore.setActionMode(mode)
+    }
+
+    override suspend fun getAppSettings(): AppSettings {
+        return userSettingsDataStore.getAppSettings()
+    }
+
+    override suspend fun updateAppSettings(settings: AppSettings) {
+        userSettingsDataStore.updateAppSettings(settings)
+    }
+
+    override suspend fun getUserProfile(): UserProfile? {
+        return userSettingsDataStore.getUserProfile()
+    }
+
+    override suspend fun updateUserProfile(profile: UserProfile?) {
+        userSettingsDataStore.updateUserProfile(profile)
+    }
+
+    override suspend fun clearUserSession() {
+        userSettingsDataStore.clearUserSession()
     }
 }

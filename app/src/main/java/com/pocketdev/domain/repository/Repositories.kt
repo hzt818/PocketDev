@@ -22,4 +22,11 @@ interface UserSettingsRepository {
     suspend fun getProviders(): List<AiProviderConfig>
     suspend fun updateProvider(provider: AiProviderConfig)
     suspend fun setActiveProvider(type: AiProviderType)
+    suspend fun getActionMode(): AiActionMode
+    suspend fun setActionMode(mode: AiActionMode)
+    suspend fun getAppSettings(): AppSettings
+    suspend fun updateAppSettings(settings: AppSettings)
+    suspend fun getUserProfile(): UserProfile?
+    suspend fun updateUserProfile(profile: UserProfile?)
+    suspend fun clearUserSession()
 }

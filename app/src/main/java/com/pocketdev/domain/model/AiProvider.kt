@@ -15,6 +15,12 @@ enum class AiProviderType {
     PC_CLI
 }
 
+enum class AiActionMode {
+    PLAN,      // User reviews before each change
+    AUTOEDIT,  // Changes happen automatically
+    BYPASS     // Skip permission prompts
+}
+
 @Serializable
 enum class ApiFormat {
     OPENAI兼容,
