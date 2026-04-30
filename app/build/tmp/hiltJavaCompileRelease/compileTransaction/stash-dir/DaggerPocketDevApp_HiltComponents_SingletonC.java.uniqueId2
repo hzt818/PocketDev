@@ -14,6 +14,7 @@ import com.pocketdev.data.di.DatabaseModule_ProvideMessageDaoFactory;
 import com.pocketdev.data.di.NetworkModule_ProvideAnthropicApiFactory;
 import com.pocketdev.data.di.NetworkModule_ProvideGeminiApiFactory;
 import com.pocketdev.data.di.NetworkModule_ProvideGitHubApiFactory;
+import com.pocketdev.data.di.NetworkModule_ProvideGitHubAuthApiFactory;
 import com.pocketdev.data.di.NetworkModule_ProvideGitHubTokenProviderFactory;
 import com.pocketdev.data.di.NetworkModule_ProvideLlmApiFactory;
 import com.pocketdev.data.di.NetworkModule_ProvideOkHttpClientFactory;
@@ -27,6 +28,7 @@ import com.pocketdev.data.remote.CollaborationWebSocket;
 import com.pocketdev.data.remote.api.AnthropicApi;
 import com.pocketdev.data.remote.api.GeminiApi;
 import com.pocketdev.data.remote.api.GitHubApi;
+import com.pocketdev.data.remote.api.GitHubAuthApi;
 import com.pocketdev.data.remote.api.LlmApi;
 import com.pocketdev.data.remote.api.OllamaApi;
 import com.pocketdev.data.remote.interceptor.DynamicHostInterceptor;
@@ -638,7 +640,7 @@ public final class DaggerPocketDevApp_HiltComponents_SingletonC {
           return (T) new ReposViewModel(viewModelCImpl.getReposUseCase(), viewModelCImpl.authenticateGitHubUseCase());
 
           case 9: // com.pocketdev.ui.screens.settings.SettingsViewModel 
-          return (T) new SettingsViewModel(singletonCImpl.userSettingsRepositoryImplProvider.get());
+          return (T) new SettingsViewModel(singletonCImpl.userSettingsRepositoryImplProvider.get(), ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
 
           case 10: // com.pocketdev.ui.screens.terminal.TerminalViewModel 
           return (T) new TerminalViewModel(singletonCImpl.terminalRepositoryImplProvider.get());
@@ -741,6 +743,8 @@ public final class DaggerPocketDevApp_HiltComponents_SingletonC {
 
     private Provider<GitHubApi> provideGitHubApiProvider;
 
+    private Provider<GitHubAuthApi> provideGitHubAuthApiProvider;
+
     private Provider<GitHubRepositoryImpl> gitHubRepositoryImplProvider;
 
     private Provider<UserSettingsRepositoryImpl> userSettingsRepositoryImplProvider;
@@ -794,24 +798,25 @@ public final class DaggerPocketDevApp_HiltComponents_SingletonC {
       this.llmRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<LlmRepositoryImpl>(singletonCImpl, 2));
       this.provideGitHubTokenProvider = DoubleCheck.provider(new SwitchingProvider<Function0<String>>(singletonCImpl, 9));
       this.provideGitHubApiProvider = DoubleCheck.provider(new SwitchingProvider<GitHubApi>(singletonCImpl, 8));
+      this.provideGitHubAuthApiProvider = DoubleCheck.provider(new SwitchingProvider<GitHubAuthApi>(singletonCImpl, 10));
       this.gitHubRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<GitHubRepositoryImpl>(singletonCImpl, 7));
-      this.userSettingsRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<UserSettingsRepositoryImpl>(singletonCImpl, 10));
-      this.provideAnthropicApiProvider = DoubleCheck.provider(new SwitchingProvider<AnthropicApi>(singletonCImpl, 12));
-      this.provideGeminiApiProvider = DoubleCheck.provider(new SwitchingProvider<GeminiApi>(singletonCImpl, 13));
-      this.provideOllamaApiProvider = DoubleCheck.provider(new SwitchingProvider<OllamaApi>(singletonCImpl, 14));
-      this.aiRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<AiRepositoryImpl>(singletonCImpl, 11));
-      this.provideAppDatabaseProvider = DoubleCheck.provider(new SwitchingProvider<AppDatabase>(singletonCImpl, 17));
-      this.provideConversationDaoProvider = DoubleCheck.provider(new SwitchingProvider<ConversationDao>(singletonCImpl, 16));
-      this.provideMessageDaoProvider = DoubleCheck.provider(new SwitchingProvider<MessageDao>(singletonCImpl, 18));
-      this.conversationRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<ConversationRepositoryImpl>(singletonCImpl, 15));
-      this.provideOkHttpClientForCollaborationProvider = DoubleCheck.provider(new SwitchingProvider<OkHttpClient>(singletonCImpl, 21));
-      this.collaborationWebSocketProvider = DoubleCheck.provider(new SwitchingProvider<CollaborationWebSocket>(singletonCImpl, 20));
-      this.collaborationRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<CollaborationRepositoryImpl>(singletonCImpl, 19));
-      this.fileRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<FileRepositoryImpl>(singletonCImpl, 22));
-      this.ollamaRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<OllamaRepositoryImpl>(singletonCImpl, 23));
-      this.pcConnectionRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<PcConnectionRepositoryImpl>(singletonCImpl, 24));
-      this.remoteRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<RemoteRepositoryImpl>(singletonCImpl, 25));
-      this.terminalRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<TerminalRepositoryImpl>(singletonCImpl, 26));
+      this.userSettingsRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<UserSettingsRepositoryImpl>(singletonCImpl, 11));
+      this.provideAnthropicApiProvider = DoubleCheck.provider(new SwitchingProvider<AnthropicApi>(singletonCImpl, 13));
+      this.provideGeminiApiProvider = DoubleCheck.provider(new SwitchingProvider<GeminiApi>(singletonCImpl, 14));
+      this.provideOllamaApiProvider = DoubleCheck.provider(new SwitchingProvider<OllamaApi>(singletonCImpl, 15));
+      this.aiRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<AiRepositoryImpl>(singletonCImpl, 12));
+      this.provideAppDatabaseProvider = DoubleCheck.provider(new SwitchingProvider<AppDatabase>(singletonCImpl, 18));
+      this.provideConversationDaoProvider = DoubleCheck.provider(new SwitchingProvider<ConversationDao>(singletonCImpl, 17));
+      this.provideMessageDaoProvider = DoubleCheck.provider(new SwitchingProvider<MessageDao>(singletonCImpl, 19));
+      this.conversationRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<ConversationRepositoryImpl>(singletonCImpl, 16));
+      this.provideOkHttpClientForCollaborationProvider = DoubleCheck.provider(new SwitchingProvider<OkHttpClient>(singletonCImpl, 22));
+      this.collaborationWebSocketProvider = DoubleCheck.provider(new SwitchingProvider<CollaborationWebSocket>(singletonCImpl, 21));
+      this.collaborationRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<CollaborationRepositoryImpl>(singletonCImpl, 20));
+      this.fileRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<FileRepositoryImpl>(singletonCImpl, 23));
+      this.ollamaRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<OllamaRepositoryImpl>(singletonCImpl, 24));
+      this.pcConnectionRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<PcConnectionRepositoryImpl>(singletonCImpl, 25));
+      this.remoteRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<RemoteRepositoryImpl>(singletonCImpl, 26));
+      this.terminalRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<TerminalRepositoryImpl>(singletonCImpl, 27));
     }
 
     @Override
@@ -869,7 +874,7 @@ public final class DaggerPocketDevApp_HiltComponents_SingletonC {
           return (T) new UserSettingsDataStore(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
 
           case 7: // com.pocketdev.data.repository.GitHubRepositoryImpl 
-          return (T) new GitHubRepositoryImpl(singletonCImpl.provideGitHubApiProvider.get(), singletonCImpl.userSettingsDataStoreProvider.get(), singletonCImpl.provideGitHubTokenProvider.get());
+          return (T) new GitHubRepositoryImpl(singletonCImpl.provideGitHubApiProvider.get(), singletonCImpl.provideGitHubAuthApiProvider.get(), singletonCImpl.userSettingsDataStoreProvider.get(), singletonCImpl.provideGitHubTokenProvider.get());
 
           case 8: // com.pocketdev.data.remote.api.GitHubApi 
           return (T) NetworkModule_ProvideGitHubApiFactory.provideGitHubApi(singletonCImpl.userSettingsDataStoreProvider.get(), singletonCImpl.provideGitHubTokenProvider.get());
@@ -877,55 +882,58 @@ public final class DaggerPocketDevApp_HiltComponents_SingletonC {
           case 9: // @javax.inject.Named("github_token_provider") kotlin.jvm.functions.Function0<java.lang.String> 
           return (T) NetworkModule_ProvideGitHubTokenProviderFactory.provideGitHubTokenProvider(singletonCImpl.userSettingsDataStoreProvider.get());
 
-          case 10: // com.pocketdev.data.repository.UserSettingsRepositoryImpl 
+          case 10: // com.pocketdev.data.remote.api.GitHubAuthApi 
+          return (T) NetworkModule_ProvideGitHubAuthApiFactory.provideGitHubAuthApi();
+
+          case 11: // com.pocketdev.data.repository.UserSettingsRepositoryImpl 
           return (T) new UserSettingsRepositoryImpl(singletonCImpl.userSettingsDataStoreProvider.get());
 
-          case 11: // com.pocketdev.data.repository.AiRepositoryImpl 
+          case 12: // com.pocketdev.data.repository.AiRepositoryImpl 
           return (T) new AiRepositoryImpl(singletonCImpl.provideLlmApiProvider.get(), singletonCImpl.provideAnthropicApiProvider.get(), singletonCImpl.provideGeminiApiProvider.get(), singletonCImpl.provideOllamaApiProvider.get());
 
-          case 12: // com.pocketdev.data.remote.api.AnthropicApi 
+          case 13: // com.pocketdev.data.remote.api.AnthropicApi 
           return (T) NetworkModule_ProvideAnthropicApiFactory.provideAnthropicApi();
 
-          case 13: // com.pocketdev.data.remote.api.GeminiApi 
+          case 14: // com.pocketdev.data.remote.api.GeminiApi 
           return (T) NetworkModule_ProvideGeminiApiFactory.provideGeminiApi();
 
-          case 14: // com.pocketdev.data.remote.api.OllamaApi 
+          case 15: // com.pocketdev.data.remote.api.OllamaApi 
           return (T) NetworkModule_ProvideOllamaApiFactory.provideOllamaApi();
 
-          case 15: // com.pocketdev.data.repository.ConversationRepositoryImpl 
+          case 16: // com.pocketdev.data.repository.ConversationRepositoryImpl 
           return (T) new ConversationRepositoryImpl(singletonCImpl.provideConversationDaoProvider.get(), singletonCImpl.provideMessageDaoProvider.get());
 
-          case 16: // com.pocketdev.data.local.database.ConversationDao 
+          case 17: // com.pocketdev.data.local.database.ConversationDao 
           return (T) DatabaseModule_ProvideConversationDaoFactory.provideConversationDao(singletonCImpl.provideAppDatabaseProvider.get());
 
-          case 17: // com.pocketdev.data.local.database.AppDatabase 
+          case 18: // com.pocketdev.data.local.database.AppDatabase 
           return (T) DatabaseModule_ProvideAppDatabaseFactory.provideAppDatabase(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
 
-          case 18: // com.pocketdev.data.local.database.MessageDao 
+          case 19: // com.pocketdev.data.local.database.MessageDao 
           return (T) DatabaseModule_ProvideMessageDaoFactory.provideMessageDao(singletonCImpl.provideAppDatabaseProvider.get());
 
-          case 19: // com.pocketdev.data.repository.CollaborationRepositoryImpl 
+          case 20: // com.pocketdev.data.repository.CollaborationRepositoryImpl 
           return (T) new CollaborationRepositoryImpl(singletonCImpl.collaborationWebSocketProvider.get());
 
-          case 20: // com.pocketdev.data.remote.CollaborationWebSocket 
+          case 21: // com.pocketdev.data.remote.CollaborationWebSocket 
           return (T) new CollaborationWebSocket(singletonCImpl.provideOkHttpClientForCollaborationProvider.get());
 
-          case 21: // @javax.inject.Named("collaboration") okhttp3.OkHttpClient 
+          case 22: // @javax.inject.Named("collaboration") okhttp3.OkHttpClient 
           return (T) NetworkModule_ProvideOkHttpClientForCollaborationFactory.provideOkHttpClientForCollaboration();
 
-          case 22: // com.pocketdev.data.repository.FileRepositoryImpl 
+          case 23: // com.pocketdev.data.repository.FileRepositoryImpl 
           return (T) new FileRepositoryImpl(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
 
-          case 23: // com.pocketdev.data.repository.OllamaRepositoryImpl 
+          case 24: // com.pocketdev.data.repository.OllamaRepositoryImpl 
           return (T) new OllamaRepositoryImpl(singletonCImpl.userSettingsDataStoreProvider.get());
 
-          case 24: // com.pocketdev.data.repository.PcConnectionRepositoryImpl 
+          case 25: // com.pocketdev.data.repository.PcConnectionRepositoryImpl 
           return (T) new PcConnectionRepositoryImpl(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
 
-          case 25: // com.pocketdev.data.repository.RemoteRepositoryImpl 
+          case 26: // com.pocketdev.data.repository.RemoteRepositoryImpl 
           return (T) new RemoteRepositoryImpl(singletonCImpl.gitHubRepositoryImplProvider.get());
 
-          case 26: // com.pocketdev.data.repository.TerminalRepositoryImpl 
+          case 27: // com.pocketdev.data.repository.TerminalRepositoryImpl 
           return (T) new TerminalRepositoryImpl(singletonCImpl.pcConnectionRepositoryImplProvider.get());
 
           default: throw new AssertionError(id);

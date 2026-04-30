@@ -119,9 +119,12 @@
     <string name="app_description">AI-powered mobile coding assistant</string>
     <string name="app_name">PocketDev</string>
     <string name="app_version">Version %1$s</string>
+    <string name="avatar">Avatar</string>
     <string name="branch_default">default</string>
     <string name="branch_protected">Protected</string>
     <string name="branch_select_title">Select Branch</string>
+    <string name="branch_selected">Selected</string>
+    <string name="build_available">Available</string>
     <string name="build_build">Build</string>
     <string name="build_daemon_running">Daemon: Running</string>
     <string name="build_daemon_stopped">Daemon: Stopped</string>
@@ -130,13 +133,16 @@
     <string name="build_gradle_not_found">Gradle not found. Please install Gradle or use gradlew.</string>
     <string name="build_gradle_version">Gradle %1$s</string>
     <string name="build_no_history">No Build History</string>
+    <string name="build_not_found">Not Found</string>
     <string name="build_phase">Phase: %1$s</string>
+    <string name="build_placeholder_path">/path/to/android/project</string>
     <string name="build_project_path">Project Path</string>
     <string name="build_refresh">Refresh Gradle Info</string>
     <string name="build_release">release</string>
     <string name="build_run_to_see">Run a build to see progress and history</string>
     <string name="build_stop">Stop</string>
     <string name="build_type">Build Type:</string>
+    <string name="build_unknown">Unknown</string>
     <string name="cache">Cache</string>
     <string name="cache_clear">Clear</string>
     <string name="cache_size">Size: %1$s</string>
@@ -162,6 +168,8 @@
     <string name="close">Close</string>
     <string name="close_drawer">"Close navigation menu"</string>
     <string name="close_sheet">"Close sheet"</string>
+    <string name="codecard_committed">Committed</string>
+    <string name="codecard_push_github">Push to GitHub</string>
     <string name="commit_commit">Commit</string>
     <string name="commit_message_hint">Enter a commit message to save your changes to the remote repository.</string>
     <string name="commit_message_label">Commit message</string>
@@ -181,7 +189,9 @@
     <string name="editor_ai_response">AI Response</string>
     <string name="editor_ask_ai">Ask AI</string>
     <string name="editor_auto_save">Auto-save</string>
+    <string name="editor_font_size">Font Size: %1$dsp</string>
     <string name="editor_insert_cursor">Insert at Cursor</string>
+    <string name="editor_load_failed">Failed to load file</string>
     <string name="editor_more_options">More options</string>
     <string name="editor_no_file_open">No file open</string>
     <string name="editor_off">Off</string>
@@ -191,14 +201,37 @@
     <string name="editor_open_folder_tooltip">Open folder</string>
     <string name="editor_redo">Redo</string>
     <string name="editor_save">Save</string>
+    <string name="editor_save_success">File saved successfully</string>
     <string name="editor_search">Search</string>
     <string name="editor_selected_code">Selected Code</string>
+    <string name="editor_show_line_numbers">Show Line Numbers</string>
+    <string name="editor_start_typing">Start typing…</string>
+    <string name="editor_tab_size">Tab Size: %1$d</string>
     <string name="editor_toggle_filetree">Toggle file tree</string>
     <string name="editor_undo">Undo</string>
+    <string name="editor_word_wrap">Word Wrap</string>
     <string name="editor_zoom_in">Zoom in</string>
     <string name="editor_zoom_out">Zoom out</string>
+    <string name="error_build_path_required">Please enter a project path</string>
+    <string name="error_chat_commit_failed">Commit failed: %1$s</string>
+    <string name="error_chat_no_provider">No AI provider configured</string>
+    <string name="error_chat_parse_failed">Failed to parse AI response: %1$s</string>
+    <string name="error_chat_unknown">Unknown error occurred</string>
+    <string name="error_chat_unknown_short">Unknown error</string>
+    <string name="error_editor_open_failed">Failed to open file: %1$s</string>
+    <string name="error_editor_save_failed">Save failed: %1$s</string>
+    <string name="error_remote_load_failed">Failed to load file</string>
+    <string name="error_remote_save_failed">Failed to save file</string>
+    <string name="error_repo_not_authenticated">Not authenticated</string>
+    <string name="error_repo_rate_limited">Rate limited</string>
+    <string name="error_repo_rate_limited_retry">Rate limited, please try again later</string>
+    <string name="error_terminal_close_session">Failed to close session</string>
+    <string name="error_terminal_create_session">Failed to create session</string>
+    <string name="error_terminal_resize">Failed to resize terminal</string>
+    <string name="error_terminal_send_input">Failed to send input</string>
     <string name="fab_chat">Chat</string>
     <string name="fab_editor">Editor</string>
+    <string name="fab_menu">Menu</string>
     <string name="fab_ollama">Ollama</string>
     <string name="fab_pc">PC</string>
     <string name="fab_terminal">Terminal</string>
@@ -287,6 +320,7 @@
     <string name="off">Off</string>
     <string name="ok">OK</string>
     <string name="ollama_available_models">Available Models</string>
+    <string name="ollama_delete">Delete</string>
     <string name="ollama_download">Download</string>
     <string name="ollama_installed">Installed</string>
     <string name="ollama_installed_models">Installed Models</string>
@@ -313,10 +347,15 @@
     <string name="pc_install_cli">Install pocketdev-cli on your PC and add a connection</string>
     <string name="pc_name">Name</string>
     <string name="pc_no_pc_connected">No PC Connected</string>
+    <string name="pc_placeholder_api_key">Leave empty if not set</string>
+    <string name="pc_placeholder_host">192.168.1.100</string>
+    <string name="pc_placeholder_name">My PC</string>
     <string name="pc_port">Port</string>
     <string name="pc_select">Select</string>
     <string name="pc_test_connection">Test Connection</string>
     <string name="pc_title">PC Connections</string>
+    <string name="presence_collaborators">Collaborators (%1$d)</string>
+    <string name="presence_cursor">Line %1$d, Col %2$d</string>
     <string name="range_end">"Range end"</string>
     <string name="range_start">"Range start"</string>
     <string name="repo_detail_back">Back</string>
@@ -325,6 +364,7 @@
     <string name="repo_detail_title">Repository</string>
     <string name="repos_connect_github">Connect to GitHub</string>
     <string name="repos_login_github">Login with GitHub</string>
+    <string name="repos_refresh">Refresh</string>
     <string name="repos_sign_in">Sign in to browse your repositories</string>
     <string name="repos_title">Repositories</string>
     <string name="retry">Retry</string>
@@ -360,7 +400,6 @@
     <string name="settings_title">Settings</string>
     <string name="show_line_numbers">Show Line Numbers</string>
     <string name="sign_out">Sign Out</string>
-    <string name="splash_tagline">AI-Powered Development</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="switch_role">Switch</string>
     <string name="tab">Tab</string>
@@ -468,23 +507,14 @@
         <attr format="reference" name="fontProviderCerts"/>
         
         <attr name="fontProviderFetchStrategy">
-            <!-- The blocking font fetch works as follows.
-              First, check the local cache, then if the requested font is not cached, request the
-              font from the provider and wait until it is finished.  You can change the length of
-              the timeout by modifying fontProviderFetchTimeout.  If the timeout happens, the
-              default typeface will be used instead. -->
+            
             <enum name="blocking" value="0"/>
-            <!-- The async font fetch works as follows.
-              First, check the local cache, then if the requeted font is not cached, trigger a
-              request the font and continue with layout inflation. Once the font fetch succeeds, the
-              target text view will be refreshed with the downloaded font data. The
-              fontProviderFetchTimeout will be ignored if async loading is specified. -->
+            
             <enum name="async" value="1"/>
         </attr>
         
         <attr format="integer" name="fontProviderFetchTimeout">
-            <!-- A special value for the timeout. In this case, the blocking font fetching will not
-              timeout and wait until a reply is received from the font provider. -->
+            
             <enum name="forever" value="-1"/>
         </attr>
         
