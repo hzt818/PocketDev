@@ -29,6 +29,22 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            // Signing configuration from gradle.properties
+            val keystorePath = project.properties["keystorePath"] as String?
+            val keystorePassword = project.properties["keystorePassword"] as String?
+            val keyAlias = project.properties["keyAlias"] as String?
+            val keyPassword = project.properties["keyPassword"] as String?
+            if (keystorePath != null && keystorePassword != null && keyAlias != null && keyPassword != null) {
+                signingConfigs {
+                    create("release") {
+                        storeFile = file(keystorePath)
+                        storePassword = keystorePassword
+                        this.keyAlias = keyAlias
+                        this.keyPassword = keyPassword
+                    }
+                }
+                signingConfig = signingConfigs.getByName("release")
+            }
         }
     }
 

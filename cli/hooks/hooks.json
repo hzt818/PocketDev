@@ -1,0 +1,44 @@
+{
+  "$schema": "https://raw.githubusercontent.com/anthropics/claude-code/main/docs/hooks-schema.json",
+  "version": 1,
+  "description": "PocketDev hooks configuration for Claude Code",
+  "POCKETDEV_ROOT": "e:/pocketdev/cli",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${POCKETDEV_ROOT}/hooks/pre_tool_use/validate_paths.js\"",
+            "description": "Validate file paths to prevent path traversal"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${POCKETDEV_ROOT}/hooks/pre_tool_use/check_dangerous.js\"",
+            "description": "Check for dangerous shell commands"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${POCKETDEV_ROOT}/hooks/post_tool_use/format_code.js\"",
+            "description": "Auto-format code after edits",
+            "async": true,
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}
