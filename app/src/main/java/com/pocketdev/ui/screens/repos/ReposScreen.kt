@@ -38,10 +38,12 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.pocketdev.R
 import com.pocketdev.domain.model.GitHubRepo
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -70,11 +72,11 @@ fun ReposScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Repositories") },
+                title = { Text(stringResource(R.string.repos_title)) },
                 actions = {
                     if (uiState.isAuthenticated) {
                         IconButton(onClick = { viewModel.onEvent(ReposEvent.LoadRepos) }) {
-                            Icon(Icons.Default.Refresh, contentDescription = "Refresh")
+                            Icon(Icons.Default.Refresh, contentDescription = stringResource(R.string.repos_refresh))
                         }
                     }
                 }
@@ -141,16 +143,16 @@ private fun LoginPrompt(
                 tint = MaterialTheme.colorScheme.primary
             )
             Text(
-                text = "Connect to GitHub",
+                text = stringResource(R.string.repos_connect_github),
                 style = MaterialTheme.typography.headlineSmall
             )
             Text(
-                text = "Sign in to browse your repositories",
+                text = stringResource(R.string.repos_sign_in),
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
             Button(onClick = onLogin) {
-                Text("Login with GitHub")
+                Text(stringResource(R.string.repos_login_github))
             }
         }
     }

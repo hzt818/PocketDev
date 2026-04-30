@@ -42,9 +42,12 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.pocketdev.R
+import com.pocketdev.ui.i18n.UiMessage
 import com.pocketdev.ui.screens.editor.components.CodeEditor
 import com.pocketdev.ui.screens.editor.components.EditorTabs
 import com.pocketdev.ui.screens.editor.components.EditorToolbar
@@ -64,8 +67,15 @@ fun EditorScreen(
         uri?.let { viewModel.onEvent(EditorEvent.OpenFolder(it)) }
     }
 
-    LaunchedEffect(uiState.error) {
-        uiState.error?.let { error ->
+    val errorText = uiState.error?.let { msg ->
+        when (msg) {
+            is UiMessage.StrRes -> stringResource(msg.id, *msg.args.toTypedArray())
+            is UiMessage.Generic -> msg.message
+        }
+    }
+
+    LaunchedEffect(errorText) {
+        errorText?.let { error ->
             snackbarHostState.showSnackbar(error)
             viewModel.onEvent(EditorEvent.ClearError)
         }
@@ -210,13 +220,13 @@ private fun EmptyEditorState(
             modifier = Modifier.padding(32.dp)
         ) {
             Text(
-                text = "No file open",
+                text = stringResource(R.string.editor_no_file_open),
                 style = MaterialTheme.typography.titleLarge,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
             Spacer(modifier = Modifier.height(8.dp))
             Text(
-                text = "Open a folder to start browsing files",
+                text = stringResource(R.string.editor_open_folder_hint),
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                 textAlign = TextAlign.Center
@@ -228,7 +238,7 @@ private fun EmptyEditorState(
                     contentDescription = null,
                     modifier = Modifier.padding(end = 8.dp)
                 )
-                Text("Open Folder")
+                Text(stringResource(R.string.editor_open_folder))
             }
         }
     }
@@ -258,13 +268,13 @@ private fun AiAssistPanel(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Text(
-                    text = "AI Assist",
+                    text = stringResource(R.string.editor_ai_assist),
                     style = MaterialTheme.typography.titleSmall
                 )
                 IconButton(onClick = onClose) {
                     Icon(
                         imageVector = Icons.Default.SmartToy,
-                        contentDescription = "Close"
+                        contentDescription = stringResource(R.string.close)
                     )
                 }
             }
@@ -273,7 +283,7 @@ private fun AiAssistPanel(
                 OutlinedTextField(
                     value = selectedText,
                     onValueChange = {},
-                    label = { Text("Selected Code") },
+                    label = { Text(stringResource(R.string.editor_selected_code)) },
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(100.dp),
@@ -297,7 +307,7 @@ private fun AiAssistPanel(
                             modifier = Modifier.padding(end = 4.dp)
                         )
                     }
-                    Text("Ask AI")
+                    Text(stringResource(R.string.editor_ask_ai))
                 }
             }
 
@@ -306,7 +316,7 @@ private fun AiAssistPanel(
                 OutlinedTextField(
                     value = response,
                     onValueChange = {},
-                    label = { Text("AI Response") },
+                    label = { Text(stringResource(R.string.editor_ai_response)) },
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(120.dp),
@@ -314,7 +324,7 @@ private fun AiAssistPanel(
                 )
                 Spacer(modifier = Modifier.height(8.dp))
                 Button(onClick = onInsertResponse) {
-                    Text("Insert at Cursor")
+                    Text(stringResource(R.string.editor_insert_cursor))
                 }
             }
         }

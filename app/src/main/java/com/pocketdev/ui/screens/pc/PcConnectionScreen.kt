@@ -49,10 +49,12 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.pocketdev.R
 import com.pocketdev.domain.model.PcConnectionConfig
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -73,10 +75,10 @@ fun PcConnectionScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("PC Connections") },
+                title = { Text(stringResource(R.string.pc_title)) },
                 actions = {
                     Text(
-                        text = if (uiState.activeConnection != null) "Connected" else "Disconnected",
+                        text = if (uiState.activeConnection != null) stringResource(R.string.pc_connected) else stringResource(R.string.pc_disconnected),
                         style = MaterialTheme.typography.bodySmall,
                         color = if (uiState.activeConnection != null)
                             MaterialTheme.colorScheme.primary
@@ -89,7 +91,7 @@ fun PcConnectionScreen(
         },
         floatingActionButton = {
             FloatingActionButton(onClick = { viewModel.onEvent(PcConnectionEvent.ShowAddDialog) }) {
-                Icon(Icons.Default.Add, contentDescription = "Add Connection")
+                Icon(Icons.Default.Add, contentDescription = stringResource(R.string.pc_add_connection))
             }
         },
         snackbarHost = { SnackbarHost(snackbarHostState) }
@@ -149,11 +151,11 @@ private fun EmptyConnectionState(modifier: Modifier = Modifier) {
                 tint = MaterialTheme.colorScheme.primary
             )
             Text(
-                text = "No PC Connected",
+                text = stringResource(R.string.pc_no_pc_connected),
                 style = MaterialTheme.typography.headlineSmall
             )
             Text(
-                text = "Install pocketdev-cli on your PC\nand add a connection",
+                text = stringResource(R.string.pc_install_cli),
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
@@ -195,7 +197,7 @@ private fun PcConnectionItem(
                     Icon(
                         imageVector = if (isActive) Icons.Default.RadioButtonChecked
                         else Icons.Default.RadioButtonUnchecked,
-                        contentDescription = if (isActive) "Active" else "Select",
+                        contentDescription = if (isActive) stringResource(R.string.pc_active) else stringResource(R.string.pc_select),
                         tint = if (isActive) MaterialTheme.colorScheme.primary
                         else MaterialTheme.colorScheme.onSurfaceVariant
                     )
@@ -213,7 +215,7 @@ private fun PcConnectionItem(
                             Spacer(modifier = Modifier.width(8.dp))
                             Icon(
                                 imageVector = Icons.Default.CheckCircle,
-                                contentDescription = "Connected",
+                                contentDescription = stringResource(R.string.pc_connected),
                                 modifier = Modifier.size(16.dp),
                                 tint = MaterialTheme.colorScheme.primary
                             )
@@ -237,7 +239,7 @@ private fun PcConnectionItem(
                     } else {
                         Icon(
                             imageVector = Icons.Default.Computer,
-                            contentDescription = "Test Connection",
+                            contentDescription = stringResource(R.string.pc_test_connection),
                             tint = MaterialTheme.colorScheme.primary
                         )
                     }
@@ -246,7 +248,7 @@ private fun PcConnectionItem(
                 IconButton(onClick = onDelete) {
                     Icon(
                         imageVector = Icons.Default.Delete,
-                        contentDescription = "Delete",
+                        contentDescription = stringResource(R.string.pc_delete),
                         tint = MaterialTheme.colorScheme.error
                     )
                 }
@@ -267,7 +269,7 @@ private fun AddConnectionDialog(
 
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text("Add PC Connection") },
+        title = { Text(stringResource(R.string.pc_add_pc_title)) },
         text = {
             Column(
                 verticalArrangement = Arrangement.spacedBy(12.dp)
@@ -275,8 +277,8 @@ private fun AddConnectionDialog(
                 OutlinedTextField(
                     value = name,
                     onValueChange = { name = it },
-                    label = { Text("Name") },
-                    placeholder = { Text("My PC") },
+                    label = { Text(stringResource(R.string.pc_name)) },
+                    placeholder = { Text(stringResource(R.string.pc_placeholder_name)) },
                     singleLine = true,
                     modifier = Modifier.fillMaxWidth()
                 )
@@ -284,8 +286,8 @@ private fun AddConnectionDialog(
                 OutlinedTextField(
                     value = host,
                     onValueChange = { host = it },
-                    label = { Text("Host IP") },
-                    placeholder = { Text("192.168.1.100") },
+                    label = { Text(stringResource(R.string.pc_host_ip)) },
+                    placeholder = { Text(stringResource(R.string.pc_placeholder_host)) },
                     singleLine = true,
                     modifier = Modifier.fillMaxWidth()
                 )
@@ -293,7 +295,7 @@ private fun AddConnectionDialog(
                 OutlinedTextField(
                     value = port.toString(),
                     onValueChange = { port = it.toIntOrNull() ?: 8080 },
-                    label = { Text("Port") },
+                    label = { Text(stringResource(R.string.pc_port)) },
                     singleLine = true,
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
                     modifier = Modifier.fillMaxWidth()
@@ -302,8 +304,8 @@ private fun AddConnectionDialog(
                 OutlinedTextField(
                     value = apiKey,
                     onValueChange = { apiKey = it },
-                    label = { Text("API Key (optional)") },
-                    placeholder = { Text("Leave empty if not set") },
+                    label = { Text(stringResource(R.string.pc_api_key_optional)) },
+                    placeholder = { Text(stringResource(R.string.pc_placeholder_api_key)) },
                     singleLine = true,
                     modifier = Modifier.fillMaxWidth()
                 )
@@ -314,12 +316,12 @@ private fun AddConnectionDialog(
                 onClick = { onConfirm(name, host, port, apiKey) },
                 enabled = name.isNotBlank() && host.isNotBlank()
             ) {
-                Text("Add")
+                Text(stringResource(R.string.pc_add))
             }
         },
         dismissButton = {
             TextButton(onClick = onDismiss) {
-                Text("Cancel")
+                Text(stringResource(R.string.cancel))
             }
         }
     )

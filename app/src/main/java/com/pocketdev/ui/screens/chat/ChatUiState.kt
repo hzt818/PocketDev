@@ -3,13 +3,14 @@ package com.pocketdev.ui.screens.chat
 import com.pocketdev.domain.model.AiResponse
 import com.pocketdev.domain.model.ChatMessage
 import com.pocketdev.domain.model.Conversation
+import com.pocketdev.ui.i18n.UiMessage
 
 data class ChatUiState(
     val conversations: List<Conversation> = emptyList(),
     val currentConversationId: String? = null,
     val messages: List<ChatMessage> = emptyList(),
     val isLoading: Boolean = false,
-    val error: String? = null,
+    val error: UiMessage? = null,
     val currentAiResponse: AiResponse? = null,
     val selectedRepo: SelectedRepo? = null,
     val drawerVisible: Boolean = false

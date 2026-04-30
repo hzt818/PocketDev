@@ -22,12 +22,14 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.pocketdev.R
 import com.pocketdev.domain.model.FileType
 import com.pocketdev.ui.screens.editor.util.SyntaxHighlighter
 
@@ -104,7 +106,7 @@ fun CodeEditor(
                     Box {
                         if (content.isEmpty()) {
                             Text(
-                                text = "Start typing...",
+                                text = stringResource(R.string.editor_start_typing),
                                 style = TextStyle(
                                     fontFamily = FontFamily.Monospace,
                                     fontSize = fontSize.sp,

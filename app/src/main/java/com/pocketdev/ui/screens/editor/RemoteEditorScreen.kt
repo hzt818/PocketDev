@@ -28,9 +28,12 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.pocketdev.R
+import com.pocketdev.ui.i18n.UiMessage
 import com.pocketdev.ui.components.CommitDialog
 import com.pocketdev.ui.screens.editor.components.CodeEditor
 import com.pocketdev.ui.screens.editor.components.SearchReplaceBar
@@ -47,9 +50,17 @@ fun RemoteEditorScreen(
 ) {
     val uiState by viewModel.uiState.collectAsState()
     val snackbarHostState = remember { SnackbarHostState() }
+    val saveSuccessMessage = stringResource(R.string.editor_save_success)
 
-    LaunchedEffect(uiState.error) {
-        uiState.error?.let { error ->
+    val errorText = uiState.error?.let { msg ->
+        when (msg) {
+            is UiMessage.StrRes -> stringResource(msg.id, *msg.args.toTypedArray())
+            is UiMessage.Generic -> msg.message
+        }
+    }
+
+    LaunchedEffect(errorText) {
+        errorText?.let { error ->
             snackbarHostState.showSnackbar(error)
             viewModel.onEvent(RemoteEditorEvent.ClearError)
         }
@@ -57,7 +68,7 @@ fun RemoteEditorScreen(
 
     LaunchedEffect(uiState.showSaveSuccess) {
         if (uiState.showSaveSuccess) {
-            snackbarHostState.showSnackbar("File saved successfully")
+            snackbarHostState.showSnackbar(saveSuccessMessage)
         }
     }
 
@@ -83,27 +94,27 @@ fun RemoteEditorScreen(
                     IconButton(onClick = onNavigateBack) {
                         Icon(
                             imageVector = Icons.AutoMirrored.Filled.ArrowBack,
-                            contentDescription = "Back"
+                            contentDescription = stringResource(R.string.repo_detail_back)
                         )
                     }
                 },
                 actions = {
                     if (uiState.isModified) {
                         IconButton(onClick = { viewModel.onEvent(RemoteEditorEvent.SaveFile) }) {
-                            Icon(Icons.Default.Save, contentDescription = "Save")
+                            Icon(Icons.Default.Save, contentDescription = stringResource(R.string.editor_save))
                         }
                     }
 
                     IconButton(onClick = { viewModel.onEvent(RemoteEditorEvent.ShowSearch) }) {
-                        Icon(Icons.Default.Search, contentDescription = "Search")
+                        Icon(Icons.Default.Search, contentDescription = stringResource(R.string.editor_search))
                     }
 
                     IconButton(onClick = { viewModel.onEvent(RemoteEditorEvent.ZoomIn(1f)) }) {
-                        Icon(Icons.Default.ZoomIn, contentDescription = "Zoom in")
+                        Icon(Icons.Default.ZoomIn, contentDescription = stringResource(R.string.editor_zoom_in))
                     }
 
                     IconButton(onClick = { viewModel.onEvent(RemoteEditorEvent.ZoomOut(1f)) }) {
-                        Icon(Icons.Default.ZoomOut, contentDescription = "Zoom out")
+                        Icon(Icons.Default.ZoomOut, contentDescription = stringResource(R.string.editor_zoom_out))
                     }
                 }
             )
@@ -159,7 +170,7 @@ fun RemoteEditorScreen(
                 }
                 else -> {
                     Text(
-                        text = "Failed to load file",
+                        text = stringResource(R.string.editor_load_failed),
                         modifier = Modifier.align(Alignment.Center),
                         color = MaterialTheme.colorScheme.error
                     )

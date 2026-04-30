@@ -20,12 +20,14 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
+import com.pocketdev.R
 import com.pocketdev.domain.model.Collaborator
 
 @Composable
@@ -113,7 +115,7 @@ fun CollaboratorsList(
 ) {
     Column(modifier = modifier.padding(16.dp)) {
         Text(
-            text = "Collaborators (${collaborators.size})",
+            text = stringResource(R.string.presence_collaborators, collaborators.size),
             style = MaterialTheme.typography.titleSmall
         )
 
@@ -147,7 +149,7 @@ private fun CollaboratorItem(
             )
             collaborator.cursorPosition?.let { pos ->
                 Text(
-                    text = "Line ${pos.line}, Col ${pos.column}",
+                    text = stringResource(R.string.presence_cursor, pos.line, pos.column),
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )

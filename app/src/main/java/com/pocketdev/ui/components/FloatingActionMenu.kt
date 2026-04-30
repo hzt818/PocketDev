@@ -17,12 +17,10 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
-import androidx.compose.material.icons.filled.Build
 import androidx.compose.material.icons.filled.Chat
 import androidx.compose.material.icons.filled.Code
 import androidx.compose.material.icons.filled.Computer
 import androidx.compose.material.icons.filled.Memory
-import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.filled.Terminal
 import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
@@ -39,7 +37,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.pocketdev.R
 
 data class FabMenuItem(
     val icon: ImageVector,
@@ -91,7 +91,7 @@ fun FloatingActionMenu(
         ) {
             Icon(
                 imageVector = Icons.Default.Add,
-                contentDescription = "Menu",
+                contentDescription = stringResource(R.string.fab_menu),
                 modifier = Modifier.rotate(rotation)
             )
         }
@@ -143,11 +143,11 @@ fun DefaultFloatingActionMenu(
     modifier: Modifier = Modifier
 ) {
     val defaultItems = listOf(
-        FabMenuItem(Icons.Default.Chat, "Chat", onNavigateToChat),
-        FabMenuItem(Icons.Default.Code, "Editor", onNavigateToEditor),
-        FabMenuItem(Icons.Default.Memory, "Ollama", onNavigateToOllama),
-        FabMenuItem(Icons.Default.Computer, "PC", onNavigateToPcConnection),
-        FabMenuItem(Icons.Default.Terminal, "Terminal", onNavigateToTerminal)
+        FabMenuItem(Icons.Default.Chat, stringResource(R.string.fab_chat), onNavigateToChat),
+        FabMenuItem(Icons.Default.Code, stringResource(R.string.fab_editor), onNavigateToEditor),
+        FabMenuItem(Icons.Default.Memory, stringResource(R.string.fab_ollama), onNavigateToOllama),
+        FabMenuItem(Icons.Default.Computer, stringResource(R.string.fab_pc), onNavigateToPcConnection),
+        FabMenuItem(Icons.Default.Terminal, stringResource(R.string.fab_terminal), onNavigateToTerminal)
     )
 
     FloatingActionMenu(

@@ -8,6 +8,7 @@ import com.pocketdev.domain.model.BuildProgress
 import com.pocketdev.domain.model.BuildResult
 import com.pocketdev.domain.model.GradleInfo
 import com.pocketdev.domain.repository.BuildRepository
+import com.pocketdev.ui.i18n.UiMessage
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -25,7 +26,7 @@ data class BuildUiState(
     val currentProgress: BuildProgress? = null,
     val gradleInfo: GradleInfo? = null,
     val buildHistory: List<BuildResult> = emptyList(),
-    val error: String? = null
+    val error: UiMessage? = null
 )
 
 sealed class BuildEvent {
@@ -73,7 +74,7 @@ class BuildViewModel @Inject constructor(
     private fun executeBuild() {
         val projectPath = _uiState.value.projectPath
         if (projectPath.isBlank()) {
-            _uiState.update { it.copy(error = "Please enter a project path") }
+            _uiState.update { it.copy(error = UiMessage.StrRes(com.pocketdev.R.string.error_build_path_required)) }
             return
         }
 

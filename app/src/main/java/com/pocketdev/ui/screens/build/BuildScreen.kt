@@ -50,10 +50,13 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.pocketdev.R
+import com.pocketdev.ui.i18n.UiMessage
 import com.pocketdev.domain.model.BuildPhase
 import com.pocketdev.domain.model.BuildProgress
 import com.pocketdev.domain.model.BuildResult
@@ -66,8 +69,15 @@ fun BuildScreen(
     val uiState by viewModel.uiState.collectAsState()
     val snackbarHostState = remember { SnackbarHostState() }
 
-    LaunchedEffect(uiState.error) {
-        uiState.error?.let { error ->
+    val errorText = uiState.error?.let { msg ->
+        when (msg) {
+            is UiMessage.StrRes -> stringResource(msg.id, *msg.args.toTypedArray())
+            is UiMessage.Generic -> msg.message
+        }
+    }
+
+    LaunchedEffect(errorText) {
+        errorText?.let { error ->
             snackbarHostState.showSnackbar(error)
             viewModel.onEvent(BuildEvent.ClearError)
         }
@@ -153,7 +163,7 @@ private fun BuildTypeSelector(
         verticalAlignment = Alignment.CenterVertically
     ) {
         Text(
-            text = "Build Type:",
+            text = stringResource(R.string.build_type),
             style = MaterialTheme.typography.bodyMedium,
             modifier = Modifier.padding(end = 8.dp)
         )
@@ -188,8 +198,8 @@ private fun ProjectPathInput(
             value = projectPath,
             onValueChange = onPathChange,
             modifier = Modifier.weight(1f),
-            label = { Text("Project Path") },
-            placeholder = { Text("/path/to/android/project") },
+            label = { Text(stringResource(R.string.build_project_path)) },
+            placeholder = { Text(stringResource(R.string.build_placeholder_path)) },
             singleLine = true
         )
     }
@@ -225,14 +235,14 @@ private fun GradleInfoCard(
                 )
                 Spacer(modifier = Modifier.width(8.dp))
                 Text(
-                    text = "Gradle ${gradleInfo.version ?: "Not Found"}",
+                    text = stringResource(R.string.build_gradle_version, gradleInfo.version ?: stringResource(R.string.build_not_found)),
                     style = MaterialTheme.typography.titleSmall
                 )
                 Spacer(modifier = Modifier.weight(1f))
                 if (gradleInfo.available) {
                     Icon(
                         imageVector = Icons.Default.Check,
-                        contentDescription = "Available",
+                        contentDescription = stringResource(R.string.build_available),
                         tint = MaterialTheme.colorScheme.primary,
                         modifier = Modifier.size(16.dp)
                     )
@@ -240,18 +250,18 @@ private fun GradleInfoCard(
             }
             if (gradleInfo.available) {
                 Text(
-                    text = "Home: ${gradleInfo.homeDir ?: "Unknown"}",
+                    text = stringResource(R.string.build_gradle_home, gradleInfo.homeDir ?: stringResource(R.string.build_unknown)),
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.7f)
                 )
                 Text(
-                    text = if (gradleInfo.daemonRunning) "Daemon: Running" else "Daemon: Stopped",
+                    text = if (gradleInfo.daemonRunning) stringResource(R.string.build_daemon_running) else stringResource(R.string.build_daemon_stopped),
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.7f)
                 )
             } else {
                 Text(
-                    text = "Gradle not found. Please install Gradle or use gradlew.",
+                    text = stringResource(R.string.build_gradle_not_found),
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onErrorContainer
                 )
@@ -284,13 +294,13 @@ private fun BuildControls(
                 modifier = Modifier.size(18.dp)
             )
             Spacer(modifier = Modifier.width(4.dp))
-            Text(if (isBuilding) "Stop" else "Build")
+            Text(if (isBuilding) stringResource(R.string.build_stop) else stringResource(R.string.build_build))
         }
 
         IconButton(onClick = onRefresh) {
             Icon(
                 imageVector = Icons.Default.Refresh,
-                contentDescription = "Refresh Gradle Info"
+                contentDescription = stringResource(R.string.build_refresh)
             )
         }
     }
@@ -306,7 +316,7 @@ private fun BuildProgressArea(
     ) {
         progress?.let {
             Text(
-                text = "Phase: ${it.phase.name}",
+                text = stringResource(R.string.build_phase, it.phase.name),
                 style = MaterialTheme.typography.titleMedium,
                 fontFamily = FontFamily.Monospace
             )
@@ -418,13 +428,13 @@ private fun EmptyBuildState(
             )
             Spacer(modifier = Modifier.height(16.dp))
             Text(
-                text = "No Build History",
+                text = stringResource(R.string.build_no_history),
                 style = MaterialTheme.typography.titleLarge,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
             Spacer(modifier = Modifier.height(8.dp))
             Text(
-                text = "Run a build to see progress and history",
+                text = stringResource(R.string.build_run_to_see),
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )

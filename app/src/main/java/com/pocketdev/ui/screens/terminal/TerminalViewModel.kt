@@ -7,6 +7,8 @@ import com.pocketdev.domain.model.TerminalSession
 import com.pocketdev.domain.model.TerminalSize
 import com.pocketdev.domain.model.ShellType
 import com.pocketdev.domain.repository.TerminalRepository
+import com.pocketdev.ui.i18n.UiMessage
+import com.pocketdev.R
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -20,7 +22,7 @@ data class TerminalUiState(
     val activeSessionId: String? = null,
     val outputs: Map<String, List<TerminalOutput>> = emptyMap(),
     val isLoading: Boolean = false,
-    val error: String? = null,
+    val error: UiMessage? = null,
     val selectedShellType: ShellType = ShellType.LOCAL,
     val commandHistory: List<String> = emptyList(),
     val historyIndex: Int = -1
@@ -97,7 +99,7 @@ class TerminalViewModel @Inject constructor(
                     _uiState.update {
                         it.copy(
                             isLoading = false,
-                            error = error.message ?: "Failed to create session"
+                            error = UiMessage.fromMessageOrNull(error.message, R.string.error_terminal_create_session)
                         )
                     }
                 }
@@ -121,7 +123,6 @@ class TerminalViewModel @Inject constructor(
 
         viewModelScope.launch {
             try {
-                // Add to command history if not empty and different from last command
                 if (input.isNotBlank()) {
                     val currentHistory = _uiState.value.commandHistory
                     if (currentHistory.isEmpty() || currentHistory.last() != input) {
@@ -136,7 +137,7 @@ class TerminalViewModel @Inject constructor(
                 terminalRepository.writeToSession(sessionId, input)
             } catch (e: Exception) {
                 _uiState.update {
-                    it.copy(error = e.message ?: "Failed to send input")
+                    it.copy(error = UiMessage.fromMessageOrNull(e.message, R.string.error_terminal_send_input))
                 }
             }
         }
@@ -189,7 +190,7 @@ class TerminalViewModel @Inject constructor(
                 }
             } catch (e: Exception) {
                 _uiState.update {
-                    it.copy(error = e.message ?: "Failed to close session")
+                    it.copy(error = UiMessage.fromMessageOrNull(e.message, R.string.error_terminal_close_session))
                 }
             }
         }
@@ -203,7 +204,7 @@ class TerminalViewModel @Inject constructor(
                 terminalRepository.resize(sessionId, TerminalSize(rows, cols))
             } catch (e: Exception) {
                 _uiState.update {
-                    it.copy(error = e.message ?: "Failed to resize terminal")
+                    it.copy(error = UiMessage.fromMessageOrNull(e.message, R.string.error_terminal_resize))
                 }
             }
         }

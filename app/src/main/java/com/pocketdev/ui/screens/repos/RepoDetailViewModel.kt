@@ -10,6 +10,8 @@ import com.pocketdev.domain.model.RemoteRepositoryResult
 import com.pocketdev.domain.model.RemoteCommit
 import com.pocketdev.domain.model.RemoteFileContent
 import com.pocketdev.domain.repository.RemoteRepositoryGateway
+import com.pocketdev.ui.i18n.UiMessage
+import com.pocketdev.R
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -30,7 +32,7 @@ data class RepoDetailUiState(
     val fileContent: RemoteFileContent? = null,
     val isLoading: Boolean = false,
     val isLoadingContent: Boolean = false,
-    val error: String? = null
+    val error: UiMessage? = null
 )
 
 sealed interface RepoDetailEvent {
@@ -107,13 +109,13 @@ class RepoDetailViewModel @Inject constructor(
                     loadFileTree()
                 }
                 is RemoteRepositoryResult.Error -> {
-                    _uiState.update { it.copy(error = result.message, isLoading = false) }
+                    _uiState.update { it.copy(error = UiMessage.Generic(result.message), isLoading = false) }
                 }
                 RemoteRepositoryResult.NotAuthenticated -> {
-                    _uiState.update { it.copy(error = "Not authenticated", isLoading = false) }
+                    _uiState.update { it.copy(error = UiMessage.StrRes(R.string.error_repo_not_authenticated), isLoading = false) }
                 }
                 RemoteRepositoryResult.RateLimited -> {
-                    _uiState.update { it.copy(error = "Rate limited, please try again later", isLoading = false) }
+                    _uiState.update { it.copy(error = UiMessage.StrRes(R.string.error_repo_rate_limited_retry), isLoading = false) }
                 }
             }
         }
@@ -155,13 +157,13 @@ class RepoDetailViewModel @Inject constructor(
                     loadCommits()
                 }
                 is RemoteRepositoryResult.Error -> {
-                    _uiState.update { it.copy(error = result.message, isLoading = false) }
+                    _uiState.update { it.copy(error = UiMessage.Generic(result.message), isLoading = false) }
                 }
                 RemoteRepositoryResult.NotAuthenticated -> {
-                    _uiState.update { it.copy(error = "Not authenticated", isLoading = false) }
+                    _uiState.update { it.copy(error = UiMessage.StrRes(R.string.error_repo_not_authenticated), isLoading = false) }
                 }
                 RemoteRepositoryResult.RateLimited -> {
-                    _uiState.update { it.copy(error = "Rate limited", isLoading = false) }
+                    _uiState.update { it.copy(error = UiMessage.StrRes(R.string.error_repo_rate_limited), isLoading = false) }
                 }
             }
         }
@@ -219,7 +221,7 @@ class RepoDetailViewModel @Inject constructor(
                     _uiState.update { it.copy(fileContent = result.data as RemoteFileContent, isLoadingContent = false) }
                 }
                 is RemoteRepositoryResult.Error -> {
-                    _uiState.update { it.copy(error = result.message, isLoadingContent = false) }
+                    _uiState.update { it.copy(error = UiMessage.Generic(result.message), isLoadingContent = false) }
                 }
                 else -> _uiState.update { it.copy(isLoadingContent = false) }
             }

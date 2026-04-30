@@ -10,6 +10,8 @@ import com.pocketdev.domain.model.RemoteRepository
 import com.pocketdev.domain.model.RemoteRepositoryResult
 import com.pocketdev.domain.model.RepositoryProvider
 import com.pocketdev.domain.repository.RemoteRepositoryGateway
+import com.pocketdev.ui.i18n.UiMessage
+import com.pocketdev.R
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
@@ -27,7 +29,7 @@ data class RemoteEditorUiState(
     val isLoading: Boolean = false,
     val isSaving: Boolean = false,
     val isModified: Boolean = false,
-    val error: String? = null,
+    val error: UiMessage? = null,
     val showCommitDialog: Boolean = false,
     val commitMessage: String = "",
     val branch: String = "",
@@ -143,12 +145,12 @@ class RemoteEditorViewModel @Inject constructor(
                 }
                 is RemoteRepositoryResult.Error -> {
                     _uiState.update {
-                        it.copy(error = result.message, isLoading = false)
+                        it.copy(error = UiMessage.Generic(result.message), isLoading = false)
                     }
                 }
                 else -> {
                     _uiState.update {
-                        it.copy(error = "Failed to load file", isLoading = false)
+                        it.copy(error = UiMessage.StrRes(R.string.error_remote_load_failed), isLoading = false)
                     }
                 }
             }
@@ -241,12 +243,12 @@ class RemoteEditorViewModel @Inject constructor(
                 }
                 is RemoteRepositoryResult.Error -> {
                     _uiState.update {
-                        it.copy(error = result.message, isSaving = false)
+                        it.copy(error = UiMessage.Generic(result.message), isSaving = false)
                     }
                 }
                 else -> {
                     _uiState.update {
-                        it.copy(error = "Failed to save file", isSaving = false)
+                        it.copy(error = UiMessage.StrRes(R.string.error_remote_save_failed), isSaving = false)
                     }
                 }
             }

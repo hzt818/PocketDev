@@ -13,8 +13,10 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
+import com.pocketdev.R
 
 @Composable
 fun CommitDialog(
@@ -34,14 +36,14 @@ fun CommitDialog(
                     .padding(24.dp)
             ) {
                 Text(
-                    text = "Commit Changes",
+                    text = stringResource(R.string.commit_title),
                     style = MaterialTheme.typography.titleLarge
                 )
 
                 Spacer(modifier = Modifier.height(16.dp))
 
                 Text(
-                    text = "Enter a commit message to save your changes to the remote repository.",
+                    text = stringResource(R.string.commit_message_hint),
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
@@ -51,8 +53,8 @@ fun CommitDialog(
                 OutlinedTextField(
                     value = commitMessage,
                     onValueChange = onCommitMessageChange,
-                    label = { Text("Commit message") },
-                    placeholder = { Text("Update file...") },
+                    label = { Text(stringResource(R.string.commit_message_label)) },
+                    placeholder = { Text(stringResource(R.string.commit_update_file)) },
                     modifier = Modifier.fillMaxWidth(),
                     minLines = 3,
                     maxLines = 5
@@ -65,14 +67,14 @@ fun CommitDialog(
                     modifier = Modifier.fillMaxWidth(),
                     enabled = commitMessage.isNotBlank()
                 ) {
-                    Text("Commit")
+                    Text(stringResource(R.string.commit_commit))
                 }
 
                 TextButton(
                     onClick = onDismiss,
                     modifier = Modifier.fillMaxWidth()
                 ) {
-                    Text("Cancel")
+                    Text(stringResource(R.string.cancel))
                 }
             }
         }

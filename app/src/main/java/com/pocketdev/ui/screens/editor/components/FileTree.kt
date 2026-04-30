@@ -17,11 +17,9 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
-import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.Description
 import androidx.compose.material.icons.filled.Folder
 import androidx.compose.material.icons.filled.FolderOpen
-import androidx.compose.material.icons.filled.InsertDriveFile
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -33,8 +31,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import com.pocketdev.R
 import com.pocketdev.domain.model.FileItem
 import com.pocketdev.domain.model.FileType
 
@@ -69,7 +69,7 @@ fun FileTree(
                     ) {
                         Icon(
                             imageVector = Icons.AutoMirrored.Filled.ArrowBack,
-                            contentDescription = "Back",
+                            contentDescription = stringResource(R.string.repo_detail_back),
                             tint = MaterialTheme.colorScheme.onSurfaceVariant
                         )
                     }
@@ -99,7 +99,7 @@ fun FileTree(
                     contentAlignment = Alignment.Center
                 ) {
                     Text(
-                        text = "Loading...",
+                        text = stringResource(R.string.file_loading),
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
@@ -110,7 +110,7 @@ fun FileTree(
                     contentAlignment = Alignment.Center
                 ) {
                     Text(
-                        text = "No files",
+                        text = stringResource(R.string.file_no_files),
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )

@@ -223,8 +223,6 @@ class AndroidStrings(private val context: Context) : Strings {
     override val commitUpdateFile: String get() = getString(R.string.commit_update_file)
     override val commitCommit: String get() = getString(R.string.commit_commit)
 
-    // Splash Screen
-    override val splashTagline: String get() = getString(R.string.splash_tagline)
 
     // Default FAB Menu
     override val fabChat: String get() = getString(R.string.fab_chat)

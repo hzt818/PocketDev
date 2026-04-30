@@ -130,6 +130,9 @@
     <string name="pc_port">Port</string>
     <string name="pc_api_key_optional">API Key (optional)</string>
     <string name="pc_add">Add</string>
+    <string name="pc_placeholder_name">My PC</string>
+    <string name="pc_placeholder_host">192.168.1.100</string>
+    <string name="pc_placeholder_api_key">Leave empty if not set</string>
 
     <!-- Editor Screen -->
     <string name="editor_no_file_open">No file open</string>
@@ -208,8 +211,6 @@
     <string name="commit_update_file">Update file…</string>
     <string name="commit_commit">Commit</string>
 
-    <!-- Splash Screen -->
-    <string name="splash_tagline">AI-Powered Development</string>
 
     <!-- Default FAB Menu -->
     <string name="fab_chat">Chat</string>
@@ -217,6 +218,7 @@
     <string name="fab_ollama">Ollama</string>
     <string name="fab_pc">PC</string>
     <string name="fab_terminal">Terminal</string>
+    <string name="fab_menu">Menu</string>
 
     <!-- About Card -->
     <string name="about_app_name">PocketDev</string>
@@ -229,5 +231,69 @@
 
     <!-- File Tree Browser -->
     <string name="file_browser_no_files">No files in this directory</string>
+
+    <!-- Repos Screen -->
+    <string name="repos_refresh">Refresh</string>
+
+    <!-- Ollama Screen -->
+    <string name="ollama_delete">Delete</string>
+
+    <!-- Build Screen -->
+    <string name="build_not_found">Not Found</string>
+    <string name="build_available">Available</string>
+    <string name="build_unknown">Unknown</string>
+    <string name="build_placeholder_path">/path/to/android/project</string>
+
+    <!-- Editor Screen -->
+    <string name="editor_load_failed">Failed to load file</string>
+    <string name="editor_save_success">File saved successfully</string>
+    <string name="editor_font_size">Font Size: %1$dsp</string>
+    <string name="editor_tab_size">Tab Size: %1$d</string>
+    <string name="editor_show_line_numbers">Show Line Numbers</string>
+    <string name="editor_word_wrap">Word Wrap</string>
+    <string name="editor_start_typing">Start typing…</string>
+
+    <!-- Branch Selector -->
+    <string name="branch_selected">Selected</string>
+
+    <!-- Code Card -->
+    <string name="codecard_committed">Committed</string>
+    <string name="codecard_push_github">Push to GitHub</string>
+
+    <!-- Presence Indicator -->
+    <string name="presence_collaborators">Collaborators (%1$d)</string>
+    <string name="presence_cursor">Line %1$d, Col %2$d</string>
+
+    <!-- Common content descriptions -->
+    <string name="avatar">Avatar</string>
+
+    <!-- Chat Error Messages -->
+    <string name="error_chat_no_provider">No AI provider configured</string>
+    <string name="error_chat_unknown">Unknown error occurred</string>
+    <string name="error_chat_unknown_short">Unknown error</string>
+    <string name="error_chat_parse_failed">Failed to parse AI response: %1$s</string>
+    <string name="error_chat_commit_failed">Commit failed: %1$s</string>
+
+    <!-- Editor Error Messages -->
+    <string name="error_editor_open_failed">Failed to open file: %1$s</string>
+    <string name="error_editor_save_failed">Save failed: %1$s</string>
+
+    <!-- Remote Editor Error Messages -->
+    <string name="error_remote_load_failed">Failed to load file</string>
+    <string name="error_remote_save_failed">Failed to save file</string>
+
+    <!-- Build Error Messages -->
+    <string name="error_build_path_required">Please enter a project path</string>
+
+    <!-- Repository Error Messages -->
+    <string name="error_repo_not_authenticated">Not authenticated</string>
+    <string name="error_repo_rate_limited_retry">Rate limited, please try again later</string>
+    <string name="error_repo_rate_limited">Rate limited</string>
+
+    <!-- Terminal Error Messages -->
+    <string name="error_terminal_create_session">Failed to create session</string>
+    <string name="error_terminal_send_input">Failed to send input</string>
+    <string name="error_terminal_close_session">Failed to close session</string>
+    <string name="error_terminal_resize">Failed to resize terminal</string>
 
 </resources>

@@ -11,10 +11,12 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.pocketdev.R
 import com.pocketdev.domain.model.AiActionMode
 import com.pocketdev.domain.model.AiProviderConfig
 import com.pocketdev.domain.model.AiProviderType
@@ -29,6 +31,7 @@ fun SettingsScreen(
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
     val snackbarHostState = remember { SnackbarHostState() }
+    val providerSavedMessage = stringResource(R.string.settings_provider_saved)
 
     var showEditDialog by remember { mutableStateOf(false) }
 
@@ -41,13 +44,13 @@ fun SettingsScreen(
 
     LaunchedEffect(uiState.saveSuccess) {
         if (uiState.saveSuccess) {
-            snackbarHostState.showSnackbar("Provider settings saved")
+            snackbarHostState.showSnackbar(providerSavedMessage)
             showEditDialog = false
         }
     }
 
     Scaffold(
-        topBar = { TopAppBar(title = { Text("Settings") }) },
+        topBar = { TopAppBar(title = { Text(stringResource(R.string.settings_title)) }) },
         snackbarHost = { SnackbarHost(snackbarHostState) }
     ) { paddingValues ->
         LazyColumn(
@@ -69,7 +72,7 @@ fun SettingsScreen(
             // Appearance Section
             item {
                 Text(
-                    text = "Appearance",
+                    text = stringResource(R.string.settings_appearance),
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.Bold
                 )
@@ -88,7 +91,7 @@ fun SettingsScreen(
             item {
                 Spacer(modifier = Modifier.height(16.dp))
                 Text(
-                    text = "Editor",
+                    text = stringResource(R.string.settings_editor),
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.Bold
                 )
@@ -108,7 +111,7 @@ fun SettingsScreen(
             item {
                 Spacer(modifier = Modifier.height(16.dp))
                 Text(
-                    text = "AI Providers",
+                    text = stringResource(R.string.settings_ai_providers),
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.Bold
                 )
@@ -135,7 +138,7 @@ fun SettingsScreen(
 
             item {
                 Text(
-                    text = "AI Action Mode",
+                    text = stringResource(R.string.settings_ai_action_mode),
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.Bold
                 )
@@ -157,7 +160,7 @@ fun SettingsScreen(
 
             item {
                 Text(
-                    text = "Local AI",
+                    text = stringResource(R.string.settings_local_ai),
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.Bold
                 )
@@ -166,8 +169,8 @@ fun SettingsScreen(
             item {
                 SettingsNavigationCard(
                     icon = Icons.Default.Memory,
-                    title = "Ollama Models",
-                    subtitle = "Download and manage local AI models",
+                    title = stringResource(R.string.settings_ollama_title),
+                    subtitle = stringResource(R.string.settings_ollama_subtitle),
                     onClick = onNavigateToOllama
                 )
             }
@@ -175,7 +178,7 @@ fun SettingsScreen(
             item {
                 Spacer(modifier = Modifier.height(8.dp))
                 Text(
-                    text = "Remote Control",
+                    text = stringResource(R.string.settings_remote_control),
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.Bold
                 )
@@ -184,8 +187,8 @@ fun SettingsScreen(
             item {
                 SettingsNavigationCard(
                     icon = Icons.Default.Computer,
-                    title = "PC Connections",
-                    subtitle = "Connect to your computer for file editing",
+                    title = stringResource(R.string.settings_pc_title),
+                    subtitle = stringResource(R.string.settings_pc_subtitle),
                     onClick = onNavigateToPcConnection
                 )
             }
@@ -193,7 +196,7 @@ fun SettingsScreen(
             item {
                 Spacer(modifier = Modifier.height(16.dp))
                 Text(
-                    text = "Storage",
+                    text = stringResource(R.string.settings_storage),
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.Bold
                 )
@@ -210,7 +213,7 @@ fun SettingsScreen(
             item {
                 Spacer(modifier = Modifier.height(16.dp))
                 Text(
-                    text = "About",
+                    text = stringResource(R.string.settings_about),
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.Bold
                 )
@@ -275,9 +278,9 @@ private fun ActionModeSelector(
                         )
                         Text(
                             text = when (mode) {
-                                AiActionMode.PLAN -> "Review each change before it happens"
-                                AiActionMode.AUTOEDIT -> "Changes happen automatically"
-                                AiActionMode.BYPASS -> "Skip permission prompts"
+                                AiActionMode.PLAN -> stringResource(R.string.action_mode_plan_desc)
+                                AiActionMode.AUTOEDIT -> stringResource(R.string.action_mode_autoedit_desc)
+                                AiActionMode.BYPASS -> stringResource(R.string.action_mode_bypass_desc)
                             },
                             style = MaterialTheme.typography.bodySmall,
                             color = MaterialTheme.colorScheme.onSurfaceVariant
@@ -322,7 +325,7 @@ private fun ProviderCard(
                     )
                     if (isActive) {
                         Spacer(modifier = Modifier.width(8.dp))
-                        Badge { Text("Active") }
+                        Badge { Text(stringResource(R.string.settings_provider_active)) }
                     }
                 }
                 Spacer(modifier = Modifier.height(4.dp))
@@ -333,7 +336,7 @@ private fun ProviderCard(
                 )
                 if (provider.apiKey.isNotBlank()) {
                     Text(
-                        text = "API Key: ••••••••",
+                        text = stringResource(R.string.settings_api_key_masked),
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
@@ -342,7 +345,7 @@ private fun ProviderCard(
             IconButton(onClick = onEdit) {
                 Icon(
                     imageVector = Icons.Default.Edit,
-                    contentDescription = "Edit ${provider.name}"
+                    contentDescription = stringResource(R.string.settings_edit, provider.name)
                 )
             }
         }
@@ -361,13 +364,13 @@ private fun ProviderEditDialog(
 ) {
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text("Configure ${provider.name}") },
+        title = { Text(stringResource(R.string.dialog_configure_provider, provider.name)) },
         text = {
             Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
                 OutlinedTextField(
                     value = provider.baseUrl,
                     onValueChange = onBaseUrlChange,
-                    label = { Text("Base URL") },
+                    label = { Text(stringResource(R.string.dialog_base_url)) },
                     modifier = Modifier.fillMaxWidth(),
                     singleLine = true,
                     enabled = provider.type != AiProviderType.OLLAMA
@@ -375,14 +378,14 @@ private fun ProviderEditDialog(
                 OutlinedTextField(
                     value = provider.modelName,
                     onValueChange = onModelNameChange,
-                    label = { Text("Model Name") },
+                    label = { Text(stringResource(R.string.dialog_model_name)) },
                     modifier = Modifier.fillMaxWidth(),
                     singleLine = true
                 )
                 OutlinedTextField(
                     value = provider.apiKey,
                     onValueChange = onApiKeyChange,
-                    label = { Text("API Key") },
+                    label = { Text(stringResource(R.string.dialog_api_key)) },
                     modifier = Modifier.fillMaxWidth(),
                     singleLine = true
                 )
@@ -393,12 +396,12 @@ private fun ProviderEditDialog(
                 onClick = onSave,
                 enabled = !isSaving
             ) {
-                Text(if (isSaving) "Saving..." else "Save")
+                Text(if (isSaving) stringResource(R.string.settings_saving) else stringResource(R.string.settings_save))
             }
         },
         dismissButton = {
             TextButton(onClick = onDismiss) {
-                Text("Cancel")
+                Text(stringResource(R.string.settings_cancel))
             }
         }
     )
@@ -464,24 +467,24 @@ private fun HelpCard() {
     ) {
         Column(modifier = Modifier.padding(16.dp)) {
             Text(
-                text = "Provider Setup",
+                text = stringResource(R.string.settings_provider_setup),
                 style = MaterialTheme.typography.titleSmall
             )
             Spacer(modifier = Modifier.height(8.dp))
             Text(
-                text = "• DeepSeek/OpenAI: Enter API key and model name",
+                text = stringResource(R.string.help_deepseek_openai),
                 style = MaterialTheme.typography.bodySmall
             )
             Text(
-                text = "• Anthropic: Get API key from console.anthropic.com",
+                text = stringResource(R.string.help_anthropic),
                 style = MaterialTheme.typography.bodySmall
             )
             Text(
-                text = "• Gemini: Get API key from aistudio.google.com",
+                text = stringResource(R.string.help_gemini),
                 style = MaterialTheme.typography.bodySmall
             )
             Text(
-                text = "• Ollama: Install locally, models auto-detected",
+                text = stringResource(R.string.help_ollama),
                 style = MaterialTheme.typography.bodySmall
             )
         }

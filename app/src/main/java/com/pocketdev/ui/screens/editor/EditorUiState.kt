@@ -3,6 +3,7 @@ package com.pocketdev.ui.screens.editor
 import android.net.Uri
 import com.pocketdev.domain.model.EditorTab
 import com.pocketdev.domain.model.FileItem
+import com.pocketdev.ui.i18n.UiMessage
 
 data class EditorUiState(
     val currentFolderUri: Uri? = null,
@@ -11,7 +12,7 @@ data class EditorUiState(
     val openTabs: List<EditorTab> = emptyList(),
     val activeTabIndex: Int = 0,
     val isLoading: Boolean = false,
-    val error: String? = null,
+    val error: UiMessage? = null,
     val searchQuery: String = "",
     val replaceText: String = "",
     val isSearchVisible: Boolean = false,

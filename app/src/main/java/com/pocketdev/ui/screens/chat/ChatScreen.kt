@@ -50,6 +50,7 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -57,6 +58,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.pocketdev.domain.model.AiResponse
 import com.pocketdev.domain.model.Conversation
 import com.pocketdev.ui.components.ChatBubble
+import com.pocketdev.ui.i18n.UiMessage
 import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
 import java.util.Date
@@ -74,8 +76,15 @@ fun ChatScreen(
     var inputText by remember { mutableStateOf("") }
     val listState = rememberLazyListState()
 
-    LaunchedEffect(uiState.error) {
-        uiState.error?.let { error ->
+    val errorText = uiState.error?.let { msg ->
+        when (msg) {
+            is UiMessage.StrRes -> stringResource(msg.id, *msg.args.toTypedArray())
+            is UiMessage.Generic -> msg.message
+        }
+    }
+
+    LaunchedEffect(errorText) {
+        errorText?.let { error ->
             snackbarHostState.showSnackbar(error)
             viewModel.onEvent(ChatEvent.ClearError)
         }

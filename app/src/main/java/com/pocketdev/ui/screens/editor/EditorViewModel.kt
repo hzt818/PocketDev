@@ -11,6 +11,8 @@ import com.pocketdev.domain.usecase.ListFilesUseCase
 import com.pocketdev.domain.usecase.OpenFolderUseCase
 import com.pocketdev.domain.usecase.ReadFileUseCase
 import com.pocketdev.domain.usecase.SaveFileUseCase
+import com.pocketdev.ui.i18n.UiMessage
+import com.pocketdev.R
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
@@ -92,7 +94,7 @@ class EditorViewModel @Inject constructor(
                 },
                 onFailure = { error ->
                     _uiState.update {
-                        it.copy(error = error.message, isLoading = false)
+                        it.copy(error = UiMessage.Generic(error.message ?: ""), isLoading = false)
                     }
                 }
             )
@@ -141,7 +143,7 @@ class EditorViewModel @Inject constructor(
                 },
                 onFailure = { error ->
                     _uiState.update {
-                        it.copy(error = "Failed to open file: ${error.message}", isLoading = false)
+                        it.copy(error = UiMessage.StrRes(R.string.error_editor_open_failed, listOf(error.message ?: "")), isLoading = false)
                     }
                 }
             )
@@ -164,7 +166,7 @@ class EditorViewModel @Inject constructor(
                 },
                 onFailure = { error ->
                     _uiState.update {
-                        it.copy(error = error.message, isLoading = false)
+                        it.copy(error = UiMessage.Generic(error.message ?: ""), isLoading = false)
                     }
                 }
             )
@@ -190,7 +192,7 @@ class EditorViewModel @Inject constructor(
                 },
                 onFailure = { error ->
                     _uiState.update {
-                        it.copy(error = error.message, isLoading = false)
+                        it.copy(error = UiMessage.Generic(error.message ?: ""), isLoading = false)
                     }
                 }
             )
@@ -298,7 +300,7 @@ class EditorViewModel @Inject constructor(
                 },
                 onFailure = { error ->
                     _uiState.update {
-                        it.copy(error = "Save failed: ${error.message}")
+                        it.copy(error = UiMessage.StrRes(R.string.error_editor_save_failed, listOf(error.message ?: "")))
                     }
                 }
             )

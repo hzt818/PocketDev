@@ -5,7 +5,9 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.pocketdev.R
 import com.pocketdev.domain.model.EditorPreferences
 
 @Composable
@@ -25,7 +27,7 @@ fun EditorSettingsCard(
         ) {
             // Font Size
             Text(
-                text = "Font Size: ${preferences.fontSize}sp",
+                text = stringResource(R.string.editor_font_size, preferences.fontSize),
                 style = MaterialTheme.typography.bodyLarge
             )
             Slider(
@@ -40,7 +42,7 @@ fun EditorSettingsCard(
 
             // Tab Size
             Text(
-                text = "Tab Size: ${preferences.tabSize}",
+                text = stringResource(R.string.editor_tab_size, preferences.tabSize),
                 style = MaterialTheme.typography.bodyLarge
             )
             Row(
@@ -65,7 +67,7 @@ fun EditorSettingsCard(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Text(
-                    text = "Show Line Numbers",
+                    text = stringResource(R.string.editor_show_line_numbers),
                     style = MaterialTheme.typography.bodyLarge
                 )
                 Switch(
@@ -83,7 +85,7 @@ fun EditorSettingsCard(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Text(
-                    text = "Word Wrap",
+                    text = stringResource(R.string.editor_word_wrap),
                     style = MaterialTheme.typography.bodyLarge
                 )
                 Switch(

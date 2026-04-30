@@ -54,6 +54,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalFocusManager
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
@@ -66,6 +67,8 @@ import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.pocketdev.R
+import com.pocketdev.ui.i18n.UiMessage
 import com.pocketdev.domain.model.TerminalOutput
 import com.pocketdev.domain.model.TerminalSession
 import com.pocketdev.domain.model.ShellType
@@ -78,8 +81,15 @@ fun TerminalScreen(
     val snackbarHostState = remember { SnackbarHostState() }
     val focusManager = LocalFocusManager.current
 
-    LaunchedEffect(uiState.error) {
-        uiState.error?.let { error ->
+    val errorText = uiState.error?.let { msg ->
+        when (msg) {
+            is UiMessage.StrRes -> stringResource(msg.id, *msg.args.toTypedArray())
+            is UiMessage.Generic -> msg.message
+        }
+    }
+
+    LaunchedEffect(errorText) {
+        errorText?.let { error ->
             snackbarHostState.showSnackbar(error)
             viewModel.onEvent(TerminalEvent.ClearError)
         }
@@ -165,7 +175,7 @@ private fun ShellTypeSelector(
         FilterChip(
             selected = selectedType == ShellType.LOCAL,
             onClick = { onTypeSelected(ShellType.LOCAL) },
-            label = { Text("Local") },
+            label = { Text(stringResource(R.string.terminal_local)) },
             leadingIcon = {
                 Icon(
                     imageVector = Icons.Default.Terminal,
@@ -182,7 +192,7 @@ private fun ShellTypeSelector(
         FilterChip(
             selected = selectedType == ShellType.REMOTE,
             onClick = { onTypeSelected(ShellType.REMOTE) },
-            label = { Text("Remote PC") },
+            label = { Text(stringResource(R.string.terminal_remote_pc)) },
             leadingIcon = {
                 Icon(
                     imageVector = Icons.Default.Computer,
@@ -232,7 +242,7 @@ private fun SessionTabs(
             ) {
                 Icon(
                     imageVector = Icons.Default.Add,
-                    contentDescription = "New Session",
+                    contentDescription = stringResource(R.string.terminal_new_session),
                     tint = MaterialTheme.colorScheme.primary
                 )
             }
@@ -286,7 +296,7 @@ private fun SessionTab(
             Spacer(modifier = Modifier.width(4.dp))
             Icon(
                 imageVector = Icons.Default.Close,
-                contentDescription = "Close",
+                contentDescription = stringResource(R.string.close),
                 modifier = Modifier
                     .size(14.dp)
                     .clickable { onClose() },
@@ -360,13 +370,13 @@ private fun EmptyTerminalState(
         )
         Spacer(modifier = Modifier.height(16.dp))
         Text(
-            text = "No active terminal session",
+            text = stringResource(R.string.terminal_no_active),
             style = MaterialTheme.typography.bodyLarge,
             color = MaterialTheme.colorScheme.onSurfaceVariant
         )
         Spacer(modifier = Modifier.height(8.dp))
         Text(
-            text = "Create a new session to start",
+            text = stringResource(R.string.terminal_create_session),
             style = MaterialTheme.typography.bodyMedium,
             color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f)
         )
@@ -378,7 +388,7 @@ private fun EmptyTerminalState(
                 modifier = Modifier.size(18.dp)
             )
             Spacer(modifier = Modifier.width(8.dp))
-            Text("New Session")
+            Text(stringResource(R.string.terminal_new_session))
         }
     }
 }
@@ -416,7 +426,7 @@ private fun TerminalInput(
             value = inputText,
             onValueChange = { inputText = it },
             modifier = Modifier.weight(1f),
-            placeholder = { Text("Enter command...") },
+            placeholder = { Text(stringResource(R.string.terminal_input_hint)) },
             singleLine = true,
             keyboardOptions = KeyboardOptions(
                 imeAction = ImeAction.Send,
@@ -437,14 +447,14 @@ private fun TerminalInput(
         ) {
             Icon(
                 imageVector = Icons.Default.KeyboardArrowUp,
-                contentDescription = "Previous History",
+                contentDescription = stringResource(R.string.terminal_previous),
                 modifier = Modifier.size(20.dp)
             )
         }
         IconButton(onClick = onHistoryPrevious) {
             Icon(
                 imageVector = Icons.Default.KeyboardArrowDown,
-                contentDescription = "Next History",
+                contentDescription = stringResource(R.string.terminal_next),
                 modifier = Modifier.size(20.dp)
             )
         }

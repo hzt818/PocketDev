@@ -22,7 +22,9 @@ import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.pocketdev.R
 
 @Composable
 fun SearchReplaceBar(
@@ -53,7 +55,7 @@ fun SearchReplaceBar(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Text(
-                    text = "Find",
+                    text = stringResource(R.string.search_find),
                     style = MaterialTheme.typography.labelMedium,
                     modifier = Modifier.padding(end = 8.dp)
                 )
@@ -62,7 +64,7 @@ fun SearchReplaceBar(
                     value = searchQuery,
                     onValueChange = onSearchQueryChange,
                     modifier = Modifier.weight(1f),
-                    placeholder = { Text("Search...") },
+                    placeholder = { Text(stringResource(R.string.search_placeholder)) },
                     singleLine = true,
                     textStyle = MaterialTheme.typography.bodySmall
                 )
@@ -70,14 +72,14 @@ fun SearchReplaceBar(
                 IconButton(onClick = onFindNext) {
                     Icon(
                         imageVector = Icons.Default.KeyboardArrowDown,
-                        contentDescription = "Find next"
+                        contentDescription = stringResource(R.string.search_find_next)
                     )
                 }
 
                 IconButton(onClick = onClose) {
                     Icon(
                         imageVector = Icons.Default.Close,
-                        contentDescription = "Close"
+                        contentDescription = stringResource(R.string.search_close)
                     )
                 }
             }
@@ -99,7 +101,7 @@ fun SearchReplaceBar(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Text(
-                    text = "Replace",
+                    text = stringResource(R.string.search_replace),
                     style = MaterialTheme.typography.labelMedium,
                     modifier = Modifier.padding(end = 8.dp)
                 )
@@ -108,7 +110,7 @@ fun SearchReplaceBar(
                     value = replaceText,
                     onValueChange = onReplaceTextChange,
                     modifier = Modifier.weight(1f),
-                    placeholder = { Text("Replace with...") },
+                    placeholder = { Text(stringResource(R.string.search_replace_with)) },
                     singleLine = true,
                     textStyle = MaterialTheme.typography.bodySmall
                 )
@@ -118,14 +120,14 @@ fun SearchReplaceBar(
                     enabled = searchQuery.isNotEmpty(),
                     modifier = Modifier.padding(start = 4.dp)
                 ) {
-                    Text("One")
+                    Text(stringResource(R.string.search_one))
                 }
 
                 TextButton(
                     onClick = onReplaceAll,
                     enabled = searchQuery.isNotEmpty()
                 ) {
-                    Text("All")
+                    Text(stringResource(R.string.search_all))
                 }
             }
         }

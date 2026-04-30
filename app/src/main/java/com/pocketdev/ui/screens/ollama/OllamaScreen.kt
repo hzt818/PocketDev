@@ -40,10 +40,12 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.pocketdev.R
 import com.pocketdev.domain.model.OllamaModelWithStatus
 import com.pocketdev.domain.model.OllamaStatus
 import java.text.DecimalFormat
@@ -66,10 +68,10 @@ fun OllamaScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Ollama Models") },
+                title = { Text(stringResource(R.string.ollama_title)) },
                 actions = {
                     Text(
-                        text = if (uiState.isServerRunning) "Server: ON" else "Server: OFF",
+                        text = if (uiState.isServerRunning) stringResource(R.string.ollama_server_on) else stringResource(R.string.ollama_server_off),
                         style = MaterialTheme.typography.bodySmall,
                         color = if (uiState.isServerRunning)
                             MaterialTheme.colorScheme.primary
@@ -78,7 +80,7 @@ fun OllamaScreen(
                     )
                     Spacer(modifier = Modifier.width(8.dp))
                     IconButton(onClick = { viewModel.onEvent(OllamaEvent.RefreshModels) }) {
-                        Icon(Icons.Default.Refresh, contentDescription = "Refresh")
+                        Icon(Icons.Default.Refresh, contentDescription = stringResource(R.string.ollama_refresh))
                     }
                 }
             )
@@ -102,7 +104,7 @@ fun OllamaScreen(
 
             item {
                 Text(
-                    text = "Available Models",
+                    text = stringResource(R.string.ollama_available_models),
                     style = MaterialTheme.typography.titleMedium,
                     modifier = Modifier.padding(vertical = 8.dp)
                 )
@@ -120,7 +122,7 @@ fun OllamaScreen(
             if (uiState.installedModels.isNotEmpty()) {
                 item {
                     Text(
-                        text = "Installed Models",
+                        text = stringResource(R.string.ollama_installed_models),
                         style = MaterialTheme.typography.titleMedium,
                         modifier = Modifier.padding(vertical = 8.dp)
                     )
@@ -162,18 +164,18 @@ private fun OllamaServerStatusCard(
         ) {
             Column {
                 Text(
-                    text = "Ollama Server",
+                    text = stringResource(R.string.ollama_server),
                     style = MaterialTheme.typography.titleMedium
                 )
                 Text(
-                    text = if (isRunning) "Running on port 11434" else "Not running",
+                    text = if (isRunning) stringResource(R.string.ollama_running_port) else stringResource(R.string.ollama_not_running),
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
             }
 
             TextButton(onClick = if (isRunning) onStop else onStart) {
-                Text(if (isRunning) "Stop" else "Start")
+                Text(if (isRunning) stringResource(R.string.ollama_stop) else stringResource(R.string.ollama_start))
             }
         }
     }
@@ -224,7 +226,7 @@ private fun OllamaModelCard(
                     OllamaStatus.INSTALLED -> {
                         Icon(
                             imageVector = Icons.Default.Check,
-                            contentDescription = "Installed",
+                            contentDescription = stringResource(R.string.ollama_installed),
                             tint = MaterialTheme.colorScheme.primary,
                             modifier = Modifier.size(24.dp)
                         )
@@ -242,7 +244,7 @@ private fun OllamaModelCard(
                             } else {
                                 Icon(
                                     imageVector = Icons.Default.CloudDownload,
-                                    contentDescription = "Download",
+                                    contentDescription = stringResource(R.string.ollama_download),
                                     tint = MaterialTheme.colorScheme.primary
                                 )
                             }
@@ -258,7 +260,7 @@ private fun OllamaModelCard(
                         IconButton(onClick = onPull) {
                             Icon(
                                 imageVector = Icons.Default.CloudDownload,
-                                contentDescription = "Retry",
+                                contentDescription = stringResource(R.string.ollama_retry),
                                 tint = MaterialTheme.colorScheme.error
                             )
                         }
@@ -337,7 +339,7 @@ private fun InstalledModelCard(
             IconButton(onClick = onDelete) {
                 Icon(
                     imageVector = Icons.Default.Delete,
-                    contentDescription = "Delete",
+                    contentDescription = stringResource(R.string.ollama_delete),
                     tint = MaterialTheme.colorScheme.error
                 )
             }

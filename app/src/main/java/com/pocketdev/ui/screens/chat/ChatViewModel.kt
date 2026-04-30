@@ -10,6 +10,8 @@ import com.pocketdev.domain.model.createConversation
 import com.pocketdev.domain.repository.AiRepository
 import com.pocketdev.domain.repository.ConversationRepository
 import com.pocketdev.domain.repository.UserSettingsRepository
+import com.pocketdev.ui.i18n.UiMessage
+import com.pocketdev.R
 import com.pocketdev.domain.usecase.CommitFileUseCase
 import com.pocketdev.domain.usecase.GetChatCompletionUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -153,7 +155,12 @@ class ChatViewModel @Inject constructor(
         viewModelScope.launch {
             try {
                 val activeProvider = userSettingsRepository.getActiveProvider()
-                    ?: throw Exception("No AI provider configured")
+                if (activeProvider == null) {
+                    _uiState.update {
+                        it.copy(isLoading = false, error = UiMessage.StrRes(R.string.error_chat_no_provider))
+                    }
+                    return@launch
+                }
 
                 val messages = _uiState.value.messages.map { Message(it.role, it.content) }
                 val requestMessages = listOf(Message("system", SYSTEM_PROMPT)) + messages
@@ -184,20 +191,20 @@ class ChatViewModel @Inject constructor(
                         _uiState.update {
                             it.copy(
                                 isLoading = false,
-                                error = error.message ?: "Unknown error occurred"
+                                error = UiMessage.fromMessageOrNull(error.message, R.string.error_chat_unknown)
                             )
                         }
                     }
                 )
             } catch (e: Exception) {
                 _uiState.update {
-                    it.copy(isLoading = false, error = e.message ?: "Unknown error")
+                    it.copy(isLoading = false, error = UiMessage.fromMessageOrNull(e.message, R.string.error_chat_unknown_short))
                 }
             }
         }
     }
 
-    private fun parseAiResponse(content: String) {
+private fun parseAiResponse(content: String) {
         viewModelScope.launch {
             try {
                 val cleanedContent = content
@@ -210,7 +217,7 @@ class ChatViewModel @Inject constructor(
                 val aiResponse = json.decodeFromString<AiResponse>(cleanedContent)
                 _uiState.update { it.copy(currentAiResponse = aiResponse) }
             } catch (e: Exception) {
-                _uiState.update { it.copy(error = "Failed to parse AI response: ${e.message}") }
+                _uiState.update { it.copy(error = UiMessage.StrRes(R.string.error_chat_parse_failed, listOf(e.message ?: ""))) }
             }
         }
     }
@@ -251,11 +258,11 @@ class ChatViewModel @Inject constructor(
                         }
                     },
                     onFailure = { error ->
-                        _uiState.update { it.copy(error = "Commit failed: ${error.message}") }
+                        _uiState.update { it.copy(error = UiMessage.StrRes(R.string.error_chat_commit_failed, listOf(error.message ?: ""))) }
                     }
                 )
             } catch (e: Exception) {
-                _uiState.update { it.copy(error = "Commit failed: ${e.message}") }
+                _uiState.update { it.copy(error = UiMessage.StrRes(R.string.error_chat_commit_failed, listOf(e.message ?: ""))) }
             }
         }
     }

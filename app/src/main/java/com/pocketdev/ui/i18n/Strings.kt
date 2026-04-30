@@ -214,8 +214,6 @@ interface Strings {
     val commitUpdateFile: String
     val commitCommit: String
 
-    // Splash Screen
-    val splashTagline: String
 
     // Default FAB Menu
     val fabChat: String

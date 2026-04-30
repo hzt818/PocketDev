@@ -10,9 +10,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
+import com.pocketdev.R
 import com.pocketdev.domain.model.UserProfile
 
 @Composable
@@ -42,7 +44,7 @@ fun UserProfileCard(
                     if (profile.avatarUrl.isNotBlank()) {
                         AsyncImage(
                             model = profile.avatarUrl,
-                            contentDescription = "Avatar",
+                            contentDescription = stringResource(R.string.avatar),
                             modifier = Modifier
                                 .size(48.dp)
                                 .clip(CircleShape),
@@ -79,7 +81,7 @@ fun UserProfileCard(
                     }
                 }
                 TextButton(onClick = onSignOut) {
-                    Text("Sign Out")
+                    Text(stringResource(R.string.sign_out))
                 }
             }
         } else {
@@ -91,7 +93,7 @@ fun UserProfileCard(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Text(
-                    text = "Not signed in",
+                    text = stringResource(R.string.not_signed_in),
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )

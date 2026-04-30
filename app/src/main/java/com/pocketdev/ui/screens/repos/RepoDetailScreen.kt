@@ -42,6 +42,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -49,6 +50,8 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.pocketdev.domain.model.RemoteBranch
 import com.pocketdev.domain.model.RemoteFile
 import com.pocketdev.domain.model.RemoteFileType
+import com.pocketdev.R
+import com.pocketdev.ui.i18n.UiMessage
 import com.pocketdev.ui.components.BranchSelector
 import com.pocketdev.ui.components.FileTreeBrowser
 
@@ -63,8 +66,15 @@ fun RepoDetailScreen(
     val snackbarHostState = remember { SnackbarHostState() }
     var showBranchSelector by remember { mutableStateOf(false) }
 
-    LaunchedEffect(uiState.error) {
-        uiState.error?.let { error ->
+    val errorText = uiState.error?.let { msg ->
+        when (msg) {
+            is UiMessage.StrRes -> stringResource(msg.id, *msg.args.toTypedArray())
+            is UiMessage.Generic -> msg.message
+        }
+    }
+
+    LaunchedEffect(errorText) {
+        errorText?.let { error ->
             snackbarHostState.showSnackbar(error)
             viewModel.onEvent(RepoDetailEvent.ClearError)
         }
@@ -76,7 +86,7 @@ fun RepoDetailScreen(
                 title = {
                     Column {
                         Text(
-                            text = uiState.repository?.name ?: "Repository",
+                            text = uiState.repository?.name ?: stringResource(R.string.repo_detail_title),
                             maxLines = 1,
                             overflow = TextOverflow.Ellipsis
                         )
@@ -92,7 +102,7 @@ fun RepoDetailScreen(
                 },
                 navigationIcon = {
                     IconButton(onClick = onNavigateBack) {
-                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
+                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = stringResource(R.string.repo_detail_back))
                     }
                 },
                 actions = {
@@ -104,7 +114,7 @@ fun RepoDetailScreen(
                             )
                             Icon(
                                 Icons.AutoMirrored.Filled.KeyboardArrowRight,
-                                contentDescription = "Select branch",
+                                contentDescription = stringResource(R.string.repo_detail_select_branch),
                                 modifier = Modifier.size(16.dp)
                             )
                         }
@@ -211,7 +221,7 @@ private fun FileContentView(
                 androidx.compose.material3.Button(
                     onClick = { onEdit(file) }
                 ) {
-                    Text("Edit")
+                    Text(stringResource(R.string.repo_detail_edit))
                 }
             }
         }
