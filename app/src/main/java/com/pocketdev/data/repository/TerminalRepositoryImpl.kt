@@ -17,6 +17,7 @@ import kotlinx.coroutines.flow.consumeAsFlow
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import android.util.Log
 import java.io.BufferedReader
 import java.io.InputStreamReader
 import java.io.OutputStreamWriter
@@ -201,21 +202,68 @@ class TerminalRepositoryImpl @Inject constructor(
         return channel?.consumeAsFlow() ?: kotlinx.coroutines.flow.flowOf()
     }
 
-    override suspend fun resize(sessionId: String, size: TerminalSize) {
-        // Android does not support PTY resize natively
-        // This is a no-op for basic shell execution
+    override suspend fun resize(sessionId: String, size: TerminalSize) = withContext(Dispatchers.IO) {
+        val session = _activeSessions.value.find { it.id == sessionId } ?: return@withContext
+
+        if (session.shellType == ShellType.LOCAL) {
+            val process = processMap[sessionId] ?: return@withContext
+            try {
+                // Set terminal process dimensions via stty if available
+                val writer = OutputStreamWriter(process.outputStream)
+                val sttyCmd = "stty rows ${size.rows} cols ${size.cols} 2>/dev/null\n"
+                writer.write(sttyCmd)
+                writer.flush()
+            } catch (e: Exception) {
+                // PTY resize not supported in current environment
+            }
+        } else {
+            // Remote: forward resize to the connected PC session
+            sessionOutputs[sessionId] ?: return@withContext
+            try {
+                val request = PcShellRequest(
+                    command = "stty rows ${size.rows} cols ${size.cols} 2>/dev/null",
+                    cwd = session.cwd
+                )
+                pcConnectionRepository.executeShell(request)
+            } catch (e: Exception) {
+                // Resize not supported on remote host
+            }
+        }
     }
 
-    override suspend fun closeSession(sessionId: String) = withContext(Dispatchers.IO) {
-        try {
-            processMap[sessionId]?.destroy()
-            processMap.remove(sessionId)
-            sessionOutputs[sessionId]?.close()
-            sessionOutputs.remove(sessionId)
+    override suspend fun closeSession(sessionId: String) {
+        withContext(Dispatchers.IO) {
+            try {
+                val process = processMap[sessionId]
+                if (process != null) {
+                    try {
+                        process.outputStream.close()
+                    } catch (_: Exception) {}
+                    try {
+                        process.inputStream.close()
+                    } catch (_: Exception) {}
+                    try {
+                        process.errorStream.close()
+                    } catch (_: Exception) {}
+                    process.destroy()
+                    if (process.isAlive) {
+                        process.destroyForcibly()
+                    }
+                }
+                processMap.remove(sessionId)
 
-            _activeSessions.value = _activeSessions.value.filter { it.id != sessionId }
-        } catch (e: Exception) {
-            // Cleanup errors are ignored
+                val channel = sessionOutputs[sessionId]
+                channel?.close()
+                sessionOutputs.remove(sessionId)
+
+                _activeSessions.value = _activeSessions.value.filter { it.id != sessionId }
+                Log.d("TerminalRepository", "Session $sessionId closed successfully")
+            } catch (e: Exception) {
+                Log.w("TerminalRepository", "Error closing session $sessionId: ${e.message}")
+                processMap.remove(sessionId)
+                sessionOutputs.remove(sessionId)
+                _activeSessions.value = _activeSessions.value.filter { it.id != sessionId }
+            }
         }
     }
 

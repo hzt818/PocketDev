@@ -6,26 +6,50 @@ import com.pocketdev.domain.model.CollaborationSession
 import com.pocketdev.domain.model.Collaborator
 import com.pocketdev.domain.model.DocumentChange
 import com.pocketdev.domain.repository.CollaborationRepository
+import com.pocketdev.domain.repository.UserSettingsRepository
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharedFlow
+import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
 class CollaborationRepositoryImpl @Inject constructor(
-    private val collaborationWebSocket: CollaborationWebSocket
+    private val collaborationWebSocket: CollaborationWebSocket,
+    private val userSettingsRepository: UserSettingsRepository
 ) : CollaborationRepository {
 
-    /**
-     * Collaboration server URL. Can be updated at runtime via [updateServerUrl].
-     * Default points to a placeholder - configure your own server in production.
-     */
-    private var serverUrl: String = "wss://collab.pocketdev.local"
+    companion object {
+        const val DEFAULT_COLLAB_SERVER = "wss://collab.pocketdev.local"
+    }
+
+    private var serverUrl: String = DEFAULT_COLLAB_SERVER
+
+    init {
+        loadServerUrl()
+    }
+
+    private fun loadServerUrl() {
+        CoroutineScope(Dispatchers.IO + SupervisorJob()).launch {
+            try {
+                val settings = userSettingsRepository.getAppSettings()
+                if (!settings.collaborationServerUrl.isNullOrBlank()) {
+                    serverUrl = settings.collaborationServerUrl
+                }
+            } catch (_: Exception) {
+                // Use default URL if settings loading fails
+            }
+        }
+    }
 
     private val _connectionState = MutableStateFlow<CollaborationRepository.ConnectionState>(
         CollaborationRepository.ConnectionState.Disconnected

@@ -40,6 +40,8 @@ data class RemoteEditorUiState(
     val isSearchVisible: Boolean = false,
     val searchQuery: String = "",
     val replaceText: String = "",
+    val matchCount: Int = 0,
+    val currentMatchIndex: Int = -1,
     val showSaveSuccess: Boolean = false
 )
 
@@ -273,12 +275,14 @@ class RemoteEditorViewModel @Inject constructor(
 
     private fun hideSearch() {
         _uiState.update {
-            it.copy(isSearchVisible = false, searchQuery = "", replaceText = "")
+            it.copy(isSearchVisible = false, searchQuery = "", replaceText = "", matchCount = 0, currentMatchIndex = -1)
         }
     }
 
     private fun updateSearchQuery(query: String) {
-        _uiState.update { it.copy(searchQuery = query) }
+        val content = _uiState.value.activeTab?.content ?: ""
+        val matchCount = if (query.isNotEmpty()) findAllMatches(content, query).size else 0
+        _uiState.update { it.copy(searchQuery = query, matchCount = matchCount, currentMatchIndex = -1) }
     }
 
     private fun updateReplaceText(text: String) {
@@ -286,11 +290,74 @@ class RemoteEditorViewModel @Inject constructor(
     }
 
     private fun findNext() {
-        val activeTab = _uiState.value.activeTab ?: return
-        val query = _uiState.value.searchQuery
+        val state = _uiState.value
+        val activeTab = state.activeTab ?: return
+        val query = state.searchQuery
         if (query.isEmpty()) return
-        // Search implementation would go here
+
+        val content = activeTab.content
+        val matches = findAllMatches(content, query)
+
+        if (matches.isEmpty()) {
+            _uiState.update { it.copy(matchCount = 0, currentMatchIndex = -1) }
+            return
+        }
+
+        // Find the next match after the current cursor position
+        val cursorOffset = lineColumnToOffset(content, state.cursorLine, state.cursorColumn)
+        val nextMatchIndex = matches.indexOfFirst { it.start >= cursorOffset }
+
+        val actualIndex = if (nextMatchIndex == -1) 0 else nextMatchIndex
+        val match = matches[actualIndex]
+
+        // Convert match offset back to line/column
+        val (matchLine, matchCol) = offsetToLineColumn(content, match.start)
+
+        _uiState.update {
+            it.copy(
+                cursorLine = matchLine,
+                cursorColumn = matchCol,
+                matchCount = matches.size,
+                currentMatchIndex = actualIndex
+            )
+        }
     }
+
+    private fun findAllMatches(content: String, query: String): List<MatchRange> {
+        val matches = mutableListOf<MatchRange>()
+        var startIndex = 0
+        while (true) {
+            val index = content.indexOf(query, startIndex, ignoreCase = true)
+            if (index == -1) break
+            matches.add(MatchRange(start = index, end = index + query.length))
+            startIndex = index + 1
+        }
+        return matches
+    }
+
+    private fun lineColumnToOffset(content: String, line: Int, column: Int): Int {
+        val lines = content.lines()
+        var offset = 0
+        for (i in 0 until (line - 1).coerceAtMost(lines.size - 1)) {
+            offset += lines[i].length + 1 // +1 for newline
+        }
+        return (offset + column - 1).coerceAtLeast(0)
+    }
+
+    private fun offsetToLineColumn(content: String, offset: Int): Pair<Int, Int> {
+        var remaining = offset
+        val lines = content.lines()
+        for (i in lines.indices) {
+            val lineLength = lines[i].length + 1 // +1 for newline
+            if (remaining < lineLength) {
+                return Pair(i + 1, remaining + 1)
+            }
+            remaining -= lineLength
+        }
+        return Pair(lines.size, 1)
+    }
+
+    private data class MatchRange(val start: Int, val end: Int)
 
     private fun replaceOne() {
         val activeTab = _uiState.value.activeTab ?: return

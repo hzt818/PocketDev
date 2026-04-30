@@ -207,6 +207,7 @@
     <string name="settings_title">Settings</string>
     <string name="show_line_numbers">Show Line Numbers</string>
     <string name="sign_out">Sign Out</string>
+    <string name="splash_tagline">AI-Powered Mobile Coding Assistant</string>
     <string name="tab_size">Tab Size: %1$d</string>
     <string name="terminal_create_session">Create a new session to start</string>
     <string name="terminal_input_hint">Enter command…</string>

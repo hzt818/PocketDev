@@ -502,6 +502,7 @@ string settings_storage
 string settings_title
 string show_line_numbers
 string sign_out
+string splash_tagline
 string status_bar_notification_info_overflow
 string switch_role
 string tab

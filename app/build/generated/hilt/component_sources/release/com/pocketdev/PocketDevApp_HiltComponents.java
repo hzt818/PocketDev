@@ -15,6 +15,7 @@ import com.pocketdev.ui.screens.pc.PcConnectionViewModel_HiltModules;
 import com.pocketdev.ui.screens.repos.RepoDetailViewModel_HiltModules;
 import com.pocketdev.ui.screens.repos.ReposViewModel_HiltModules;
 import com.pocketdev.ui.screens.settings.SettingsViewModel_HiltModules;
+import com.pocketdev.ui.screens.splash.SplashViewModel_HiltModules;
 import com.pocketdev.ui.screens.terminal.TerminalViewModel_HiltModules;
 import dagger.Binds;
 import dagger.Component;
@@ -185,6 +186,7 @@ public final class PocketDevApp_HiltComponents {
           RepoDetailViewModel_HiltModules.KeyModule.class,
           ReposViewModel_HiltModules.KeyModule.class,
           SettingsViewModel_HiltModules.KeyModule.class,
+          SplashViewModel_HiltModules.KeyModule.class,
           TerminalViewModel_HiltModules.KeyModule.class
       }
   )
@@ -232,6 +234,7 @@ public final class PocketDevApp_HiltComponents {
           RepoDetailViewModel_HiltModules.BindsModule.class,
           ReposViewModel_HiltModules.BindsModule.class,
           SettingsViewModel_HiltModules.BindsModule.class,
+          SplashViewModel_HiltModules.BindsModule.class,
           TerminalViewModel_HiltModules.BindsModule.class
       }
   )

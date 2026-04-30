@@ -400,6 +400,7 @@
     <string name="settings_title">Settings</string>
     <string name="show_line_numbers">Show Line Numbers</string>
     <string name="sign_out">Sign Out</string>
+    <string name="splash_tagline">AI-Powered Mobile Coding Assistant</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="switch_role">Switch</string>
     <string name="tab">Tab</string>

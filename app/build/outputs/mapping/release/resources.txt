@@ -20,6 +20,7 @@ Marking id:tag_window_insets_animation_callback:2131165270 reachable: referenced
 Marking string:build_refresh:2131427357 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:build_placeholder_path:2131427355 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:build_project_path:2131427356 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:error_chat_parse_failed:2131427435 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking id:tag_screen_reader_focusable:2131165265 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking id:tag_accessibility_heading:2131165260 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking id:tag_accessibility_pane_title:2131165261 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
@@ -49,6 +50,7 @@ Marking string:commit_commit:2131427390 reachable: referenced from E:\pocketdev\
 Marking string:sign_out:2131427615 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking id:hide_in_inspector_tag:2131165239 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:editor_load_failed:2131427411 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:error_terminal_send_input:2131427448 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:navigation_menu:2131427530 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:close_drawer:2131427386 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking id:wrapped_composition_tag:2131165280 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
@@ -56,7 +58,6 @@ Marking string:ollama_installed_models:2131427539 reachable: referenced from E:\
 Marking string:ollama_available_models:2131427535 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:error_repo_not_authenticated:2131427442 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:error_repo_rate_limited:2131427443 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking string:error_terminal_create_session:2131427446 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:settings_cancel:2131427598 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:settings_provider_active:2131427606 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:settings_local_ai:2131427601 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
@@ -80,6 +81,12 @@ Marking id:view_tree_saved_state_registry_owner:2131165277 reachable: referenced
 Marking id:view_tree_view_model_store_owner:2131165278 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking id:view_tree_lifecycle_owner:2131165275 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:pc_add:2131427552 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:terminal_next:2131427626 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:terminal_previous:2131427628 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:terminal_input_hint:2131427623 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:terminal_new_session:2131427625 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:terminal_remote_pc:2131427629 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:terminal_local:2131427624 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking id:androidx_compose_ui_view_composition_context:2131165222 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:pc_connected:2131427556 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:codecard_committed:2131427388 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
@@ -91,7 +98,7 @@ Marking string:app_description:2131427336 reachable: referenced from E:\pocketde
 Marking string:commit_title:2131427393 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:commit_message_hint:2131427391 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking id:is_pooling_container_tag:2131165244 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking string:error_terminal_send_input:2131427448 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:error_remote_load_failed:2131427440 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:pc_host_ip:2131427559 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:pc_placeholder_name:2131427565 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:pc_name:2131427561 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
@@ -116,22 +123,13 @@ Marking string:editor_redo:2131427419 reachable: referenced from E:\pocketdev\ap
 Marking string:editor_undo:2131427428 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:editor_open_folder_tooltip:2131427418 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:editor_toggle_filetree:2131427427 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking string:tab:2131427618 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking string:switch_role:2131427617 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:tab:2131427619 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:switch_role:2131427618 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:editor_ai_response:2131427406 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:editor_selected_code:2131427423 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking id:tag_unhandled_key_listeners:2131165269 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:repos_login_github:2131427579 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:repo_detail_edit:2131427575 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking string:terminal_next:2131427625 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking string:terminal_previous:2131427627 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking string:terminal_input_hint:2131427622 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking string:terminal_new_session:2131427624 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking string:terminal_remote_pc:2131427628 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking string:terminal_local:2131427623 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking string:error_chat_no_provider:2131427434 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking string:error_chat_unknown:2131427436 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking string:error_chat_unknown_short:2131427437 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:build_not_found:2131427353 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:build_gradle_version:2131427351 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:build_available:2131427344 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
@@ -140,7 +138,12 @@ Marking string:build_gradle_home:2131427349 reachable: referenced from E:\pocket
 Marking string:build_daemon_running:2131427346 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:build_daemon_stopped:2131427347 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:build_gradle_not_found:2131427350 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking string:error_chat_commit_failed:2131427433 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:nav_chat:2131427525 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:nav_repos:2131427527 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:nav_editor:2131427526 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:nav_build:2131427524 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:nav_terminal:2131427529 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:nav_settings:2131427528 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:branch_select_title:2131427342 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:file_loading:2131427459 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:file_no_files:2131427460 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
@@ -152,7 +155,6 @@ Marking string:repos_refresh:2131427580 reachable: referenced from E:\pocketdev\
 Marking string:repos_title:2131427582 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:error_repo_rate_limited_retry:2131427444 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:pc_disconnected:2131427558 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking string:error_remote_save_failed:2131427441 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:repo_detail_select_branch:2131427576 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:repo_detail_title:2131427577 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:fab_menu:2131427451 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
@@ -166,7 +168,7 @@ Marking string:editor_auto_save:2131427408 reachable: referenced from E:\pocketd
 Marking string:editor_on:2131427415 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:editor_off:2131427414 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:codecard_push_github:2131427389 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking string:error_chat_parse_failed:2131427435 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:error_chat_commit_failed:2131427433 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking drawable:abc_vector_test:2131099648 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:error_editor_save_failed:2131427439 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:search_find:2131427586 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
@@ -174,6 +176,7 @@ Marking string:search_replace:2131427590 reachable: referenced from E:\pocketdev
 Marking id:compose_view_saveable_id_tag:2131165232 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:editor_save_success:2131427421 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:settings_provider_saved:2131427607 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:splash_tagline:2131427616 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:branch_default:2131427340 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:branch_protected:2131427341 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:branch_selected:2131427343 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
@@ -186,24 +189,19 @@ Marking string:fab_pc:2131427453 reachable: referenced from E:\pocketdev\app\bui
 Marking string:fab_terminal:2131427454 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:build_no_history:2131427352 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:build_run_to_see:2131427359 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:pooling_container_listener_holder_tag:2131165253 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:pc_no_pc_connected:2131427562 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:pc_install_cli:2131427560 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking id:pooling_container_listener_holder_tag:2131165253 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:editor_no_file_open:2131427413 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:editor_open_folder_hint:2131427417 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking string:terminal_no_active:2131427626 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking string:terminal_create_session:2131427621 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:terminal_no_active:2131427627 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:terminal_create_session:2131427622 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:file_browser_no_files:2131427458 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:repos_connect_github:2131427578 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:repos_sign_in:2131427581 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:default_popup_window_title:2131427397 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking string:nav_chat:2131427525 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking string:nav_repos:2131427527 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking string:nav_editor:2131427526 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking string:nav_build:2131427524 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking string:nav_terminal:2131427529 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking string:nav_settings:2131427528 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking string:error_remote_load_failed:2131427440 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:error_remote_save_failed:2131427441 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:error_terminal_create_session:2131427446 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:settings_pc_title:2131427605 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:settings_pc_subtitle:2131427604 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:settings_ollama_title:2131427603 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
@@ -211,7 +209,6 @@ Marking string:settings_ollama_subtitle:2131427602 reachable: referenced from E:
 Marking string:androidx_startup:2131427335 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:editor_start_typing:2131427425 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking id:consume_window_insets_tag:2131165233 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking string:error_terminal_close_session:2131427445 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking id:accessibility_custom_action_0:2131165185 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking id:accessibility_custom_action_1:2131165186 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking id:accessibility_custom_action_2:2131165197 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
@@ -249,13 +246,17 @@ Marking string:off:2131427533 reachable: referenced from E:\pocketdev\app\build\
 Marking string:on:2131427550 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:selected:2131427592 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:not_selected:2131427531 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking string:template_percent:2131427620 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:template_percent:2131427621 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:in_progress:2131427466 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:error_build_path_required:2131427432 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:default_error_message:2131427396 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:error_chat_no_provider:2131427434 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:error_chat_unknown:2131427436 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:error_chat_unknown_short:2131427437 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:error_terminal_close_session:2131427445 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:dialog_configure_provider:2131427400 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:settings_edit:2131427599 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking string:theme_mode:2131427629 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:theme_mode:2131427630 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:dynamic_color:2131427403 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:dynamic_color_subtitle:2131427404 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking string:settings_api_key_masked:2131427596 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
@@ -289,8 +290,8 @@ java.lang.CharSequence
 STOP
 require
 short_id
-keyToMatch
 kts
+keyToMatch
 WHERE
 eClass
 0
@@ -323,8 +324,8 @@ _
 a
 Center
 b
-c
 address
+c
 ACTION_CLEAR_ACCESSIBILITY_FOCUS
 Infinity
 d
@@ -342,12 +343,12 @@ m
 cookieJar
 r
 s
-java.lang.Module
 t
+java.lang.Module
 TypefaceCompatApi26Impl
 throw
-v
 cipherSuites
+v
 x
 SECURITY
 com.pocketdev.domain.model.OllamaResp...
@@ -390,6 +391,7 @@ A70AXLTMO
 cjs
 org.bouncycastle.jsse.provider.Bouncy...
 SaveFile
+splash
 ACTION_ARGUMENT_SET_TEXT_CHARSEQUENCE
 struct
 GPSDifferential
@@ -419,8 +421,8 @@ connectionSpecs
 NEW_LINE
 GITLAB
 Modulate
-RCT6513W87DK5e
 messageDao
+RCT6513W87DK5e
 onBackInvoked
 XResolution
 binary
@@ -547,8 +549,8 @@ mcv5a
 CollectionInfo
 document
 Rtl
-fixes
 okhttp/4.12.0
+fixes
 intptr_t
 ToggleableState
 remediation
@@ -621,6 +623,7 @@ EXTRA_SKIP_FILE_OPERATION
 center
 pair
 Paragraph
+splash_animation
 func
 PASTE
 DIRECTORY
@@ -645,8 +648,8 @@ YResolution
 %2e%2e
 WHEN
 pokeLong
-TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
 POISONED
+TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
 maxTokens
 LOCAL
 Boolean
@@ -662,8 +665,8 @@ com.pocketdev.data.remote.api.GitLabC...
 .apk
 Object
 CHANNEL_CLOSED
-com.pocketdev.domain.model.ChatComple...
 SharingStarted.Lazily
+com.pocketdev.domain.model.ChatComple...
 CONTINUATION
 map.entries
 PrivateApi
@@ -677,8 +680,8 @@ unknown
 proxySelector
 android.widget.SeekBar
 low
-producerIndex
 REMOVE
+producerIndex
 planner
 phases
 GPSDestBearingRef
@@ -687,8 +690,8 @@ value.stringSet.stringsList
 $this$navigate
 initial
 Kotlin
-SecureOff
 .immediate
+SecureOff
 TAB
 /index.html
 None
@@ -750,8 +753,8 @@ java.specification.version
 def
 insertInorderBarrier
 del
-TLS_RSA_WITH_AES_256_CBC_SHA
 cyclomaticComplexity
+TLS_RSA_WITH_AES_256_CBC_SHA
 path
 Button
 ExposureMode
@@ -775,6 +778,7 @@ domain
 StripByteCounts
 complex128
 groupAnchor
+onNavigateToMain
 TraceCompat
 ahannah
 Seq
@@ -782,8 +786,8 @@ relative
 Recomposer:animation
 ALTER
 albums
-getEmojiConsistencySet
 Wrap
+getEmojiConsistencySet
 Set
 ExitTransition.KeepUntilTransitionsFi...
 A30ATMO
@@ -856,8 +860,8 @@ TLS
 FocalPlaneXResolution
 $selectors
 retry
-Leading
 socketAddress
+Leading
 strings_
 classSimpleName
 SELECT_DOWN
@@ -866,8 +870,8 @@ Filled
 instanceof
 baseUrl
 multipart/digest
-Expect
 on_update
+Expect
 DeepSeek
 inherit
 DEFAULT
@@ -966,8 +970,8 @@ interrupted
 separator
 entries
 font_italic
-null
 TEST_WRITER
+null
 CRC
 background
 androidx.datastore.preferences.protob...
@@ -1020,14 +1024,14 @@ TLS_RSA_WITH_AES_256_CBC_SHA256
 Armor_3
 CUT
 receiver
-_decision
 dismissAction
-Armor_6
+_decision
 module
+Armor_6
 Butt
 input_method
-SSL_DH_anon_WITH_RC4_128_MD5
 defaultCreationExtras
+SSL_DH_anon_WITH_RC4_128_MD5
 unique
 TLS_ECDHE_ECDSA_WITH_NULL_SHA
 setCurrentState
@@ -1140,8 +1144,8 @@ NONE
 95
 96
 TLS_DH_anon_WITH_AES_128_CBC_SHA
-address.hostAddress
 97
+address.hostAddress
 val
 kotlinx.coroutines.semaphore.maxSpinC...
 avatarUrl
@@ -1165,8 +1169,8 @@ COMMENTS
 CONNECT
 com.pocketdev.data.remote.api.GitLabT...
 savedStateRegistry
-identity
 Char
+identity
 INTERRUPTED_SEND
 security_reviewer
 com.pocketdev.domain.model.AiProvider...
@@ -1186,8 +1190,8 @@ kotlinx.serialization.Polymorphic
 TransferFunction
 Tab
 outState
-com.pocketdev.ui.screens.pc.PcConnect...
 kotlin.
+com.pocketdev.ui.screens.pc.PcConnect...
 ACTION_SET_TEXT
 msg
 BLOB
@@ -1321,8 +1325,8 @@ http://localhost:11434/api/pull
 decimal
 LIST
 private
-kotlin.collections.MutableCollection
 pcConnectionRepository
+kotlin.collections.MutableCollection
 companion
 Em
 getDouble
@@ -1363,8 +1367,8 @@ estimatedTime
 content_sha256
 IN
 projectPath
-_rootCause
 REFUSED_STREAM
+_rootCause
 IS
 androidx.compose.ui.input.pointer.Poi...
 datastore/
@@ -1372,8 +1376,8 @@ datastore/
 Top
 404
 RESULT_NOT_WRITABLE
-etag
 Swift
+etag
 %02d:%02d:%02d
 PROPPATCH
 MAP
@@ -1388,8 +1392,8 @@ protocolSelected
 URI
 PYTHON
 valueVector
-fffe
 androidx$room$IMultiInstanceInvalidat...
+fffe
 LocalViewConfiguration
 Strategy.Simple
 kotlin.Long
@@ -1423,8 +1427,8 @@ FERMI_TF
 _isCompleting
 TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA
 ShowAddDialog
-HTTP_1_0
 settings
+HTTP_1_0
 new
 uriPathSegments
 HTTP_1_1
@@ -1474,15 +1478,15 @@ Filled.Close
 com.pocketdev.ui.screens.editor.Colla...
 SSL_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA
 nil
-receiveSegment
 android.widget.HorizontalScrollView
+receiveSegment
 emojiCompat
 java
 NO_CLOSE_CAUSE
 androidx$room$IMultiInstanceInvalidat...
 com.pocketdev.agent.protocol.Complexity
-newValue
 models
+newValue
 com.pocketdev.domain.model.GitHubComm...
 iota
 rjames_f
@@ -1497,8 +1501,8 @@ Expires
 REMOVE_FROZEN
 .tmp
 _Impl
-$this$buildSerialDescriptor
 kotlinx.coroutines.semaphore.segmentSize
+$this$buildSerialDescriptor
 SSL_RSA_EXPORT_WITH_DES40_CBC_SHA
 android.view.accessibility.extra.DATA...
 literal
@@ -1506,8 +1510,8 @@ Rc
 default
 waterfall
 Int32
-TLS_ECDH_RSA_WITH_AES_256_CBC_SHA
 $this$popUpTo
+TLS_ECDH_RSA_WITH_AES_256_CBC_SHA
 SSL_RSA_WITH_RC4_128_SHA
 objectFieldOffset
 outBundle
@@ -1547,8 +1551,8 @@ TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256
 folderName
 Up
 SceneCaptureType
-getDescriptor
 next
+getDescriptor
 string
 import
 color
@@ -1601,8 +1605,8 @@ kotlinx.coroutines.scheduler.max.pool...
 probability
 double
 TLS_KRB5_EXPORT_WITH_DES_CBC_40_MD5
-TDD_GUIDE
 INSTANCE
+TDD_GUIDE
 RelatedSoundFile
 explicit
 Low
@@ -1642,9 +1646,9 @@ ScrollToIndex
 completedExpandBuffersAndPauseFlag
 EmojiCompatInitializer
 KEY_COMPONENT_ACTIVITY_REGISTERED_RCS
+AnimatedVisibility
 notification
 2
-AnimatedVisibility
 protocol
 overflow
 proxyAuthenticator
@@ -1665,8 +1669,8 @@ unexpected
 NO_RECEIVE_RESULT
 END_STREAM
 Ltr
-Touch
 elementSerializer
+Touch
 onReplaceOne
 AUTOMATIC
 Trailing
@@ -1754,11 +1758,11 @@ https://api.anthropic.com/
 never
 Dismiss
 multipart
-debugData
 END
+debugData
 ACTION_ACCESSIBILITY_FOCUS
-isDirectory
 https:
+isDirectory
 frame
 ThumbnailImageLength
 fi
@@ -1781,8 +1785,8 @@ class
 ws:
 conversationId
 LINE_START
-go
 PROPFIND
+go
 getDeclaredMethod
 50%
 Sharpness
@@ -1836,8 +1840,8 @@ js
 Uri
 AutoMirrored.Filled.Redo
 Url
-Authorization
 delegate
+Authorization
 word_wrap
 BodyMedium
 https://api.anthropic.com/v1
@@ -1847,8 +1851,8 @@ RIGHT
 FILE
 fileSystem
 GROUP_LIST
-kotlin.jvm.functions.Function
 suggestion
+kotlin.jvm.functions.Function
 kt
 GPSLongitude
 ReferenceBlackWhite
@@ -1877,8 +1881,8 @@ kotlin.Number
 cacheSize
 FILL
 Dst
-author
 ms
+author
 PhotographicSensitivity
 Filled.Refresh
 Range
@@ -1886,11 +1890,11 @@ Filled.Computer
 entry
 http://localhost:11434/
 androidx.datastore.preferences.protob...
-ANTHROPIC格式
 p0
+ANTHROPIC格式
 code
-SELECT_LINE_LEFT
 ns
+SELECT_LINE_LEFT
 keys
 androidx.compose.ui.semantics.testTag
 addFontFromBuffer
@@ -1941,6 +1945,7 @@ com.pocketdev.data.remote.api.GitHubA...
 drawable
 getObject
 ACTION_NEXT_HTML_ELEMENT
+onNavigateToRepos
 insertReorderBarrier
 BodySerialNumber
 then
@@ -2014,11 +2019,11 @@ this
 prettyPrintIndent
 PreventUserInput
 NOT
-buildType
 failure
+buildType
 viewModel
-changed
 MULTILINE
+changed
 destination
 ON_DESTROY
 NANOSECONDS
@@ -2057,11 +2062,11 @@ Mistral
 connection
 cont
 phase
-_display_name
 method
+_display_name
 api/files/read
-socketFactory
 Dimension.Undefined
+socketFactory
 refHolder
 deserializer
 inetSocketAddress
@@ -2116,8 +2121,8 @@ RefCell
 kotlinx.serialization.json.pool.size
 staticmethod
 retrofit2.KotlinExtensions
-Character
 NotReady
+Character
 LocalHapticFeedback
 defaultBranch
 TextMotion.Static
@@ -2125,8 +2130,8 @@ kotlin.jvm.internal.EnumCompanionObject
 branches
 SGINO6
 LineHeightStyle.Trim.Both
-android.widget.TextView
 blob
+android.widget.TextView
 onConfirm
 navDeepLink
 UInt16
@@ -2139,21 +2144,22 @@ line
 MiniMax
 link
 GPSSatellites
+scale
 GPSDestLatitude
 __ENCODING__
 CopyText
 DateTimeOriginal
 CancelBuild
-onFindNext
 sqLiteQuery
+onFindNext
 security
 leadingIcon
 kotlin.collections.Set
 TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384
 androidx.activity.result.contract.ext...
 com.pocketdev.domain.model.GeminiResp...
-factory
 ISIZE
+factory
 com.pocketdev.data.remote.api.GitHubB...
 JPEGInterchangeFormatLength
 java.util.Iterator
@@ -2215,8 +2221,8 @@ stdout
 Start
 POST
 com.pocketdev.domain.model.OllamaList...
-/system/bin/sh
 ColorSpace
+/system/bin/sh
 taskHistory
 i32
 isTagEnabled
@@ -2233,8 +2239,8 @@ Optional
 visibility
 OPENAI
 preferencesProto.preferencesMap
-list
 dagger.hilt.android.components.ViewCo...
+list
 candidates
 external
 DateTimeDigitized
@@ -2251,8 +2257,8 @@ RESULT_BASELINE_PROFILE_NOT_FOUND
 _invoked
 medium
 interface
-remove
 $this$buildClassSerialDescriptor
+remove
 RESULT_DELETE_SKIP_FILE_SUCCESS
 SDK_INT
 WordBreak.None
@@ -2287,8 +2293,8 @@ HTTP/1.0
 HTTP/1.1
 fullPackage
 Filled.Check
-spdy/3.1
 write
+spdy/3.1
 StateDescription
 unalias
 SensorLeftBorder
@@ -2408,8 +2414,8 @@ com.pocketdev.data.remote.api.GitHubC...
 OPTIONS
 $tmp0
 GPSImgDirectionRef
-Project
 input
+Project
 aljeter
 Running
 dalvik.system.CloseGuard
@@ -2522,14 +2528,14 @@ trap
 $this$toBuilder
 tlsVersion
 customActions
-closeHandler
 accessToken
+closeHandler
 CustomActions
 CASE
 orchestrator
 ASUS_X018_4
-$callback
 BUFFERED
+$callback
 GET
 finishReason
 kotlin.collections.LinkedHashSet
@@ -2581,8 +2587,8 @@ Markdown
 SubSecTime
 Python
 java.lang.Cloneable
-Power_2_Pro
 publicKey.encoded
+Power_2_Pro
 BV9500Pro
 tree
 requestLine
@@ -2593,11 +2599,11 @@ FILE_SEARCH
 MINIMAX
 targetUnit
 Filled.KeyboardArrowDown
-Filled.RadioButtonChecked
 TLS_1_3
+Filled.RadioButtonChecked
 TLS_1_2
-SELECT_NEXT_PARAGRAPH
 request
+SELECT_NEXT_PARAGRAPH
 LocalImageVectorCache
 TLS_1_1
 values
@@ -2666,8 +2672,8 @@ api/system/info
 DROP_LATEST
 _exceptionsHolder
 unsafe
-TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA
 com.pocketdev.data.remote.api.GitHubU...
+TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA
 startDestination
 dagger.hilt.android.internal.builders...
 Equatable
@@ -2713,8 +2719,8 @@ LinkedList
 DISABLED
 Role
 java.lang.annotation.Annotation
-org.eclipse.jetty.alpn.ALPN$ClientPro...
 sha256/
+org.eclipse.jetty.alpn.ALPN$ClientPro...
 font_weight
 some
 Closure
@@ -2780,12 +2786,13 @@ PHP
 Final
 TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
 okhttp.Http2
-java.nio.file.Files
 COMPRESSED
+java.nio.file.Files
 ACTION_PAGE_RIGHT
 TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA
 FlashEnergy
 hxx
+TerminalRepository
 git_operator
 getLong
 focusManager
@@ -2856,8 +2863,8 @@ socket
 ACTION_PASTE
 android.graphics.FontFamily
 SINT32_LIST
-SELECT_LEFT_CHAR
 PUBLICATION
+SELECT_LEFT_CHAR
 apiKey
 OLLAMA
 themeMode
@@ -2949,8 +2956,8 @@ AutoMirrored.Filled.MenuBook
 comment
 Editor
 Location
-setUseSessionTickets
 com.pocketdev.domain.model.PcFileResp...
+setUseSessionTickets
 Strictness.Normal
 prefix
 HTTP_1_1_REQUIRED
@@ -2958,15 +2965,15 @@ getMethod
 LiveRegion
 rune
 getViewRootImpl
-delimiter
 superclass
 PocketDev
+delimiter
 repoFullName
 application/json
 nestedName
+sslSocketSession
 LEFT_CHAR
 java.util.Set
-sslSocketSession
 readIfAbsent
 Suffix
 Switch
@@ -3085,8 +3092,8 @@ zsh
 ContentOrLtr
 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
 $this$ModalDrawerSheet
-close
 TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA
+close
 EmojiCompat.EmojiCompatInitializer.run
 repoId
 $this$Badge
@@ -3228,8 +3235,8 @@ insteadof
 Xyz
 DESTROYED
 NORMAL
-GPSLatitude
 outputs
+GPSLatitude
 referer
 Compression
 Null
@@ -3295,8 +3302,8 @@ tableName
 ANIM
 TLS_KRB5_WITH_DES_CBC_MD5
 androidx.datastore.preferences.protob...
-QUIC
 dagger.hilt.android.components.Servic...
+QUIC
 ERROR
 kotlin.collections.LinkedHashMap
 using
@@ -3336,8 +3343,8 @@ com.pocketdev.domain.model.OllamaPull...
 onContentChange
 kotlin.Char
 UNION
-_decisionAndIndex
 SrcOver
+_decisionAndIndex
 .%2e
 navigationIcon
 rue
@@ -3355,8 +3362,8 @@ androidx.lifecycle.ViewModelCoroutine...
 com.pocketdev.domain.model.Usage
 androidx.core.view.inputmethod.Editor...
 PreviewImageStart
-BOTTOM_UP
 FULL
+BOTTOM_UP
 finalException
 byteString
 GPSDestLongitude
@@ -3369,16 +3376,17 @@ bool
 distance
 IFD
 android
-java.lang.module.ModuleDescriptor
 description
+java.lang.module.ModuleDescriptor
 encodedValues
 Justify
 navigationBarStyle
 dotted
 com.pocketdev.domain.model.ThemeMode
 $queryInterceptorProgram
-file_name
+com.pocketdev.ui.screens.splash.Splas...
 Dispatchers.Main
+file_name
 TraversalIndex
 collectionInfo
 Cancelled
@@ -3432,8 +3440,8 @@ resuming_sender
 ENUM_LIST
 architecture
 SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA
-java.util.Map$Entry
 FRAME_SIZE_ERROR
+java.util.Map$Entry
 willSet
 display
 LensModel
@@ -3521,8 +3529,8 @@ complex
 getSuppressed
 kotlinx.serialization.json.JsonElement
 httponly
-publicSuffixListBytes
 SHOULD_BUFFER
+publicSuffixListBytes
 setparam
 traceCounter
 canceled
@@ -3547,12 +3555,12 @@ Selected
 androidx.compose.text.SpanStyle
 seq
 completion
-java.io.tmpdir
 LINE_END
+java.io.tmpdir
 configuring
 set
-ISO
 COMPRESSION_ERROR
+ISO
 column
 ACK
 totalTokens
@@ -3576,8 +3584,8 @@ androidx.view.accessibility.Accessibi...
 Underline
 Filled.Person
 RegExp
-preferences_
 Failed
+preferences_
 Color
 sha
 BRANCH_DIVERGENCE
@@ -3591,13 +3599,13 @@ ACTION_LONG_CLICK
 SRATIONAL
 getFloat
 4dd9dd4435fad3f0be8fe8b0025e1d5d
-Filled.Chat
 putLong
+Filled.Chat
 timeout
 await
 client
-java.vm.name
 Hue
+java.vm.name
 valueSerializer
 false
 com.pocketdev.domain.model.PcGitCommi...
@@ -3649,8 +3657,8 @@ ALL
 auto
 http://localhost/
 annotations
-encodedNames
 suffix
+encodedNames
 unset
 Nothing
 _size
@@ -3668,8 +3676,8 @@ Polite
 gradlew
 pokeInt
 ThumbnailOrientation
-TOO_LATE_TO_CANCEL
 NULL
+TOO_LATE_TO_CANCEL
 TLS_DHE_DSS_WITH_AES_256_CBC_SHA
 .preferences_pb
 CompressedBitsPerPixel
@@ -3728,13 +3736,14 @@ INITIALIZING
 CreateSession
 .Companion
 Never
+pulse_alpha
 Overlay
 proxyAddress
 CODE_SMELL
 TextDecoration.None
 RSA
-enqIdx
 SpectralSensitivity
+enqIdx
 invoker
 accept
 ACTION_COLLAPSE
@@ -3745,8 +3754,8 @@ com.pocketdev.domain.model.UnifiedCha...
 hostName
 INTO
 ExposureBiasValue
-TLS_RSA_WITH_AES_128_GCM_SHA256
 primitive
+TLS_RSA_WITH_AES_128_GCM_SHA256
 blob_id
 h2_prior_knowledge
 terminalRepository
@@ -3762,8 +3771,8 @@ Java
 onZoomIn
 GPSAreaInformation
 dagger.hilt.android.EarlyEntryPoint
-store
 kotlin.Float
+store
 S70
 CSHARP
 SSL_RSA_WITH_NULL_MD5
@@ -3847,8 +3856,8 @@ elsif
 STREAM_CLOSED
 RefreshGradleInfo
 FocalPlaneResolutionUnit
-JsonLiteral
 eventListener
+JsonLiteral
 author_email
 cbuf
 Finished
@@ -3874,6 +3883,7 @@ LocalTextToolbar
 ShutterSpeedValue
 elements
 rootFile
+collaborationServerUrl
 URI_MASKABLE
 SelectionEnd
 ON_CREATE
@@ -3893,10 +3903,10 @@ FIXED64_LIST_PACKED
 NewSubfileType
 Inherit
 EmojiCompat.FontRequestEmojiCompatCon...
-PageUp
 SYNCHRONIZED
-TOP_DOWN
+PageUp
 SUBMODULE
+TOP_DOWN
 indirect
 RESULT_UNSUPPORTED_ART_VERSION
 innerTextField
@@ -3945,6 +3955,7 @@ Popup:
 arguments
 category
 LocalWindowInfo
+Marking string:splash_tagline:2131427616 used because it matches string pool constant splash
 Marking id:blocking:2131165224 used because it matches string pool constant block
 Marking string:font_size:2131427461 used because it matches string pool constant font_size
 Marking attr:shortcutMatchRequired:2130903074 used because it matches string pool constant short
@@ -3979,7 +3990,7 @@ Marking string:navigation_menu:2131427530 used because it matches string pool co
 Marking id:text:2131165271 used because it matches string pool constant text
 Marking id:text2:2131165272 used because it matches string pool constant text
 Marking integer:status_bar_notification_info_maxnum:2131230720 used because it matches string pool constant status
-Marking string:status_bar_notification_info_overflow:2131427616 used because it matches string pool constant status
+Marking string:status_bar_notification_info_overflow:2131427617 used because it matches string pool constant status
 Marking attr:uri:2130903078 used because it matches string pool constant uri
 Marking attr:nullable:2130903065 used because it matches string pool constant null
 Marking string:commit_commit:2131427390 used because it matches string pool constant commit
@@ -3989,7 +4000,7 @@ Marking string:commit_title:2131427393 used because it matches string pool const
 Marking string:commit_update_file:2131427394 used because it matches string pool constant commit
 Marking string:dynamic_color:2131427403 used because it matches string pool constant dyn
 Marking string:dynamic_color_subtitle:2131427404 used because it matches string pool constant dyn
-Marking string:tab_size:2131427619 used because it matches string pool constant tab_size
+Marking string:tab_size:2131427620 used because it matches string pool constant tab_size
 Marking id:async:2131165223 used because it matches string pool constant async
 Marking string:branch_default:2131427340 used because it matches string pool constant branch
 Marking string:branch_protected:2131427341 used because it matches string pool constant branch
@@ -4113,14 +4124,14 @@ Marking layout:notification_template_icon_group:2131296264 used because it match
 Marking layout:notification_template_part_chronometer:2131296265 used because it matches string pool constant notification
 Marking layout:notification_template_part_time:2131296266 used because it matches string pool constant notification
 Marking id:visible_removing_fragment_view_tag:2131165279 used because it matches string pool constant visible
-Marking string:terminal_create_session:2131427621 used because it matches string pool constant terminal
-Marking string:terminal_input_hint:2131427622 used because it matches string pool constant terminal
-Marking string:terminal_local:2131427623 used because it matches string pool constant terminal
-Marking string:terminal_new_session:2131427624 used because it matches string pool constant terminal
-Marking string:terminal_next:2131427625 used because it matches string pool constant terminal
-Marking string:terminal_no_active:2131427626 used because it matches string pool constant terminal
-Marking string:terminal_previous:2131427627 used because it matches string pool constant terminal
-Marking string:terminal_remote_pc:2131427628 used because it matches string pool constant terminal
+Marking string:terminal_create_session:2131427622 used because it matches string pool constant terminal
+Marking string:terminal_input_hint:2131427623 used because it matches string pool constant terminal
+Marking string:terminal_local:2131427624 used because it matches string pool constant terminal
+Marking string:terminal_new_session:2131427625 used because it matches string pool constant terminal
+Marking string:terminal_next:2131427626 used because it matches string pool constant terminal
+Marking string:terminal_no_active:2131427627 used because it matches string pool constant terminal
+Marking string:terminal_previous:2131427628 used because it matches string pool constant terminal
+Marking string:terminal_remote_pc:2131427629 used because it matches string pool constant terminal
 Marking id:async:2131165223 used because it matches string pool constant as
 Marking string:search_all:2131427584 used because it matches string pool constant search
 Marking string:search_close:2131427585 used because it matches string pool constant search
@@ -4152,7 +4163,7 @@ Marking string:in_progress:2131427466 used because it matches string pool consta
 Marking string:indeterminate:2131427467 used because it matches string pool constant in
 Marking id:is_pooling_container_tag:2131165244 used because it matches string pool constant is
 Marking id:italic:2131165245 used because it matches string pool constant it
-Marking string:word_wrap:2131427632 used because it matches string pool constant word_wrap
+Marking string:word_wrap:2131427633 used because it matches string pool constant word_wrap
 Marking string:codecard_committed:2131427388 used because it matches string pool constant code
 Marking string:codecard_push_github:2131427389 used because it matches string pool constant code
 Marking id:dialog_button:2131165234 used because it matches string pool constant dialog
@@ -4165,17 +4176,17 @@ Marking attr:shortcutMatchRequired:2130903074 used because it matches string poo
 Marking string:show_line_numbers:2131427614 used because it matches string pool constant sh
 Marking id:text:2131165271 used because it matches string pool constant te
 Marking id:text2:2131165272 used because it matches string pool constant te
-Marking string:template_percent:2131427620 used because it matches string pool constant te
-Marking string:terminal_create_session:2131427621 used because it matches string pool constant te
-Marking string:terminal_input_hint:2131427622 used because it matches string pool constant te
-Marking string:terminal_local:2131427623 used because it matches string pool constant te
-Marking string:terminal_new_session:2131427624 used because it matches string pool constant te
-Marking string:terminal_next:2131427625 used because it matches string pool constant te
-Marking string:terminal_no_active:2131427626 used because it matches string pool constant te
-Marking string:terminal_previous:2131427627 used because it matches string pool constant te
-Marking string:terminal_remote_pc:2131427628 used because it matches string pool constant te
-Marking string:tooltip_description:2131427630 used because it matches string pool constant to
-Marking string:tooltip_label:2131427631 used because it matches string pool constant to
+Marking string:template_percent:2131427621 used because it matches string pool constant te
+Marking string:terminal_create_session:2131427622 used because it matches string pool constant te
+Marking string:terminal_input_hint:2131427623 used because it matches string pool constant te
+Marking string:terminal_local:2131427624 used because it matches string pool constant te
+Marking string:terminal_new_session:2131427625 used because it matches string pool constant te
+Marking string:terminal_next:2131427626 used because it matches string pool constant te
+Marking string:terminal_no_active:2131427627 used because it matches string pool constant te
+Marking string:terminal_previous:2131427628 used because it matches string pool constant te
+Marking string:terminal_remote_pc:2131427629 used because it matches string pool constant te
+Marking string:tooltip_description:2131427631 used because it matches string pool constant to
+Marking string:tooltip_label:2131427632 used because it matches string pool constant to
 Marking attr:destination:2130903045 used because it matches string pool constant destination
 Marking attr:data:2130903043 used because it matches string pool constant data
 Marking attr:dataPattern:2130903044 used because it matches string pool constant data
@@ -4216,7 +4227,7 @@ Marking id:accessibility_custom_action_7:2131165214 used because it matches stri
 Marking id:accessibility_custom_action_8:2131165215 used because it matches string pool constant accessibility
 Marking id:accessibility_custom_action_9:2131165216 used because it matches string pool constant accessibility
 Marking id:actions:2131165221 used because it matches string pool constant actions
-Marking string:theme_mode:2131427629 used because it matches string pool constant theme_mode
+Marking string:theme_mode:2131427630 used because it matches string pool constant theme_mode
 Marking id:time:2131165273 used because it matches string pool constant time
 Marking string:editor_ai_assist:2131427405 used because it matches string pool constant editor
 Marking string:editor_ai_response:2131427406 used because it matches string pool constant editor
@@ -4409,7 +4420,7 @@ Marking string:settings_saving:2131427611 used because it matches string pool co
 Marking string:settings_storage:2131427612 used because it matches string pool constant set
 Marking string:settings_title:2131427613 used because it matches string pool constant set
 Marking string:selected:2131427592 used because it matches string pool constant select
-Marking string:switch_role:2131427617 used because it matches string pool constant switch
+Marking string:switch_role:2131427618 used because it matches string pool constant switch
 Marking attr:destination:2130903045 used because it matches string pool constant dest
 Marking string:dynamic_color:2131427403 used because it matches string pool constant dynamic
 Marking string:dynamic_color_subtitle:2131427404 used because it matches string pool constant dynamic
@@ -4419,8 +4430,8 @@ Marking string:commit_message_label:2131427392 used because it matches string po
 Marking id:normal:2131165249 used because it matches string pool constant normal
 Marking string:range_end:2131427572 used because it matches string pool constant range
 Marking string:range_start:2131427573 used because it matches string pool constant range
-Marking string:tab:2131427618 used because it matches string pool constant tab
-Marking string:tab_size:2131427619 used because it matches string pool constant tab
+Marking string:tab:2131427619 used because it matches string pool constant tab
+Marking string:tab_size:2131427620 used because it matches string pool constant tab
 Marking id:tag_accessibility_actions:2131165258 used because it matches string pool constant tag
 Marking id:tag_accessibility_clickable_spans:2131165259 used because it matches string pool constant tag
 Marking id:tag_accessibility_heading:2131165260 used because it matches string pool constant tag
@@ -4989,6 +5000,7 @@ Marking id:fragment_container_view_tag:2131165237 used because it matches string
 @string/settings_title : reachable=true
 @string/show_line_numbers : reachable=true
 @string/sign_out : reachable=true
+@string/splash_tagline : reachable=true
 @string/status_bar_notification_info_overflow : reachable=true
 @string/switch_role : reachable=true
 @string/tab : reachable=true
@@ -5419,23 +5431,24 @@ The root reachable resources are:
  string:settings_title:2131427613
  string:show_line_numbers:2131427614
  string:sign_out:2131427615
- string:status_bar_notification_info_overflow:2131427616
- string:switch_role:2131427617
- string:tab:2131427618
- string:tab_size:2131427619
- string:template_percent:2131427620
- string:terminal_create_session:2131427621
- string:terminal_input_hint:2131427622
- string:terminal_local:2131427623
- string:terminal_new_session:2131427624
- string:terminal_next:2131427625
- string:terminal_no_active:2131427626
- string:terminal_previous:2131427627
- string:terminal_remote_pc:2131427628
- string:theme_mode:2131427629
- string:tooltip_description:2131427630
- string:tooltip_label:2131427631
- string:word_wrap:2131427632
+ string:splash_tagline:2131427616
+ string:status_bar_notification_info_overflow:2131427617
+ string:switch_role:2131427618
+ string:tab:2131427619
+ string:tab_size:2131427620
+ string:template_percent:2131427621
+ string:terminal_create_session:2131427622
+ string:terminal_input_hint:2131427623
+ string:terminal_local:2131427624
+ string:terminal_new_session:2131427625
+ string:terminal_next:2131427626
+ string:terminal_no_active:2131427627
+ string:terminal_previous:2131427628
+ string:terminal_remote_pc:2131427629
+ string:theme_mode:2131427630
+ string:tooltip_description:2131427631
+ string:tooltip_label:2131427632
+ string:word_wrap:2131427633
  style:DialogWindowTheme:2131492864
  style:FloatingDialogTheme:2131492865
  style:FloatingDialogWindowTheme:2131492866

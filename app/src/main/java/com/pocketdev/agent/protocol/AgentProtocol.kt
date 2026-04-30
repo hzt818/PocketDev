@@ -122,23 +122,18 @@ enum class AgentType {
     @SerialName("build_error_resolver")
     BUILD_ERROR_RESOLVER,
 
-    @Deprecated("No implementation available - scheduled for removal in v2.0")
     @SerialName("refactor_cleaner")
     REFACTOR_CLEANER,
 
-    @Deprecated("No implementation available - scheduled for removal in v2.0")
     @SerialName("doc_updater")
     DOC_UPDATER,
 
-    @Deprecated("No implementation available - scheduled for removal in v2.0")
     @SerialName("e2e_runner")
     E2E_RUNNER,
 
-    @Deprecated("No implementation available - scheduled for removal in v2.0")
     @SerialName("search")
     SEARCH,
 
-    @Deprecated("No implementation available - scheduled for removal in v2.0")
     @SerialName("general")
     GENERAL,
 

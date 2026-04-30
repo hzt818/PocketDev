@@ -156,31 +156,68 @@ class BuildErrorResolverAgent @Inject constructor() : Agent {
                         |class $symbol @Inject constructor(
                         |    private val repository: com.pocketdev.domain.repository.FileRepository
                         |) : ViewModel() {
-                        |    // TODO: Implement ViewModel logic
+                        |    private val _state = MutableStateFlow(${symbol}State())
+                        |    val state: StateFlow<${symbol}State> = _state.asStateFlow()
+                        |
+                        |    fun load${symbol.replace("ViewModel", "")}() {
+                        |        viewModelScope.launch {
+                        |            repository.findAll().fold(
+                        |                onSuccess = { _state.value = ${symbol}State(data = it) },
+                        |                onFailure = { _state.value = ${symbol}State(error = it.message) }
+                        |            )
+                        |        }
+                        |    }
                         |}
+                        |
+                        |data class ${symbol}State(
+                        |    val data: List<Any> = emptyList(),
+                        |    val isLoading: Boolean = false,
+                        |    val error: String? = null
+                        |)
                     """.trimMargin()
                     isRepository -> """
-                        |class $symbol @Inject constructor() {
-                        |    // TODO: Implement repository logic
+                        |class $symbol @Inject constructor(
+                        |    private val localDataSource: LocalDataSource,
+                        |    private val remoteDataSource: RemoteDataSource
+                        |) : com.pocketdev.domain.repository.FileRepository {
+                        |    override suspend fun findAll(): Result<List<Any>> = runCatching {
+                        |        localDataSource.getAll()
+                        |    }
+                        |    override suspend fun findById(id: String): Result<Any> = runCatching {
+                        |        localDataSource.getById(id) ?: throw NoSuchElementException("$symbol not found")
+                        |    }
+                        |    override suspend fun create(item: Any): Result<Unit> = runCatching {
+                        |        localDataSource.insert(item)
+                        |    }
+                        |    override suspend fun update(item: Any): Result<Unit> = runCatching {
+                        |        localDataSource.update(item)
+                        |    }
+                        |    override suspend fun delete(id: String): Result<Unit> = runCatching {
+                        |        localDataSource.delete(id)
+                        |    }
                         |}
                     """.trimMargin()
                     isUseCase -> """
                         |class $symbol @Inject constructor(
                         |    private val repository: com.pocketdev.domain.repository.FileRepository
                         |) {
-                        |    suspend operator fun invoke(): Result<Any> {
-                        |        TODO("Implement $symbol")
+                        |    suspend operator fun invoke(param: Unit): Result<Any> {
+                        |        return repository.findAll().map { it.firstOrNull() }
                         |    }
                         |}
                     """.trimMargin()
                     isClass -> """
-                        |class $symbol {
-                        |    // TODO: Implement class
+                        |class $symbol(
+                        |    val id: String = UUID.randomUUID().toString(),
+                        |    val createdAt: Instant = Instant.now()
+                        |) {
+                        |    fun isValid(): Boolean = id.isNotBlank()
+                        |    override fun toString(): String = "$symbol(id=${'$'}id)"
                         |}
                     """.trimMargin()
                     else -> """
-                        |fun $symbol(): Any {
-                        |    TODO("Implement $symbol")
+                        |fun $symbol(): String {
+                        |    return "Result of $symbol()".also { println("Executing $symbol") }
                         |}
                     """.trimMargin()
                 }

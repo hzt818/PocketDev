@@ -6,5 +6,6 @@ import kotlinx.serialization.Serializable
 data class AppSettings(
     val themeMode: ThemeMode = ThemeMode.SYSTEM,
     val dynamicColor: Boolean = true,
-    val editorPreferences: EditorPreferences = EditorPreferences()
+    val editorPreferences: EditorPreferences = EditorPreferences(),
+    val collaborationServerUrl: String? = null
 )

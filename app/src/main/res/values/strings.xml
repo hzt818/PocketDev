@@ -3,6 +3,9 @@
     <!-- App -->
     <string name="app_name">PocketDev</string>
 
+    <!-- Splash Screen -->
+    <string name="splash_tagline">AI-Powered Mobile Coding Assistant</string>
+
     <!-- Navigation -->
     <string name="nav_chat">Chat</string>
     <string name="nav_repos">Repos</string>

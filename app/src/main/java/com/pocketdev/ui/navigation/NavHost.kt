@@ -38,6 +38,7 @@ import com.pocketdev.ui.screens.repos.RepoDetailScreen
 import com.pocketdev.ui.screens.repos.ReposScreen
 import com.pocketdev.ui.screens.settings.SettingsScreen
 import com.pocketdev.ui.screens.build.BuildScreen
+import com.pocketdev.ui.screens.splash.SplashScreen
 import com.pocketdev.ui.screens.terminal.TerminalScreen
 
 data class BottomNavItem(
@@ -60,44 +61,67 @@ fun PocketDevNavHost() {
     val navController = rememberNavController()
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentDestination = navBackStackEntry?.destination
+    val currentRoute = currentDestination?.route
+
+    val showBottomBar = currentRoute != Screen.Splash.route &&
+            currentRoute != Screen.RepoDetail.route &&
+            currentRoute != Screen.RemoteEditor.route
 
     Scaffold(
         bottomBar = {
-            NavigationBar {
-                bottomNavItems.forEach { item ->
-                    NavigationBarItem(
-                        icon = { Icon(item.icon, contentDescription = stringResource(item.labelResId)) },
-                        label = { Text(stringResource(item.labelResId)) },
-                        selected = currentDestination?.hierarchy?.any { it.route == item.screen.route } == true,
-                        onClick = {
-                            navController.navigate(item.screen.route) {
-                                popUpTo(navController.graph.findStartDestination().id) {
-                                    saveState = true
+            if (showBottomBar) {
+                NavigationBar {
+                    bottomNavItems.forEach { item ->
+                        NavigationBarItem(
+                            icon = { Icon(item.icon, contentDescription = stringResource(item.labelResId)) },
+                            label = { Text(stringResource(item.labelResId)) },
+                            selected = currentDestination?.hierarchy?.any { it.route == item.screen.route } == true,
+                            onClick = {
+                                navController.navigate(item.screen.route) {
+                                    popUpTo(navController.graph.findStartDestination().id) {
+                                        saveState = true
+                                    }
+                                    launchSingleTop = true
+                                    restoreState = true
                                 }
-                                launchSingleTop = true
-                                restoreState = true
                             }
-                        }
-                    )
+                        )
+                    }
                 }
             }
         },
         floatingActionButton = {
-            DefaultFloatingActionMenu(
-                onNavigateToChat = { navController.navigate(Screen.Chat.route) },
-                onNavigateToEditor = { navController.navigate(Screen.Editor.route) },
-                onNavigateToOllama = { navController.navigate(Screen.Ollama.route) },
-                onNavigateToPcConnection = { navController.navigate(Screen.PcConnection.route) },
-                onNavigateToTerminal = { navController.navigate(Screen.Terminal.route) }
-            )
+            if (showBottomBar) {
+                DefaultFloatingActionMenu(
+                    onNavigateToChat = { navController.navigate(Screen.Chat.route) },
+                    onNavigateToEditor = { navController.navigate(Screen.Editor.route) },
+                    onNavigateToOllama = { navController.navigate(Screen.Ollama.route) },
+                    onNavigateToPcConnection = { navController.navigate(Screen.PcConnection.route) },
+                    onNavigateToTerminal = { navController.navigate(Screen.Terminal.route) }
+                )
+            }
         }
     ) { innerPadding ->
         Box(modifier = Modifier.fillMaxSize()) {
             NavHost(
                 navController = navController,
-                startDestination = Screen.Chat.route,
+                startDestination = Screen.Splash.route,
                 modifier = Modifier.padding(innerPadding)
             ) {
+                composable(Screen.Splash.route) {
+                    SplashScreen(
+                        onNavigateToMain = {
+                            navController.navigate(Screen.Chat.route) {
+                                popUpTo(Screen.Splash.route) { inclusive = true }
+                            }
+                        },
+                        onNavigateToRepos = {
+                            navController.navigate(Screen.Repos.route) {
+                                popUpTo(Screen.Splash.route) { inclusive = true }
+                            }
+                        }
+                    )
+                }
                 composable(Screen.Chat.route) { ChatScreen() }
                 composable(Screen.Settings.route) {
                     SettingsScreen(

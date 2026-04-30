@@ -80,6 +80,8 @@ import com.pocketdev.ui.screens.repos.ReposViewModel;
 import com.pocketdev.ui.screens.repos.ReposViewModel_HiltModules_KeyModule_ProvideFactory;
 import com.pocketdev.ui.screens.settings.SettingsViewModel;
 import com.pocketdev.ui.screens.settings.SettingsViewModel_HiltModules_KeyModule_ProvideFactory;
+import com.pocketdev.ui.screens.splash.SplashViewModel;
+import com.pocketdev.ui.screens.splash.SplashViewModel_HiltModules_KeyModule_ProvideFactory;
 import com.pocketdev.ui.screens.terminal.TerminalViewModel;
 import com.pocketdev.ui.screens.terminal.TerminalViewModel_HiltModules_KeyModule_ProvideFactory;
 import dagger.hilt.android.ActivityRetainedLifecycle;
@@ -441,7 +443,7 @@ public final class DaggerPocketDevApp_HiltComponents_SingletonC {
 
     @Override
     public Set<String> getViewModelKeys() {
-      return SetBuilder.<String>newSetBuilder(11).add(BuildViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(ChatViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(CollaborationViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(EditorViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(OllamaViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(PcConnectionViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(RemoteEditorViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(RepoDetailViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(ReposViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(SettingsViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(TerminalViewModel_HiltModules_KeyModule_ProvideFactory.provide()).build();
+      return SetBuilder.<String>newSetBuilder(12).add(BuildViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(ChatViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(CollaborationViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(EditorViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(OllamaViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(PcConnectionViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(RemoteEditorViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(RepoDetailViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(ReposViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(SettingsViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(SplashViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(TerminalViewModel_HiltModules_KeyModule_ProvideFactory.provide()).build();
     }
 
     @Override
@@ -488,6 +490,8 @@ public final class DaggerPocketDevApp_HiltComponents_SingletonC {
     private Provider<ReposViewModel> reposViewModelProvider;
 
     private Provider<SettingsViewModel> settingsViewModelProvider;
+
+    private Provider<SplashViewModel> splashViewModelProvider;
 
     private Provider<TerminalViewModel> terminalViewModelProvider;
 
@@ -578,12 +582,13 @@ public final class DaggerPocketDevApp_HiltComponents_SingletonC {
       this.repoDetailViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 7);
       this.reposViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 8);
       this.settingsViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 9);
-      this.terminalViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 10);
+      this.splashViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 10);
+      this.terminalViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 11);
     }
 
     @Override
     public Map<String, javax.inject.Provider<ViewModel>> getHiltViewModelMap() {
-      return MapBuilder.<String, javax.inject.Provider<ViewModel>>newMapBuilder(11).put("com.pocketdev.ui.screens.build.BuildViewModel", ((Provider) buildViewModelProvider)).put("com.pocketdev.ui.screens.chat.ChatViewModel", ((Provider) chatViewModelProvider)).put("com.pocketdev.ui.screens.editor.CollaborationViewModel", ((Provider) collaborationViewModelProvider)).put("com.pocketdev.ui.screens.editor.EditorViewModel", ((Provider) editorViewModelProvider)).put("com.pocketdev.ui.screens.ollama.OllamaViewModel", ((Provider) ollamaViewModelProvider)).put("com.pocketdev.ui.screens.pc.PcConnectionViewModel", ((Provider) pcConnectionViewModelProvider)).put("com.pocketdev.ui.screens.editor.RemoteEditorViewModel", ((Provider) remoteEditorViewModelProvider)).put("com.pocketdev.ui.screens.repos.RepoDetailViewModel", ((Provider) repoDetailViewModelProvider)).put("com.pocketdev.ui.screens.repos.ReposViewModel", ((Provider) reposViewModelProvider)).put("com.pocketdev.ui.screens.settings.SettingsViewModel", ((Provider) settingsViewModelProvider)).put("com.pocketdev.ui.screens.terminal.TerminalViewModel", ((Provider) terminalViewModelProvider)).build();
+      return MapBuilder.<String, javax.inject.Provider<ViewModel>>newMapBuilder(12).put("com.pocketdev.ui.screens.build.BuildViewModel", ((Provider) buildViewModelProvider)).put("com.pocketdev.ui.screens.chat.ChatViewModel", ((Provider) chatViewModelProvider)).put("com.pocketdev.ui.screens.editor.CollaborationViewModel", ((Provider) collaborationViewModelProvider)).put("com.pocketdev.ui.screens.editor.EditorViewModel", ((Provider) editorViewModelProvider)).put("com.pocketdev.ui.screens.ollama.OllamaViewModel", ((Provider) ollamaViewModelProvider)).put("com.pocketdev.ui.screens.pc.PcConnectionViewModel", ((Provider) pcConnectionViewModelProvider)).put("com.pocketdev.ui.screens.editor.RemoteEditorViewModel", ((Provider) remoteEditorViewModelProvider)).put("com.pocketdev.ui.screens.repos.RepoDetailViewModel", ((Provider) repoDetailViewModelProvider)).put("com.pocketdev.ui.screens.repos.ReposViewModel", ((Provider) reposViewModelProvider)).put("com.pocketdev.ui.screens.settings.SettingsViewModel", ((Provider) settingsViewModelProvider)).put("com.pocketdev.ui.screens.splash.SplashViewModel", ((Provider) splashViewModelProvider)).put("com.pocketdev.ui.screens.terminal.TerminalViewModel", ((Provider) terminalViewModelProvider)).build();
     }
 
     @Override
@@ -642,7 +647,10 @@ public final class DaggerPocketDevApp_HiltComponents_SingletonC {
           case 9: // com.pocketdev.ui.screens.settings.SettingsViewModel 
           return (T) new SettingsViewModel(singletonCImpl.userSettingsRepositoryImplProvider.get(), ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
 
-          case 10: // com.pocketdev.ui.screens.terminal.TerminalViewModel 
+          case 10: // com.pocketdev.ui.screens.splash.SplashViewModel 
+          return (T) new SplashViewModel(singletonCImpl.userSettingsRepositoryImplProvider.get());
+
+          case 11: // com.pocketdev.ui.screens.terminal.TerminalViewModel 
           return (T) new TerminalViewModel(singletonCImpl.terminalRepositoryImplProvider.get());
 
           default: throw new AssertionError(id);

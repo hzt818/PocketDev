@@ -79,11 +79,14 @@ class CollaborationWebSocket @Inject constructor(
 
     private var currentSessionId: String? = null
     private var currentUserId: String? = null
+    private var currentServerUrl: String? = null
     private val json = Json { ignoreUnknownKeys = true }
 
     private var reconnectAttempts = 0
     private val maxReconnectAttempts = 5
     private val baseReconnectDelay = 1000L
+    private val heartbeatInterval = 30_000L // 30 second ping
+    private var heartbeatJob: kotlinx.coroutines.Job? = null
 
     sealed class ConnectionState {
         data object Disconnected : ConnectionState()
@@ -95,9 +98,11 @@ class CollaborationWebSocket @Inject constructor(
     fun connect(serverUrl: String, sessionId: String, userId: String) {
         if (_connectionState.value == ConnectionState.Connecting) return
 
+        currentServerUrl = serverUrl
         currentSessionId = sessionId
         currentUserId = userId
         _connectionState.value = ConnectionState.Connecting
+        reconnectAttempts = 0
 
         val request = Request.Builder()
             .url("$serverUrl/ws/session/$sessionId?userId=$userId")
@@ -107,6 +112,7 @@ class CollaborationWebSocket @Inject constructor(
             override fun onOpen(webSocket: WebSocket, response: Response) {
                 _connectionState.value = ConnectionState.Connected
                 reconnectAttempts = 0
+                startHeartbeat()
                 scope.launch {
                     _events.emit(CollaborationEvent.SyncCompleted(0))
                 }
@@ -121,39 +127,61 @@ class CollaborationWebSocket @Inject constructor(
             }
 
             override fun onClosed(webSocket: WebSocket, code: Int, reason: String) {
+                stopHeartbeat()
                 _connectionState.value = ConnectionState.Disconnected
                 attemptReconnect()
             }
 
             override fun onFailure(webSocket: WebSocket, t: Throwable, response: Response?) {
+                stopHeartbeat()
                 _connectionState.value = ConnectionState.Error(t.message ?: "Connection failed")
                 attemptReconnect()
             }
         })
     }
 
+    private fun startHeartbeat() {
+        heartbeatJob?.cancel()
+        heartbeatJob = scope.launch {
+            while (true) {
+                delay(heartbeatInterval)
+                if (_connectionState.value != ConnectionState.Connected) break
+                send(CollaborationMessage(type = "ping"))
+            }
+        }
+    }
+
+    private fun stopHeartbeat() {
+        heartbeatJob?.cancel()
+        heartbeatJob = null
+    }
+
     fun disconnect() {
         reconnectAttempts = maxReconnectAttempts
+        stopHeartbeat()
         webSocket?.close(1000, "User disconnected")
         webSocket = null
         _connectionState.value = ConnectionState.Disconnected
         currentSessionId = null
         currentUserId = null
+        currentServerUrl = null
         _collaborators.value = emptyList()
     }
 
     private fun attemptReconnect() {
         if (reconnectAttempts >= maxReconnectAttempts) return
-        if (currentSessionId == null || currentUserId == null) return
+        if (currentSessionId == null || currentUserId == null || currentServerUrl == null) return
 
         val delayMs = baseReconnectDelay * (1 shl reconnectAttempts)
         reconnectAttempts++
 
         scope.launch {
             delay(delayMs)
-            currentSessionId?.let { sessionId ->
-                currentUserId?.let { userId ->
-                    connect("wss://collab.pocketdev.local", sessionId, userId)
+            currentServerUrl?.let { serverUrl ->
+                currentSessionId?.let { sessionId ->
+                    currentUserId?.let { userId ->
+                        connect(serverUrl, sessionId, userId)
+                    }
                 }
             }
         }
