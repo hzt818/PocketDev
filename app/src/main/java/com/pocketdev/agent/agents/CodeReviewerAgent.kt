@@ -49,9 +49,15 @@ class CodeReviewerAgent @Inject constructor() : Agent {
 
     private fun analyzeFile(file: String, context: AgentContext): List<Finding> {
         val findings = mutableListOf<Finding>()
+        val content = try {
+            val f = java.io.File(file)
+            if (f.exists() && f.isFile) f.readText() else null
+        } catch (e: Exception) { null }
+
+        if (content == null) return findings
 
         // Check file naming conventions
-        if (!file.matches(Regex("^[A-Z][a-zA-Z0-9]*\\.kt$")) && file.endsWith(".kt")) {
+        if (file.endsWith(".kt") && !file.substringAfterLast("/").matches(Regex("^[A-Z][a-zA-Z0-9]*\\.kt$"))) {
             findings.add(
                 Finding(
                     type = FindingType.STYLE,
@@ -63,8 +69,48 @@ class CodeReviewerAgent @Inject constructor() : Agent {
             )
         }
 
-        // Check for TODO comments that indicate incomplete work
-        // This would typically scan the file content
+        // Check for TODO/FIXME comments in file content
+        Regex("""(TODO|FIXME|HACK|XXX)[:\s].*""").findAll(content).forEach { match ->
+            findings.add(
+                Finding(
+                    type = FindingType.CODE_SMELL,
+                    severity = Severity.LOW,
+                    file = file,
+                    message = "Unresolved ${match.groupValues[1]} found: ${match.value.trim()}",
+                    suggestion = "Address or create tracking issue for this task"
+                )
+            )
+        }
+
+        // Check for empty catch blocks
+        Regex("""catch\s*\([^)]*\)\s*\{[\s;]*\}""").findAll(content).forEach {
+            findings.add(
+                Finding(
+                    type = FindingType.BUG,
+                    severity = Severity.MEDIUM,
+                    file = file,
+                    message = "Empty catch block detected",
+                    suggestion = "Add error handling or logging"
+                )
+            )
+        }
+
+        // Check for hardcoded configuration values
+        if (content.contains("http://") || content.contains("https://")) {
+            Regex("""["']https?://[^"']+["']""").findAll(content).forEach { match ->
+                if (!match.value.contains("\${")) {
+                    findings.add(
+                        Finding(
+                            type = FindingType.CODE_SMELL,
+                            severity = Severity.INFO,
+                            file = file,
+                            message = "Hardcoded URL detected: ${match.value.take(60)}",
+                            suggestion = "Extract to a constant or configuration"
+                        )
+                    )
+                }
+            }
+        }
 
         return findings
     }
@@ -97,13 +143,50 @@ class CodeReviewerAgent @Inject constructor() : Agent {
 
     private fun calculateMetrics(context: AgentContext): CodeMetrics {
         var totalLines = 0
-        context.relevantFiles.forEach { totalLines += 200 }
+        var totalComplexity = 0
+        var fileCount = 0
+
+        for (filePath in context.relevantFiles) {
+            val content = try {
+                val f = java.io.File(filePath)
+                if (f.exists() && f.isFile) f.readText() else null
+            } catch (e: Exception) { null } ?: continue
+
+            val lines = content.lines()
+            totalLines += lines.size
+            fileCount++
+
+            // Calculate cyclomatic complexity: count decision points
+            val decisionPatterns = listOf(
+                Regex("""\bif\s*\("""), Regex("""\bwhen\s*\{"""),
+                Regex("""\bfor\s*\("""), Regex("""\bwhile\s*\("""),
+                Regex("""\bcatch\s*\("""), Regex("""\bcase\s+"""),
+                Regex("""&&"""), Regex("""\|\|""")
+            )
+            totalComplexity += decisionPatterns.sumOf { pattern ->
+                pattern.findAll(content).count()
+            }
+        }
+
+        // Maintainability index (simplified): higher for small well-structured files
+        val avgLinesPerFile = if (fileCount > 0) totalLines / fileCount else 0
+        val maintainabilityIndex = when {
+            avgLinesPerFile == 0 -> 100f
+            avgLinesPerFile < 100 -> 85f
+            avgLinesPerFile < 300 -> 70f
+            avgLinesPerFile < 500 -> 55f
+            else -> 40f
+        }
+
+        // Technical debt estimate: files > 300 lines need refactoring
+        val technicalDebt = (totalLines / 300) + (totalComplexity / 10)
+
         return CodeMetrics(
             linesOfCode = totalLines,
-            cyclomaticComplexity = 5, // Placeholder
-            maintainabilityIndex = 85f, // Placeholder
-            testCoverage = 0f, // Would need actual coverage data
-            technicalDebt = 0 // Would need actual debt calculation
+            cyclomaticComplexity = totalComplexity.coerceAtLeast(1),
+            maintainabilityIndex = maintainabilityIndex,
+            testCoverage = 0f, // Requires external test coverage tool
+            technicalDebt = technicalDebt
         )
     }
 }

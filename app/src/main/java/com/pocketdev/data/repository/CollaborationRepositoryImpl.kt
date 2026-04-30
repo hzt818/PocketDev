@@ -12,6 +12,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.runBlocking
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -19,6 +20,12 @@ import javax.inject.Singleton
 class CollaborationRepositoryImpl @Inject constructor(
     private val collaborationWebSocket: CollaborationWebSocket
 ) : CollaborationRepository {
+
+    /**
+     * Collaboration server URL. Can be updated at runtime via [updateServerUrl].
+     * Default points to a placeholder - configure your own server in production.
+     */
+    private var serverUrl: String = "wss://collab.pocketdev.local"
 
     private val _connectionState = MutableStateFlow<CollaborationRepository.ConnectionState>(
         CollaborationRepository.ConnectionState.Disconnected
@@ -72,7 +79,7 @@ class CollaborationRepositoryImpl @Inject constructor(
             currentUserId = userId
 
             collaborationWebSocket.connect(
-                serverUrl = "wss://collab.pocketdev.local",
+                serverUrl = serverUrl,
                 sessionId = sessionId,
                 userId = userId
             )
@@ -89,7 +96,7 @@ class CollaborationRepositoryImpl @Inject constructor(
             currentUserId = userId
 
             collaborationWebSocket.connect(
-                serverUrl = "wss://collab.pocketdev.local",
+                serverUrl = serverUrl,
                 sessionId = sessionId,
                 userId = userId
             )
@@ -141,6 +148,22 @@ class CollaborationRepositoryImpl @Inject constructor(
         return collaborationWebSocket.connectionState.value ==
             CollaborationWebSocket.ConnectionState.Connected
     }
+
+    /**
+     * Update the collaboration server URL at runtime.
+     * Disconnects the current session if connected.
+     */
+    fun updateServerUrl(url: String) {
+        serverUrl = url
+        // Disconnect current session when URL changes
+        if (isConnected()) {
+            kotlinx.coroutines.runBlocking {
+                leaveSession()
+            }
+        }
+    }
+
+    fun getServerUrl(): String = serverUrl
 
     private fun generateSessionId(repositoryId: String, filePath: String, branch: String): String {
         val data = "$repositoryId:$filePath:$branch:${System.currentTimeMillis()}"

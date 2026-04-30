@@ -7,7 +7,9 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.pocketdev.R
 
 @Composable
 fun CacheSettingsCard(
@@ -28,11 +30,11 @@ fun CacheSettingsCard(
         ) {
             Column {
                 Text(
-                    text = "Cache",
+                    text = stringResource(R.string.cache),
                     style = MaterialTheme.typography.bodyLarge
                 )
                 Text(
-                    text = "Size: $cacheSize",
+                    text = stringResource(R.string.cache_size, cacheSize),
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
@@ -54,7 +56,7 @@ fun CacheSettingsCard(
                     )
                 }
                 Spacer(modifier = Modifier.width(8.dp))
-                Text("Clear")
+                Text(stringResource(R.string.cache_clear))
             }
         }
     }

@@ -1,5 +1,6 @@
 package com.pocketdev.ui.screens.settings
 
+import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.pocketdev.domain.model.AiActionMode
@@ -12,6 +13,7 @@ import com.pocketdev.domain.model.ThemeMode
 import com.pocketdev.domain.model.UserProfile
 import com.pocketdev.domain.repository.UserSettingsRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
+import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -63,7 +65,8 @@ sealed interface SettingsEvent {
 
 @HiltViewModel
 class SettingsViewModel @Inject constructor(
-    private val userSettingsRepository: UserSettingsRepository
+    private val userSettingsRepository: UserSettingsRepository,
+    @ApplicationContext private val context: Context
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(SettingsUiState())
@@ -257,11 +260,59 @@ class SettingsViewModel @Inject constructor(
         viewModelScope.launch {
             _uiState.update { it.copy(isClearingCache = true) }
             try {
-                // TODO: Implement actual cache clearing
-                _uiState.update { it.copy(isClearingCache = false, cacheSize = "0 B") }
+                // Clear app cache directory
+                val cacheDir = context.cacheDir
+                if (cacheDir.exists()) {
+                    cacheDir.listFiles()?.forEach { file ->
+                        if (file.isDirectory) {
+                            file.deleteRecursively()
+                        } else {
+                            file.delete()
+                        }
+                    }
+                }
+
+                // Clear external cache if available
+                context.externalCacheDir?.let { extCacheDir ->
+                    if (extCacheDir.exists()) {
+                        extCacheDir.listFiles()?.forEach { file ->
+                            if (file.isDirectory) {
+                                file.deleteRecursively()
+                            } else {
+                                file.delete()
+                            }
+                        }
+                    }
+                }
+
+                // Recalculate and update cache size
+                val newSize = calculateCacheSize()
+                _uiState.update { it.copy(isClearingCache = false, cacheSize = newSize) }
             } catch (e: Exception) {
                 _uiState.update { it.copy(isClearingCache = false, error = e.message) }
             }
+        }
+    }
+
+    private fun calculateCacheSize(): String {
+        var totalBytes = 0L
+        val cacheDir = context.cacheDir
+        if (cacheDir.exists()) {
+            totalBytes += cacheDir.walkTopDown().sumOf { it.length() }
+        }
+        context.externalCacheDir?.let { extCacheDir ->
+            if (extCacheDir.exists()) {
+                totalBytes += extCacheDir.walkTopDown().sumOf { it.length() }
+            }
+        }
+        return formatFileSize(totalBytes)
+    }
+
+    private fun formatFileSize(bytes: Long): String {
+        return when {
+            bytes < 1024 -> "$bytes B"
+            bytes < 1024 * 1024 -> "${bytes / 1024} KB"
+            else -> "${bytes / (1024 * 1024)} MB"
         }
     }
 }

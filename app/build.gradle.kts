@@ -1,9 +1,18 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.hilt)
     alias(libs.plugins.ksp)
+}
+
+// Load local.properties for signing config
+val localProperties = Properties()
+val localPropsFile = rootProject.file("local.properties")
+if (localPropsFile.exists()) {
+    localProperties.load(localPropsFile.inputStream())
 }
 
 android {
@@ -24,16 +33,17 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
+            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            // Signing configuration from gradle.properties
-            val keystorePath = project.properties["keystorePath"] as String?
-            val keystorePassword = project.properties["keystorePassword"] as String?
-            val keyAlias = project.properties["keyAlias"] as String?
-            val keyPassword = project.properties["keyPassword"] as String?
+            // Signing configuration from local.properties
+            val keystorePath = localProperties.getProperty("keystorePath")
+            val keystorePassword = localProperties.getProperty("keystorePassword")
+            val keyAlias = localProperties.getProperty("keyAlias")
+            val keyPassword = localProperties.getProperty("keyPassword")
             if (keystorePath != null && keystorePassword != null && keyAlias != null && keyPassword != null) {
                 signingConfigs {
                     create("release") {

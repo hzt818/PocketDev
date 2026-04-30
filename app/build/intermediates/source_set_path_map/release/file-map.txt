@@ -59,6 +59,7 @@ com.pocketdev.app-browser-1.7.0-57 C:\Users\Admin\.gradle\caches\transforms-3\fe
 com.pocketdev.app-resValues-58 E:\pocketdev\app\build\generated\res\resValues\release
 com.pocketdev.app-packageReleaseResources-59 E:\pocketdev\app\build\intermediates\incremental\release\packageReleaseResources\merged.dir
 com.pocketdev.app-packageReleaseResources-60 E:\pocketdev\app\build\intermediates\incremental\release\packageReleaseResources\stripped.dir
-com.pocketdev.app-merged_res-61 E:\pocketdev\app\build\intermediates\merged_res\release
-com.pocketdev.app-main-62 E:\pocketdev\app\src\main\res
-com.pocketdev.app-release-63 E:\pocketdev\app\src\release\res
+com.pocketdev.app-merged-not-compiled-resources-61 E:\pocketdev\app\build\intermediates\merged-not-compiled-resources\release
+com.pocketdev.app-merged_res-62 E:\pocketdev\app\build\intermediates\merged_res\release
+com.pocketdev.app-main-63 E:\pocketdev\app\src\main\res
+com.pocketdev.app-release-64 E:\pocketdev\app\src\release\res

@@ -110,8 +110,8 @@ class GradleExecutor @Inject constructor() {
         }
 
         when (config.buildType) {
-            "debug" -> tasks.add("--debug")
-            "release" -> tasks.add("--release")
+            "debug" -> tasks.add("-PbuildType=debug")
+            "release" -> tasks.add("-PbuildType=release")
         }
 
         if (config.parallel) {

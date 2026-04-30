@@ -40,6 +40,7 @@ class UserSettingsDataStore @Inject constructor(
         val ACTIVE_PROVIDER_TYPE = stringPreferencesKey("active_provider_type")
         val GITHUB_TOKEN = stringPreferencesKey("github_token")
         val GITLAB_TOKEN = stringPreferencesKey("gitlab_token")
+        val GITHUB_CLIENT_SECRET = stringPreferencesKey("github_client_secret")
         val ACTION_MODE = stringPreferencesKey("action_mode")
         val THEME_MODE = stringPreferencesKey("theme_mode")
         val DYNAMIC_COLOR = stringPreferencesKey("dynamic_color")
@@ -135,6 +136,20 @@ class UserSettingsDataStore @Inject constructor(
 
     suspend fun getGitLabToken(): String? {
         return context.aiProvidersDataStore.data.first()[PreferencesKeys.GITLAB_TOKEN]
+    }
+
+    suspend fun getGitHubClientSecret(): String? {
+        return context.aiProvidersDataStore.data.first()[PreferencesKeys.GITHUB_CLIENT_SECRET]
+    }
+
+    suspend fun setGitHubClientSecret(secret: String?) {
+        context.aiProvidersDataStore.edit { preferences ->
+            if (secret != null) {
+                preferences[PreferencesKeys.GITHUB_CLIENT_SECRET] = secret
+            } else {
+                preferences.remove(PreferencesKeys.GITHUB_CLIENT_SECRET)
+            }
+        }
     }
 
     suspend fun setGitLabToken(token: String?) {

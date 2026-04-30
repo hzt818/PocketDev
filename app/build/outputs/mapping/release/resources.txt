@@ -1,0 +1,5350 @@
+Marking string:cache:2131427357 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:cache_size:2131427359 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:m3c_snackbar_dismiss:2131427475 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking dimen:browser_actions_context_menu_min_padding:2131034113 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking dimen:browser_actions_context_menu_max_width:2131034112 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:m3c_dialog:2131427471 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:tag_on_apply_window_listener:2131165262 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:tag_window_insets_animation_callback:2131165270 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:tag_screen_reader_focusable:2131165265 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:tag_accessibility_heading:2131165260 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:tag_accessibility_pane_title:2131165261 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:tag_state_description:2131165266 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:tag_accessibility_actions:2131165258 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_action_clickable_span:2131165184 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:tag_accessibility_clickable_spans:2131165259 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:cache_clear:2131427358 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:inspection_slot_table_set:2131165243 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:view_tree_lifecycle_owner:2131165275 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:view_tree_saved_state_registry_owner:2131165277 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:pooling_container_listener_holder_tag:2131165253 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:tag_unhandled_key_event_manager:2131165268 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:tag_unhandled_key_listeners:2131165269 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:hide_in_inspector_tag:2131165239 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:navigation_menu:2131427497 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:close_drawer:2131427380 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:wrapped_composition_tag:2131165280 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:androidx_compose_ui_view_composition_context:2131165222 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:view_tree_on_back_pressed_dispatcher_owner:2131165276 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:about_app_name:2131427328 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:app_version:2131427338 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:app_description:2131427336 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:is_pooling_container_tag:2131165244 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:view_tree_view_model_store_owner:2131165278 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:tab:2131427579 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:switch_role:2131427578 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:report_drawn:2131165254 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:abc_vector_test:2131099648 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:compose_view_saveable_id_tag:2131165232 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:default_popup_window_title:2131427389 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:nav_chat:2131427492 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:nav_repos:2131427494 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:nav_editor:2131427493 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:nav_build:2131427491 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:nav_terminal:2131427496 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:nav_settings:2131427495 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:androidx_startup:2131427335 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:consume_window_insets_tag:2131165233 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_0:2131165185 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_1:2131165186 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_2:2131165197 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_3:2131165208 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_4:2131165211 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_5:2131165212 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_6:2131165213 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_7:2131165214 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_8:2131165215 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_9:2131165216 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_10:2131165187 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_11:2131165188 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_12:2131165189 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_13:2131165190 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_14:2131165191 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_15:2131165192 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_16:2131165193 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_17:2131165194 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_18:2131165195 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_19:2131165196 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_20:2131165198 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_21:2131165199 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_22:2131165200 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_23:2131165201 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_24:2131165202 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_25:2131165203 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_26:2131165204 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_27:2131165205 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_28:2131165206 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_29:2131165207 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_30:2131165209 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:accessibility_custom_action_31:2131165210 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:indeterminate:2131427434 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:off:2131427500 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:on:2131427516 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:selected:2131427552 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:not_selected:2131427498 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:template_percent:2131427581 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:in_progress:2131427433 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:default_error_message:2131427388 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:theme_mode:2131427590 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:dynamic_color:2131427395 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking string:dynamic_color_subtitle:2131427396 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking style:DialogWindowTheme:2131492864 reachable: referenced from E:\pocketdev\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+android.content.res.Resources#getIdentifier present: true
+Web content present: false
+Referenced Strings:
+http://
+callerContext
+estimatedComplexity
+ArrayList
+​
+descriptor
+BrightnessValue
+com.pocketdev.agent.protocol.Severity
+android.graphics.drawable.ColorStateL...
+TAKEN
+preferences_pb
+$this$item
+Compose:abandons
+com.pocketdev.domain.model.OllamaModel
+Filled.Add
+solid
+$
+java.lang.CharSequence
+STOP
+require
+short_id
+kts
+keyToMatch
+WHERE
+eClass
+0
+1
+Promise
+size
+AspectFrame
+left
+KotlinExtensions.kt
+object
+Strategy.HighQuality
+codellama:latest
+role
+S_RESUMING_BY_RCV
+C
+100%
+ssize_t
+SET
+Selection
+H
+PKIX
+result
+Q
+DeferredAnimation
+S
+NumberPassword
+Mixtral
+constructor.parameterTypes
+_
+a
+Center
+b
+address
+c
+ACTION_CLEAR_ACCESSIBILITY_FOCUS
+Infinity
+d
+Compose:unobserve
+e
+M10500
+h
+truncated
+effectiveDirectAddress
+k
+RESUMING_BY_EB
+userId
+OnClick
+m
+cookieJar
+r
+s
+t
+java.lang.Module
+TypefaceCompatApi26Impl
+throw
+cipherSuites
+v
+x
+SECURITY
+com.pocketdev.domain.model.OllamaResp...
+1.0.0
+ProgressBarRangeInfo
+TRUNCATE
+Add
+com.pocketdev.domain.model.OllamaChat...
+INSTALLED
+PRIORITY
+image/webp
+empty
+RIGHT_WORD
+Checkbox
+Multiply
+removeMethod
+endfor
+fileSha
+export
+CONCURRENT_EDIT
+H2_PRIOR_KNOWLEDGE
+unchecked
+TLS_PSK_WITH_AES_128_CBC_SHA
+Rgb
+indicatorRipple
+cid
+androidx.view.accessibility.Accessibi...
+COMPLETING_WAITING_CHILDREN
+PAGE_DOWN
+unsupported
+PC_CLI
+provider
+root
+Age
+headers
+onDismiss
+DisplaySmall
+kotlin.collections.List
+PLANNER
+A70AXLTMO
+cjs
+org.bouncycastle.jsse.provider.Bouncy...
+SaveFile
+splash
+ACTION_ARGUMENT_SET_TEXT_CHARSEQUENCE
+struct
+GPSDifferential
+BV9500
+onNavigateUp
+SharingStarted.Eagerly
+TransformOriginInterruptionHandling
+autoMigrationSpecs
+BodySmall
+LookaheadLayingOut
+android.os.Build$VERSION
+executor
+okhttp3.mockwebserver.MockWebServer
+block
+Available
+sass
+mutating
+TLS_KRB5_WITH_DES_CBC_SHA
+serverProviderClass
+$this$Button
+TextSubstitution
+byte
+com.pocketdev.domain.model.AnthropicC...
+DISTINCT
+STYLE
+maxOutputTokens
+connectionSpecs
+NEW_LINE
+GITLAB
+Modulate
+messageDao
+RCT6513W87DK5e
+onBackInvoked
+XResolution
+binary
+orders
+hash
+TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SH...
+Warning
+agentType
+INADEQUATE_SECURITY
+SWIFT
+pins
+U5A_PLUS_4G
+tuple
+com.pocketdev.agent.protocol.AgentRes...
+CompletableFuture
+goto
+HEADERS
+top
+ACTION_PAGE_UP
+FloatAnimation
+Filled.Terminal
+com.pocketdev.domain.model.AnthropicU...
+SSL_RSA_WITH_RC4_128_MD5
+com.pocketdev.domain.model.AnthropicR...
+Filled.Search
+LookaheadMeasuring
+$this$DropdownMenu
+Lighten
+TOML
+All
+ExifVersion
+findings
+commandHistory
+Copyright
+gemma4:latest
+$this_asFactory
+tailrec
+getApplicationProtocol
+shell_executor
+function
+okhttp.OkHttpClient
+raise
+android.view.accessibility.extra.DATA...
+Plus
+cpp
+subscript
+supportedCipherSuites
+statusBarStyle
+revert
+less
+SQL
+OLLAMA格式
+200
+SELECT_PAGE_UP
+204
+206
+BYTES_LIST
+submodule
+com.pocketdev.domain.model.OllamaChat...
+try
+Horizontal
+font_size
+displayCutout
+TLS_ECDH_anon_WITH_AES_256_CBC_SHA
+Any
+Companion
+SFIXED64_LIST_PACKED
+SSLv3
+Function
+tsx
+RCT6B03W13
+RCT6B03W12
+com.pocketdev.domain.model.ApiFormat
+TLS_PSK_WITH_AES_256_CBC_SHA
+Strictness.None
+http://10.0.2.2:11434
+buildId
+PRIMARY
+Array
+jvmVersion
+dagger.hilt.android.internal.builders...
+UNKNOWN
+threadsafe
+pythonVersion
+JAVA
+css
+CREATE
+Bradford
+Edit
+quic
+UINT32
+impl
+BV6800Pro
+CONNECT_ERROR
+tdd_guide
+DELETE_NEXT_CHAR
+com.pocketdev.agent.protocol.Finding
+let
+state
+dagger.hilt.android.components.ViewMo...
+element
+Filled.Save
+parameterSize
+android.content.extra.SIZE
+ACTION_SCROLL_DOWN
+SelectionHandleInfo
+SELECT_RIGHT_WORD
+SUM
+android.view.ViewRootImpl
+vulnerability
+mcv1s
+TextDecoration.
+.class
+cacheResponse
+InteroperabilityIndex
+Arc
+FocalPlaneYResolution
+DOC_UPDATER
+KEY
+vSerializer
+promptTokenCount
+com.pocketdev.domain.model.GeminiGene...
+25%
+mcv5a
+CollectionInfo
+document
+Rtl
+okhttp/4.12.0
+fixes
+intptr_t
+ToggleableState
+remediation
+tabSize
+ordersMap.values
+BUG
+TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_...
+builder
+DstIn
+WhitePoint
+getParent
+internalQueryExecutor
+Normal
+androidx.lifecycle.ViewModelProvider....
+cwd
+txt
+runnable
+totalSubagentTimeMs
+$this$composable
+klass.interfaces
+mcv7a
+PocketDevApp
+source
+com.pocketdev.agent.protocol.CodeAnal...
+DOT_MATCHES_ALL
+SelectionStart
+Filled.SmartToy
+compile
+Search
+elseif
+Oklab
+androidx.view.accessibility.Accessibi...
+com.pocketdev.domain.model.PcShellReq...
+markState
+interceptors
+actual
+cxx
+SHELL
+com.pocketdev.domain.model.UserProfile
+https://github.com/
+tableIds
+UINT64
+DIAGNOSTIC_PROFILE_IS_COMPRESSED
+_Bool
+com.pocketdev.agent.protocol.Security...
+peekByte
+TLS_CHACHA20_POLY1305_SHA256
+fixed
+shopt
+uint8
+full
+TLS_KRB5_EXPORT_WITH_RC4_40_SHA
+cipherSuitesIntersection
+safetyRatings
+_isTerminated
+GPSDateStamp
+libcore.io.Memory
+TextSelectionRange
+CREATED
+ulong
+ContentOrRtl
+maintainabilityIndex
+TLSv1.3
+onNavigateToPcConnection
+TLSv1.2
+TLSv1.1
+androidx.content.action.LOAD_EMOJI_FONT
+SubfileType
+EXTRA_SKIP_FILE_OPERATION
+center
+pair
+Paragraph
+func
+PASTE
+DIRECTORY
+shellType
+Sentences
+short
+MINUTES
+HeadlineSmall
+Strategy.Unspecified
+jeter
+j7maxlte
+isset
+Filled.MoreVert
+android.widget.RadioButton
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
+Conversations
+PLAN
+required
+modelClass.constructors
+api/files/write
+YResolution
+%2e%2e
+WHEN
+pokeLong
+POISONED
+TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+maxTokens
+LOCAL
+Boolean
+ACTION_SHOW_ON_SCREEN
+sessions
+CreateConversation
+vararg
+PreEnter
+priority
+dependencies
+com.pocketdev.agent.protocol.AgentType
+com.pocketdev.data.remote.api.GitLabC...
+.apk
+Object
+CHANNEL_CLOSED
+SharingStarted.Lazily
+com.pocketdev.domain.model.ChatComple...
+CONTINUATION
+map.entries
+PrivateApi
+Outlined
+Self
+BEGIN
+migrationContainer
+com.pocketdev.agent.protocol.Implemen...
+unknown
+undefined
+proxySelector
+android.widget.SeekBar
+low
+REMOVE
+producerIndex
+planner
+phases
+GPSDestBearingRef
+LineHeightStyle.Alignment.Bottom
+value.stringSet.stringsList
+$this$navigate
+initial
+Kotlin
+.immediate
+SecureOff
+TAB
+/index.html
+None
+UInt
+e2e_runner
+SignOut
+android_asset
+errorCode
+JsonObject
+onBreadcrumbClick
+Bevel
+isActive
+TLS_RSA_WITH_CAMELLIA_256_CBC_SHA
+RESULT_INSTALL_SUCCESS
+Send
+internalTransactionExecutor
+BoundReached
+checked
+REMOTE
+ALIGN_RIGHT
+CLOSE_HANDLER_INVOKED
+Compose:deactivate
+com.pocketdev.domain.model.Conversation
+GPSLongitudeRef
+format
+done
+Filled.Memory
+SELECT_LEFT_WORD
+peerCertificates
+WrongConstant
+V0310WW
+com.pocketdev.ui.screens.chat.ChatVie...
+critical
+CLOSED
+JsonPrimitive
+part
+isContainer
+LocalFocusManager
+INT32_LIST_PACKED
+conversations
+_removedRef
+anthropicApi
+SINT64_LIST_PACKED
+SSL_NULL_WITH_NULL_NULL
+ISOSpeedLatitudezzz
+com.pocketdev.domain.model.AICodeAction
+branchName
+ExecuteBuild
+Date
+LEFT_WORD
+third
+build
+Single
+CROSS
+TLS_FALLBACK_SCSV
+TLS_DH_anon_WITH_AES_256_CBC_SHA
+com.pocketdev.agent.protocol.Subagent...
+java.specification.version
+def
+insertInorderBarrier
+del
+cyclomaticComplexity
+TLS_RSA_WITH_AES_256_CBC_SHA
+path
+Button
+ExposureMode
+record
+com.pocketdev.domain.model.GitHubFile...
+CutText
+CODE_GENERATOR
+addObserver
+MEDIUM
+DIFF
+pass
+ID1ID2
+PixelXDimension
+ClearTextSubstitution
+com.pocketdev.domain.model.OllamaMode...
+ON_ANY
+com.pocketdev.agent.protocol.TDDGuide...
+ON_PAUSE
+MeteringMode
+domain
+StripByteCounts
+complex128
+onNavigateToMain
+groupAnchor
+TraceCompat
+ahannah
+Seq
+relative
+Recomposer:animation
+ALTER
+albums
+Wrap
+getEmojiConsistencySet
+Set
+ExitTransition.KeepUntilTransitionsFi...
+A30ATMO
+com.pocketdev.PocketDevApp
+transparent
+onBackInvokedDispatcher
+journal
+composition
+:scheme
+StripOffsets
+.SSLParametersImpl
+typealias
+override
+kotlin.Nothing
+Decal
+ISOSpeedRatings
+typeParams
+undef
+currentView
+onFileClick
+right
+EnterTransition.None
+com.pocketdev.agent.protocol.Implemen...
+TLS_RSA_WITH_SEED_CBC_SHA
+OkHttp
+Recomposer:recompose
+Dismissed
+com.pocketdev.domain.model.Message
+file_path
+die
+rjames_go
+missingDelimiterValue
+CancelTraversal
+onSearch
+com.pocketdev.agent.protocol.Vulnerab...
+dir
+Upgrade
+code_generator
+Filled.PlayArrow
+AwaitContinuation
+Filled.Description
+kotlin.Boolean
+List
+CRITICAL
+info
+parcel
+static
+test
+finally
+graph
+ACCEPT_LOCAL
+collaborationRepository
+dagger.hilt.android.components.Activi...
+kotlin.time.Duration
+final
+virtual
+AndroidOwner:onMeasure
+ClearCache
+compositionLocalMap
+bitField0_
+ACTION_SET_SELECTION
+isCtrlPressed
+JSON
+title
+quantization_level
+SPDY_3
+kotlin.collections.Map
+RecordingIC
+onTabSelect
+TLS
+FocalPlaneXResolution
+$selectors
+retry
+socketAddress
+Leading
+strings_
+classSimpleName
+SELECT_DOWN
+IconCompat
+Filled
+instanceof
+baseUrl
+multipart/digest
+on_update
+Expect
+DeepSeek
+inherit
+DEFAULT
+SensingMethod
+pc_connection
+callable
+com.pocketdev.domain.model.UnifiedCha...
+android.net.Uri
+updateDisplayListIfDirty
+lastScheduledTask
+InsertTextAtCursor
+androidx.activity.result.contract.ext...
+navigation
+lock
+ELSE
+text
+Captured
+init
+LocalFontFamilyResolver
+cookie
+primary.prof
+dns
+TLS_AES_256_GCM_SHA384
+signed
+Mutex
+repoDefaultBranch
+encoder
+lexer
+errorOutput
+$this$collectionSize
+requestHeaders
+field
+contents
+ETag
+html_url
+messages
+interval
+connectionName
+status
+server
+f32
+TestTagsAsResourceId
+assembleDebug
+Filled.RadioButtonUnchecked
+RESPECT_PERFORMANCE
+Filled.ZoomOut
+TYPESCRIPT
+InvisibleToUser
+DpSize.Unspecified
+stream
+kotlinx.serialization.json.JsonArray
+traversalIndex
+CancellableContinuation
+map
+hannah
+SSL_RSA_WITH_NULL_SHA
+max
+SaveableStateHolder_BackStackEntryKey
+kotlin.Triple
+uri
+url
+sslSocket.enabledCipherSuites
+currentMode
+modelName
+Italic
+com.pocketdev.data.remote.api.GitLabF...
+geminiApi
+304
+ACTION_HIDE_TOOLTIP
+CatS41
+comparable
+StartServer
+columnName
+esac
+RESUMED
+llmApi
+CPP
+com.pocketdev.domain.model.GitHubRepo
+use
+Luminosity
+main
+WeakSet
+size_t
+Result
+feff
+com.pocketdev.data.remote.api.GitLabB...
+onBackStarted
+Void
+TopLeft
+TLS_RSA_WITH_CAMELLIA_128_CBC_SHA
+RESPECT_ALL
+f64
+Unreached
+Box
+interrupted
+separator
+entries
+font_italic
+null
+TEST_WRITER
+CRC
+background
+androidx.datastore.preferences.protob...
+Collection
+androidx.lifecycle.internal.SavedStat...
+DISK
+org.conscrypt.Conscrypt$Version
+mdx
+HEAD
+statusLine
+Src
+SubjectDistance
+TLS_RSA_WITH_AES_256_GCM_SHA384
+peekLong
+UINT32_LIST
+Clear
+CustomRendered
+repeat
+Inactive
+Round
+onWordWrapChange
+CSS
+DONE_RCV
+kotlin
+Error
+Trace
+collectionItemInfo
+bytes
+U50APLUSTMO
+RESUME_TOKEN
+properties
+LightSource
+method.declaringClass
+Vertical
+argumentName
+navigationBarsIgnoringVisibility
+Connected
+commit
+Dialog:
+constraints
+observer
+llama3:latest
+isize
+int8
+TRACE_TAG_APP
+PROTOCOL_ERROR
+released
+height
+TLS_KRB5_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA256
+Armor_3
+CUT
+receiver
+dismissAction
+_decision
+module
+Armor_6
+Butt
+input_method
+SSL_DH_anon_WITH_RC4_128_MD5
+defaultCreationExtras
+unique
+TLS_ECDHE_ECDSA_WITH_NULL_SHA
+setCurrentState
+uint8_t
+THEN
+activeProviderType
+TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384
+statusCode
+SubjectDistanceRange
+components
+0s
+candidatesTokenCount
+http://10.0.2.2:11434/
+0x
+Filled.CloudDownload
+URATIONAL
+long
+HideAddDialog
+PlanarConfiguration
+min
+kotlinx.coroutines.channels.defaultBu...
+Exclusion
+supports
+getBoolean
+30
+OBJECTIVE_C
+31
+32
+33
+34
+35
+36
+37
+kotlin.UInt
+enddeclare
+ollamaApi
+crate
+INEXACT
+ClearError
+CharArray
+avatar_url
+:method
+mjs
+dyn
+STRING
+InsertAiResponse
+Filled.Shield
+android.widget.EditText
+open
+NO_DECISION
+JPEGInterchangeFormat
+OnLongClick
+navigator
+originalRequest
+loop
+androidx.profileinstaller.action.INST...
+kSerializer
+ON_START
+KEY_COMPONENT_ACTIVITY_LAUNCHED_KEYS
+precedencegroup
+RUNNING
+monospace
+sealed
+android.resource
+FILE_MODIFIED
+attr_writer
+eSerializer
+immutable
+profileInstalled
+commits
+_next
+HAVING
+allow
+defer
+com.pocketdev.data.remote.api.GitLabB...
+Compose:applyChanges
+keyDesc
+ColorBurn
+DROP
+api/show
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA
+pokeByte
+registry
+setCookie
+REPORT
+com.pocketdev.data.remote.api.GitHubT...
+$this$LazyRow
+debug.layout
+viewModelStoreOwner
+bash
+step
+java.lang.Object
+dexopt/baseline.profm
+base
+kotlinx.coroutines.bufferedChannel.se...
+mod
+ImageVector
+DELETE_TO_LINE_END
+crossinline
+state1
+TABLE
+90
+91
+92
+93
+94
+NONE
+95
+96
+97
+TLS_DH_anon_WITH_AES_128_CBC_SHA
+address.hostAddress
+val
+kotlinx.coroutines.semaphore.maxSpinC...
+avatarUrl
+ShutDown
+var
+SELECT_PAGE_DOWN
+cacheControl
+TLS_ECDHE_ECDSA_WITH_RC4_128_SHA
+LOW
+SensorRightBorder
+TopBar
+OpenFolderPicker
+SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA
+Heading
+extension
+internal
+kotlin.collections.MutableMap
+signature
+DisplayLarge
+COMMENTS
+CONNECT
+com.pocketdev.data.remote.api.GitLabT...
+savedStateRegistry
+Char
+identity
+INTERRUPTED_SEND
+security_reviewer
+com.pocketdev.domain.model.AiProvider...
+Chat
+velocityVector
+VALUES
+https://api.moonshot.cn/v1
+include
+_availablePermits
+DARK
+COPY
+uint
+TreeMap
+kotlin.ULong
+LabelMedium
+kotlinx.serialization.Polymorphic
+TransferFunction
+Tab
+outState
+kotlin.
+com.pocketdev.ui.screens.pc.PcConnect...
+ACTION_SET_TEXT
+msg
+BLOB
+Characters
+pocketdev_db
+aiAssistResponse
+Cursor
+float
+elementName
+Gamma
+Repos
+BodyLarge
+java.lang.Enum
+TextField
+classDiscriminator
+html
+tab_size
+caCert.subjectX500Principal
+Client
+Testing
+offset
+com.pocketdev.domain.model.EditorPref...
+__FILE__
+connectionPool
+StopInput
+failed
+mts
+sequence
+LIKE
+DATA
+androidx.core.view.inputmethod.Editor...
+putObject
+.font
+configuration
+localRect
+token_type
+Strictness.Unspecified
+org.eclipse.jetty.alpn.ALPN$Provider
+DESELECT
+mut
+platform
+typeset
+postfix
+TextMotion.Animated
+opaque
+path_with_namespace
+assistant
+fontMetrics
+command
+GPSDestLongitudeRef
+onPushToGitHub
+LensMake
+async
+androidx.activity.result.contract.act...
+repositoryId
+Future
+providers
+Delete
+exception
+StandardOutputSensitivity
+effectiveNodeIndexOut
+androidx.activity.result.contract.ext...
+AutoMirrored.Filled.ArrowBack
+SETTINGS
+ExitTransition.None
+branch
+CommitFile
+via
+CROSSED
+Compose:sideeffects
+A3
+GPSSpeed
+IntArray
+display_photo
+WordBreak.Unspecified
+saver
+androidx.activity.result.contract.act...
+upgrade
+SEARCH
+_handled
+SetSelection
+RCT6873W42BMF9A
+AS
+kotlinx.coroutines.scheduler.default....
+onMenuKeyEvent
+detail
+https://api.deepseek.com/v1
+BC
+DAYS
+keySerializer
+LayingOut
+MESSAGE
+http/1.1
+DIRTY
+http/1.0
+.OpenSSLSocketImpl
+AUTOEDIT
+BY
+LocalInputManager
+$tables
+annotation
+preferences
+ColorDodge
+htmlUrl
+192.168.1.100
+Hyphens.None
+onTabSizeChange
+TopRight
+TLS_DHE_DSS_WITH_AES_256_CBC_SHA256
+androidx.lifecycle.BundlableSavedStat...
+relevantFiles
+this$0
+https://api.github.com/
+RST_STREAM
+Startup
+ULONG
+GPSAltitude
+scss
+Miter
+TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY130...
+SFIXED32_LIST_PACKED
+okhttp.TaskRunner
+ACTION_SET_PROGRESS
+index_
+HistoryPrevious
+RadioButton
+encoding
+Storage
+warnIfOpen
+http
+stateDescription
+http://localhost:11434/api/pull
+decimal
+LIST
+private
+pcConnectionRepository
+kotlin.collections.MutableCollection
+companion
+Em
+getDouble
+FIXED32
+com.pocketdev.agent.protocol.Analysis...
+androidx.compose.foundation.text.inli...
+end
+NotAuthenticated
+ACTION_SCROLL_UP
+BITMAP_MASKABLE
+seqno
+GO
+UserInput
+http://ns.adobe.com/xap/1.0/
+WRITE_ONLY
+Mouse
+Measuring
+Previous
+START
+PageDown
+family
+com.pocketdev.domain.model.GitHubComm...
+release
+A3_Pro
+Go
+GPSTimeStamp
+gitHubAuthApi
+PostExit
+ACTION_CONTEXT_CLICK
+d8b19d208295484de6e08abd252a6903
+TLS_ECDH_RSA_WITH_NULL_SHA
+dexopt/baseline.prof
+$this$anim
+kotlinx.coroutines.internal.StackTrac...
+aiProvidersDataStore
+promptTokens
+estimatedTime
+content_sha256
+IN
+projectPath
+REFUSED_STREAM
+_rootCause
+IS
+androidx.compose.ui.input.pointer.Poi...
+datastore/
+400
+Top
+404
+RESULT_NOT_WRITABLE
+Swift
+etag
+%02d:%02d:%02d
+PROPPATCH
+MAP
+navigatorProvider
+viewModelStore
+MAX
+libcore.io.DiskLruCache
+LabelSmall
+user_profile
+login
+protocolSelected
+URI
+PYTHON
+valueVector
+Refresh
+androidx$room$IMultiInstanceInvalidat...
+fffe
+LocalViewConfiguration
+Strategy.Simple
+kotlin.Long
+androidx.view.accessibility.Accessibi...
+Style
+Completing
+Menu
+_resumed
+GPSHPositioningError
+gzip
+FIXED64
+onSignOut
+Lab
+toml
+runningWorkers
+refactor_cleaner
+anchor
+sbyte
+KOTLIN
+mistral:latest
+missingFields
+Task
+SINGLE
+dagger.hilt.android.components.Fragme...
+ActionPerformed
+ExposureProgram
+UTC
+True
+paneTitle
+com.pocketdev.ui.screens.repos.ReposV...
+FERMI_TF
+_isCompleting
+TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA
+ShowAddDialog
+settings
+HTTP_1_0
+new
+uriPathSegments
+HTTP_1_1
+onClearCache
+LocalAutofillTree
+uint16_t
+ImageDescription
+VOID
+DoubleArray
+FLOAT
+riskLevel
+ctx.baseContext
+handleLifecycleEvent
+Indeterminate
+serializer
+media
+Committed
+READ_ONLY
+com.pocketdev.data.remote.api.GitLabF...
+running
+OffsetTime
+Phone
+multipart/parallel
+OK
+Ruby
+ON
+androidx.activity.result.contract.ext...
+arrayBaseOffset
+OR
+Codable
+Host
+discriminator
+super
+PC
+risks
+layout_inflater
+Find
+On
+LineHeightStyle.Alignment.Proportional
+PT
+subagentResults
+shift
+BETWEEN
+echo
+sqLiteDatabase
+layoutResult
+Int16
+AccessibilityNodeInfo.roleDescription
+Filled.Close
+com.pocketdev.ui.screens.editor.Colla...
+SSL_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA
+nil
+android.widget.HorizontalScrollView
+receiveSegment
+emojiCompat
+java
+NO_CLOSE_CAUSE
+androidx$room$IMultiInstanceInvalidat...
+com.pocketdev.agent.protocol.Complexity
+models
+newValue
+com.pocketdev.domain.model.GitHubComm...
+iota
+rjames_f
+onReplaceTextChange
+MIN
+verticalScrollAxisRange
+dbObj
+targetVector
+A3A_8_4G_TMO
+com.pocketdev.data.remote.api.GitHubR...
+Expires
+REMOVE_FROZEN
+.tmp
+_Impl
+kotlinx.coroutines.semaphore.segmentSize
+$this$buildSerialDescriptor
+SSL_RSA_EXPORT_WITH_DES40_CBC_SHA
+android.view.accessibility.extra.DATA...
+Repeated
+literal
+Rc
+default
+waterfall
+Int32
+TLS_ECDH_RSA_WITH_AES_256_CBC_SHA
+$this$popUpTo
+SSL_RSA_WITH_RC4_128_SHA
+objectFieldOffset
+outBundle
+TLS_ECDH_RSA_WITH_RC4_128_SHA
+timestamp
+EDISON_TF
+ComponentsConfiguration
+dagger.hilt.android.internal.builders...
+gradle
+TE
+absolute
+triggerType
+endTime
+ACTION_ARGUMENT_EXTEND_SELECTION_BOOLEAN
+Sp
+$name
+java.util.ListIterator
+GPSAltitudeRef
+Label
+android.view.accessibility.extra.EXTR...
+operator
+lifecycle
+UP
+Disabled
+javaName
+testTag
+US
+unreachable
+org.eclipse.jetty.alpn.ALPN
+CANON_EQ
+ollama
+UNIQUE
+UINT64_LIST
+mixin
+responseHeaders
+TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256
+folderName
+Up
+SceneCaptureType
+next
+getDescriptor
+string
+import
+color
+hidden
+U50A_ATT
+kotlin.coroutines.jvm.internal.BaseCo...
+TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256
+Search...
+sQLiteDatabase
+SrcIn
+LineThrough
+Shell
+not
+androidx.view.accessibility.Accessibi...
+JavaScript
+statement
+thisRef
+severity
+SUSPEND_NO_WAITER
+TREAT_AS_VIEW_TREE_APPEARING
+chunked
+Filled.Delete
+.lck
+what
+HOURS
+onToggleFileTree
+Int64
+HideCommitDialog
+android.intent.action.VIEW
+vulnerabilities
+window
+$this$TextButton
+U50A_PLUS_ATT
+Cancelling
+SECURITY_REVIEWER
+uint64_t
+codeContent
+ushort
+when
+EmptyCoroutineContext
+fileTree
+error_description
+Z2
+catch
+plan
+onTabClose
+Z9
+buildRepository
+kotlinx.coroutines.scheduler.core.poo...
+kotlinx.coroutines.scheduler.max.pool...
+probability
+double
+TLS_KRB5_EXPORT_WITH_DES_CBC_40_MD5
+INSTANCE
+TDD_GUIDE
+Local
+RelatedSoundFile
+explicit
+Low
+mRecreateDisplayList
+_Complex
+SceneType
+implicit
+commitMessage
+flags
+CHAR
+captionBarIgnoringVisibility
+TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256
+Span
+kotlinx.coroutines.bufferedChannel.ex...
+ORDER
+UTF_8
+TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_...
+symlink
+startTime
+GIT_OPERATOR
+internalOpenHelper
+userSettingsDataStore
+VP8L
+navGraphNavigator
+SELECT_UP
+appSettings
+VP8X
+availableModels
+grid
+width
+_parentHandle
+indicator
+BYTES
+kotlinx.coroutines.fast.service.loader
+https://open.bigmodel.cn/api/paas/v4
+ScrollToIndex
+completedExpandBuffersAndPauseFlag
+EmojiCompatInitializer
+KEY_COMPONENT_ACTIVITY_REGISTERED_RCS
+AnimatedVisibility
+notification
+2
+protocol
+overflow
+proxyAuthenticator
+dict
+java.lang.Byte
+int32_t
+UnfocusedNotEmpty
+replaceText
+visible
+nora_8917_n
+actionIcons
+inner
+_consensus
+effect
+One_Max
+SetTextSubstitution
+unexpected
+NO_RECEIVE_RESULT
+END_STREAM
+Ltr
+elementSerializer
+Touch
+onReplaceOne
+AUTOMATIC
+Trailing
+Dalvik
+Size.Unspecified
+compose:lazylist:prefetch:compose
+getDeclaredField
+user.dir
+Ellipsis
+terminal
+Terminal
+AutoMirrored.Filled.NavigateNext
+FILE_DELETED
+didSet
+Filled.CheckCircle
+onOpenFolder
+user
+IsPopup
+DeviceSettingDescription
+getModule
+parent
+http://localhost:11434
+SHELL_EXECUTOR
+android.widget.ProgressBar
+TopMiddle
+PERFORMANCE
+setAlpnProtocols
+messageType
+GPSSpeedRef
+PerformImeAction
+androidx.lifecycle.LifecycleDispatche...
+DOUBLE_LIST_PACKED
+ACTION_UNKNOWN
+defaultLifecycleObserver
+Rust
+diff
+CloseFolderPicker
+elif
+LineHeightStyle.Alignment.Center
+proxy
+kotlinx.coroutines.scheduler.resoluti...
+as
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+FocalLength
+kotlin.jvm.internal.StringCompanionOb...
+ACTION_CLICK
+N5501LA
+attr_reader
+:memory:
+PageLeft
+search
+TLSv1
+by
+Queue
+%02x
+cc
+androidx.view.accessibility.Accessibi...
+recentChanges
+ACTION_IME_ENTER
+kotlinx.serialization.json.JsonObject
+Strictness.Strict
+initializing
+cs
+actor
+Dp.Unspecified
+android.support.PARENT_ACTIVITY
+opacity
+db
+font
+SELECT_PREV_PARAGRAPH
+Port
+language
+extern
+Difference
+do
+TLS_DHE_DSS_WITH_AES_128_GCM_SHA256
+USHORT
+test_writer
+com.pocketdev.data.remote.api.GitHubC...
+SSL_DH_anon_WITH_DES_CBC_SHA
+uriHost
+NonDisposableHandle
+PAGE_UP
+PATCH
+https://api.anthropic.com/
+never
+Dismiss
+multipart
+END
+debugData
+ACTION_ACCESSIBILITY_FOCUS
+https:
+isDirectory
+frame
+ThumbnailImageLength
+fi
+origin
+for
+fn
+h2
+paramName
+content
+UInt8
+onToggleAutoSave
+Number
+com.pocketdev.agent.protocol.Subagent...
+stackalloc
+TLS_ECDH_ECDSA_WITH_RC4_128_SHA
+json
+OUTER
+EOF
+class
+ws:
+conversationId
+LINE_START
+PROPFIND
+go
+getDeclaredMethod
+50%
+Sharpness
+Middle
+PendingWork
+Filled.FolderOpen
+i8
+referenceColumnNames
+500
+$query
+com.android.org.conscrypt
+E2E_RUNNER
+HOME
+WINDOW_UPDATE
+android.support.text.emoji.emojiCompa...
+hh
+False
+authorization
+Filled.Info
+else
+context
+collaborators
+id
+https
+dispatcher
+%07x
+if
+Exit
+MILLISECONDS
+ENUM
+com.pocketdev.domain.model.AppSettings
+S80Lite
+in
+executionTimeMs
+is
+it
+Undo
+bSerializer
+UNDECIDED
+IndexForKey
+Ready
+methodAnnotations
+NioSystemFileSystem
+columnsMap.values
+kotlin.jvm.internal.
+Map
+JAVASCRIPT
+charset
+http:
+Max
+Cancel
+js
+AutoMirrored.Filled.Redo
+Uri
+Url
+delegate
+Authorization
+word_wrap
+BodyMedium
+https://api.anthropic.com/v1
+Filled.Source
+digest
+RIGHT
+FILE
+fileSystem
+GROUP_LIST
+suggestion
+kotlin.jvm.functions.Function
+kt
+GPSLongitude
+ReferenceBlackWhite
+ARCHITECTURE
+ResolutionUnit
+/data/misc/profiles/ref/
+fun
+synchronized
+android:text
+com.pocketdev.agent.protocol.CodeSugg...
+HashMap
+BUILD
+backStackEntry
+while
+Unit
+GRADLE
+second
+that
+md
+u128
+TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA
+coil.request.NullRequestData
+updatedAt
+mm
+kotlin.Number
+cacheSize
+FILL
+Dst
+ms
+author
+PhotographicSensitivity
+Filled.Refresh
+Range
+Filled.Computer
+entry
+http://localhost:11434/
+androidx.datastore.preferences.protob...
+p0
+ANTHROPIC格式
+code
+ns
+SELECT_LINE_LEFT
+keys
+androidx.compose.ui.semantics.testTag
+addFontFromBuffer
+mixed
+head
+dialog
+kotlin.UShort
+inParcel
+of
+rescue
+baseKey
+or
+pendingChanges
+DOUBLE_LIST
+pokeByteArray
+pettyl
+COROUTINE_SUSPENDED
+GPSDOP
+okHttpClient
+android.widget.Spinner
+resolvedCompositionContext
+Commit
+FloatArray
+kotlin.UByte
+SELECT_ALL
+LineHeightStyle.Alignment.Top
+com.pocketdev.domain.model.GeminiProm...
+pk
+RUBY
+sourceUnit
+TLS_DH_anon_WITH_AES_256_CBC_SHA256
+com.pocketdev.domain.model.PcFileWrit...
+U50A_PLUS_TF
+py
+createAsync
+SubSecTimeOriginal
+KING_KONG_3
+com.pocketdev.ui.screens.ollama.Ollam...
+iterator
+lambda
+freeze
+AnyRef
+java.util.Map
+Painter
+/data/misc/profiles/cur/0
+DOWNLOADING
+Cookie
+com.pocketdev.data.remote.api.GitHubA...
+drawable
+getObject
+ACTION_NEXT_HTML_ELEMENT
+insertReorderBarrier
+BodySerialNumber
+then
+/path/to/android/project
+kotlin.Array
+rb
+$this$Json
+node
+Min
+full_name
+Redo
+Close
+com.pocketdev.domain.model.GeminiRequest
+starting
+HideKeyboard
+androidx.activity.result.contract.ext...
+rs
+RESULT_CANCELED
+activity
+MICROSECONDS
+INT32
+LocalLifecycleOwner
+onFontSizeChange
+FHCRC
+ENUM_LIST_PACKED
+sc
+DELETE
+sh
+RCT6T06E13
+ACTION_SCROLL_TO_POSITION
+$this$$receiver
+NO_ERROR
+sp
+email
+RESOURCE
+kotlin.Enum.Companion
+animator_duration_scale
+DOC_WRITER
+profileinstaller_profileWrittenFor_la...
+u8
+ACTION_EXPAND
+window.decorView
+encodedName
+AutoMirrored.Filled.Undo
+uint32_t
+WRITE_SKIP_FILE
+GPSMeasureMode
+SELECT_RIGHT_CHAR
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256
+te
+systemFileSystem
+Words
+Installed
+closed
+to
+compressed
+UInt32
+ts
+efbbbf
+horizontalScrollAxisRange
+loader
+pcConnectionsDataStore
+Name
+createdAt
+trivial
+ReusedSlotId
+details
+modified_at
+putBoolean
+us
+Dispatchers.Default
+mcv3
+kotlinx.coroutines.flow.defaultConcur...
+ensure
+actionMode
+this
+prettyPrintIndent
+PreventUserInput
+NOT
+failure
+buildType
+viewModel
+MULTILINE
+changed
+destination
+ON_DESTROY
+NANOSECONDS
+changes
+abortCreation
+LocalContext
+serialName
+RESULT_ALREADY_INSTALLED
+FOREIGN
+gap
+http://localhost:11434/api/tags
+TLS_ECDH_ECDSA_WITH_NULL_SHA
+UInt64
+Replace
+INT64
+DropDownMenu
+isRegularFile
+com.pocketdev.data.remote.api.GitLabP...
+Dispatchers.Main.immediate
+invalidatedTablesIds
+Integer
+com.pocketdev.data.remote.api.GitHubF...
+annotatedString
+location
+endif
+getInstance
+FLOW_CONTROL_ERROR
+$this$TopAppBar
+GPSProcessingMethod
+none
+type
+repository
+LocalView
+statusBars
+Bool
+Mistral
+connection
+cont
+Saving...
+phase
+_display_name
+method
+api/files/read
+Dimension.Undefined
+socketFactory
+refHolder
+deserializer
+inetSocketAddress
+ShowKeyboard
+ACTION_ARGUMENT_SELECTION_START_INT
+SpatialFrequencyResponse
+saveableStateHolderRef
+TLS_KRB5_WITH_3DES_EDE_CBC_MD5
+_state
+FindNext
+NOT_CROSSED
+CHECK
+fab_rotation
+Hashable
+com.pocketdev.domain.model.PcShellRes...
+evert_nt
+columns
+Filled.Folder
+ColorAnimation
+nonmutating
+out
+promptFeedback
+get
+Either
+java.lang.Number
+dagger.hilt.android.components.Activi...
+fireball
+com.pocketdev.ui.screens.build.BuildV...
+TLS_PSK_WITH_3DES_EDE_CBC_SHA
+initializer
+android.view.accessibility.extra.DATA...
+dagger.hilt.android.internal.builders...
+Vec
+NEGLIGIBLE
+dynamicColor
+Model
+self
+SHIFT6m
+date
+dashed
+nora
+data
+org.eclipse.jetty.alpn.ALPN$ServerPro...
+FROM
+LocalConfiguration
+linesOfCode
+IsDialog
+com.pocketdev.data.remote.api.GitLabC...
+Stream
+0000ffff
+RefCell
+kotlinx.serialization.json.pool.size
+staticmethod
+retrofit2.KotlinExtensions
+NotReady
+Character
+LocalHapticFeedback
+defaultBranch
+TextMotion.Static
+kotlin.jvm.internal.EnumCompanionObject
+branches
+SGINO6
+LineHeightStyle.Trim.Both
+android.widget.TextView
+blob
+onConfirm
+navDeepLink
+UInt16
+send
+RUST
+image/jpeg
+kotlin.collections.Map.Entry
+scala
+line
+MiniMax
+link
+GPSSatellites
+GPSDestLatitude
+__ENCODING__
+onFindNext
+sqLiteQuery
+CopyText
+DateTimeOriginal
+CancelBuild
+security
+leadingIcon
+kotlin.collections.Set
+TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384
+androidx.activity.result.contract.ext...
+com.pocketdev.domain.model.GeminiResp...
+ISIZE
+factory
+com.pocketdev.data.remote.api.GitHubB...
+JPEGInterchangeFormatLength
+java.util.Iterator
+focusProperties
+org.robolectric.Robolectric
+RESULT_IO_EXCEPTION
+intent
+com.pocketdev.agent.protocol.Subagent...
+FIT
+ai_providers
+boolean
+emit
+trustRootIndex
+UTF_16LE
+TransactionDispatcher
+valueCase_
+show_line_numbers
+explanation
+java.lang.Integer
+com.pocketdev.domain.model.AnthropicR...
+userSettingsRepository
+protected
+xml
+layoutDirection
+com.android.contacts
+text/xml
+optional
+Orientation
+textSelectionRange
+globalThis
+ACTION_PRESS_AND_HOLD
+mime_type
+kotlinx.coroutines.DefaultExecutor
+com.pocketdev.data.remote.api.GitHubT...
+notnull
+Filled.Send
+JvmSystemFileSystem
+com.pocketdev.data.remote.api.GitHubC...
+displayName
+emoji2.text.DefaultEmojiConfig
+api/git/commit
+ImageLength
+Prefix
+record.loggerName
+float64
+CONSTRAINT
+i16
+targetVersion
+image/heif
+xor
+image/heic
+EXTRA_BENCHMARK_OPERATION
+SUCCESS
+featureDescription
+union
+kotlin.String
+SUSPEND
+stdout
+Start
+POST
+com.pocketdev.domain.model.OllamaList...
+/system/bin/sh
+ColorSpace
+taskHistory
+i32
+isTagEnabled
+CONFIGURING
+com.pocketdev.ui.screens.repos.RepoDe...
+file_search
+ACTION_SCROLL_FORWARD
+bufferEndSegment
+Filled.ArrowBack
+completionTokens
+Short
+gitlab_token
+Optional
+visibility
+OPENAI
+preferencesProto.preferencesMap
+dagger.hilt.android.components.ViewCo...
+list
+About
+candidates
+external
+DateTimeDigitized
+eval
+success
+Bottom
+End
+IGNORE_CASE
+child
+manning
+onUndo
+UNDO
+RESULT_BASELINE_PROFILE_NOT_FOUND
+_invoked
+medium
+interface
+$this$buildClassSerialDescriptor
+remove
+RESULT_DELETE_SKIP_FILE_SUCCESS
+SDK_INT
+WordBreak.None
+OBJ
+kotlinx.coroutines.main.delay
+rhannah
+_delayed
+FIXED32_LIST_PACKED
+navigationBars
+deqIdx
+i64
+compose:lazylist:prefetch:measure
+GPSImgDirection
+args
+with
+service
+android.view.View$AttachInfo
+tabId
+java.lang.Float
+Dispatchers.IO
+Downloading
+com.pocketdev.domain.model.ChatMessage
+selectedText
+N5702L
+aSerializer
+fixups
+InactivePendingWork
+androidx.profileinstaller.action.SAVE...
+ImageWidth
+com.pocketdev.domain.model.OllamaDele...
+HTTP/1.0
+HTTP/1.1
+fullPackage
+Filled.Check
+write
+spdy/3.1
+StateDescription
+unalias
+SensorLeftBorder
+GPSDestLatitudeRef
+toggleableState
+EmojiSupportMatch.Default
+EXACT
+Square
+GPSStatus
+SSL_DHE_RSA_WITH_DES_CBC_SHA
+retrofit
+YCbCrCoefficients
+%2B
+CODE_REVIEWER
+attr_accessor
+taskRunner
+NothingSerialDescriptor
+foreignKeys
+wait
+ACTION_SCROLL_IN_DIRECTION
+sslSocket.enabledProtocols
+MaxApertureValue
+https://api.deepseek.com/
+%s.%sParcelizer
+LINE_RIGHT
+IGNORE
+restrict
+DEEPSEEK
+native
+%2e
+java.lang.String
+ExifIFDPointer
+kotlinx.serialization.json.JsonUnquot...
+%40
+HorizontalScrollAxisRange
+Unspecified
+Default
+BCJSSE
+multipart/alternative
+framework
+php
+TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+nora_8917
+entity
+BUILD_ERROR_RESOLVER
+New
+putMethod
+G3212
+base64
+TRIVIAL
+cipherSuite
+OPENAI兼容
+android.widget.CheckBox
+suspend
+void
+G3221
+G3223
+G3226
+_cur
+mStableInsets
+com.pocketdev
+READ
+MARKDOWN
+com.pocketdev.domain.model.GeminiUsag...
+REAL
+StructuralEqualityPolicy
+SensitivityType
+_id
+kotlin.Throwable
+RequestFocus
+parkedWorkersStack
+NO_VALUE
+dagger.hilt.components.SingletonCompo...
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+kotlin.Annotation
+int16_t
+SkipSubtreeAndContinueTraversal
+GPSTrackRef
+REDO
+NavigateUp
+Invalid
+High
+%6s
+protected_
+BITMAP
+SubjectLocation
+mandatorySystemGestures
+ENHANCE_YOUR_CALM
+DigitalZoomRatio
+intrface
+inout
+breadcrumb
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+valueDesc
+kotlinx.serialization.json.JsonPrimitive
+initialExtras
+fallthrough
+DstOut
+fileName
+getByte
+accessibility
+STOP_AND_RESET_REPLAY_CACHE
+onBackCancelled
+active_provider_type
+hostname
+kotlinx.coroutines.scheduler.keep.ali...
+readonly
+apiFormat
+api/pull
+DisplayMedium
+TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+CompanionObject
+INNER
+%8s
+FontFamily.Monospace
+com.pocketdev.data.remote.api.GitHubC...
+OPTIONS
+$tmp0
+GPSImgDirectionRef
+input
+Project
+aljeter
+Running
+dalvik.system.CloseGuard
+default_branch
+uint64
+actions
+Repositories
+GPSDestDistanceRef
+RefreshModels
+copyMemory
+on_delete
+GetTextLayoutResult
+SELECT_LINE_END
+GEMINI格式
+ComposeInternal
+markdown
+OFFSET
+liveRegion
+setRemoveOnCancelPolicy
+receive
+Connection
+refresh
+dflt_value
+GOAWAY
+Select
+Assertive
+Vary
+PaneTitle
+chars
+arrayIndexScale
+Hint
+secure
+$dbRef
+VIEW
+YAML
+Compose:Composer.dispose
+Container
+Compose
+java.lang.Short
+continue
+android.widget.Button
+_closeCause
+has
+uint32
+Eraser
+INTEGER
+UINT32_LIST_PACKED
+given
+androidx.datastore.preferences.protob...
+remoteRepository
+com.pocketdev.data.remote.api.GitHubC...
+DELETE_PREV_CHAR
+int8_t
+HandlerCompat
+Medium
+GITHUB
+Enter
+code_smell
+https://api.minimax.chat/v1
+com.pocketdev.domain.model.PcSystemInfo
+Filled.Build
+updated
+INTERRUPTED_RCV
+MESSAGE_LIST
+font_variation_settings
+const
+DpAnimation
+GENERAL
+EmojiSupportMatch.None
+Stylus
+SEALED
+NO_OWNER
+build_error_resolver
+TLS_KRB5_WITH_RC4_128_MD5
+st18c10bnn
+Password
+theme_mode
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384
+EXISTS
+DNGVersion
+yes
+Fab
+INTERNAL_ERROR
+$tokenProvider
+captionBar
+volatile
+currentPath
+BOOL_LIST
+reified
+UTF_16BE
+BOOL
+dynamicHostInterceptor
+TLS_DHE_DSS_WITH_AES_128_CBC_SHA
+time
+pub
+COMPLETING_RETRY
+ApertureValue
+OrBuilderList
+TLS_AES_128_CCM_SHA256
+android.widget.ImageView
+ACCESSIBILITY_CLICKABLE_SPAN_ID
+imeAction
+put
+complex64
+ACTION_PAGE_LEFT
+SSL_RSA_WITH_DES_CBC_SHA
+FAILED
+font_ttc_index
+searchQuery
+options
+trap
+$this$toBuilder
+tlsVersion
+customActions
+accessToken
+closeHandler
+CustomActions
+CASE
+orchestrator
+BUFFERED
+$callback
+ASUS_X018_4
+GET
+finishReason
+kotlin.collections.LinkedHashSet
+unicodeDomain
+ReplaceAll
+java.lang.Throwable
+/data/misc/profiles/cur/0/
+Power_5
+CREATION_CALLBACK_KEY
+effectiveNodeIndex
+lazy
+tabs
+kotlin.collections.ArrayList
+QueryDispatcher
+INITIALIZED
+awaiter
+KIMI
+uint16
+SSL_DH_anon_EXPORT_WITH_DES40_CBC_SHA
+CFAPattern
+editor
+chain
+ACTION_DRAG_START
+peerSettings
+SBYTE
+JsonArray
+FIXED32_LIST
+targetBytes
+chat
+char
+chan
+com.pocketdev.domain.model.PcConnecti...
+ShowSearch
+ali_n
+PENTAX
+TLS_DHE_DSS_WITH_AES_128_CBC_SHA256
+bytearray
+savedStateHandle
+pyw
+StopServer
+Bytes
+kotlinx.serialization.json.JsonLiteral
+CollectionItemInfo
+com.pocketdev.domain.model.AiProvider...
+onNavigateToTerminal
+KEY_COMPONENT_ACTIVITY_REGISTERED_KEYS
+trailingIcon
+Markdown
+SubSecTime
+Python
+java.lang.Cloneable
+publicKey.encoded
+Power_2_Pro
+BV9500Pro
+tree
+requestLine
+require_once
+LabelLarge
+Identifiable
+FILE_SEARCH
+MINIMAX
+targetUnit
+Filled.KeyboardArrowDown
+TLS_1_3
+Filled.RadioButtonChecked
+TLS_1_2
+request
+SELECT_NEXT_PARAGRAPH
+LocalImageVectorCache
+TLS_1_1
+values
+TLS_1_0
+selectedShellType
+LineHeightStyle.Trim.None
+consumerIndex
+findViewByAccessibilityIdTraversal
+general
+Idle
+onNavigateBack
+HardLight
+inlineDescriptor
+yml
+alias
+kotlin.String.Companion
+padding
+process
+requirements
+LocalDensity
+debug
+ActiveParent
+okhttp.MockWebServer
+ACTION_SHOW_TOOLTIP
+TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+jClass
+float32
+value_
+clean
+addFontFromAssetManager
+DstOver
+XML
+com.pocketdev.ui.screens.terminal.Ter...
+mAttachInfo
+value.string
+suggestions
+classes.dex
+uintptr
+Left
+kotlin.Cloneable
+com.pocketdev.agent.protocol.Subagent...
+GLM
+executing
+GPSDestBearing
+Decimal
+kotlin.reflect.jvm.internal.Reflectio...
+last_modified
+COLLAPSED
+tlsVersionsIntersection
+cleanedAndPointers
+DEFAULT_TEST_TAG
+com.pocketdev.ui.screens.editor.Remot...
+com.pocketdev.data.remote.api.GitHubC...
+modelClass
+SFIXED32_LIST
+guava.concurrent.generate_cancellatio...
+GMT
+SINT32
+$serializer
+onCommitMessageChange
+route
+:path
+Canceled
+context.noBackupFilesDir
+api/system/info
+DROP_LATEST
+_exceptionsHolder
+unsafe
+com.pocketdev.data.remote.api.GitHubU...
+TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA
+startDestination
+dagger.hilt.android.internal.builders...
+Equatable
+COMPLETED
+TLS_KRB5_EXPORT_WITH_DES_CBC_40_SHA
+$this$AnimatedVisibility
+LoadRepos
+Download
+RESULT_DESIRED_FORMAT_UNSUPPORTED
+tail
+hpp
+com.pocketdev.domain.model.GeminiCand...
+SELECT_LINE_RIGHT
+assemble
+PERMIT
+transition
+android.os.SystemProperties
+LongArray
+CANCEL
+SYSTEM
+debugger
+listener
+api/delete
+BanParcelableUsage
+taskQueue
+SubIFDPointer
+Compose:onForgotten
+RoomCursorUtil
+_queue
+trait
+INDEX
+onSearchQueryChange
+OECF
+HashSet
+upstream
+max_tokens
+count
+NotImplemented
+SELECT_HOME
+mixtral:latest
+com.pocketdev.domain.model.Choice
+Weight
+LinkedList
+DISABLED
+Role
+java.lang.annotation.Annotation
+sha256/
+org.eclipse.jetty.alpn.ALPN$ClientPro...
+font_weight
+some
+Closure
+TERMINATED
+session
+$this$NavigationBar
+androidx.view.accessibility.Accessibi...
+com.pocketdev.domain.model.OllamaMode...
+columnNames
+SubjectArea
+ProfileInstaller
+java.lang.Boolean
+owner
+htm
+ExifInterface
+TitleMedium
+Hi9Pro
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
+print
+nodes
+totalTimeMs
+hue
+sQLiteOpenHelper
+DROP_OLDEST
+Filled.ZoomIn
+SetText
+75%
+JOIN
+SFIXED64_LIST
+collaborator
+tables
+androidx.view.accessibility.Accessibi...
+action
+installedModels
+Vector
+infix
+Contrast
+Disconnected
+enum
+dagger.hilt.android.internal.builders...
+com.pocketdev.domain.model.PcGitCommi...
+applicationContext
+getResId
+repos
+Byte
+cancelled
+fontSize
+androidx.datastore.preferences.protob...
+arch_disk_io_
+LocalClipboardManager
+BYPASS
+SamplesPerPixel
+ACTION_CLEAR_SELECTION
+Right
+record.message
+Off
+ORCHESTRATOR
+file
+BYTE_STRING
+YCbCrSubSampling
+fileHandle
+typeConverters
+PHP
+Final
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
+okhttp.Http2
+COMPRESSED
+java.nio.file.Files
+ACTION_PAGE_RIGHT
+TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA
+FlashEnergy
+hxx
+git_operator
+getLong
+focusManager
+viewParent
+ollamaRepository
+https://api.openai.com/v1
+EmojiCompat.MetadataRepo.create
+return
+com.pocketdev.data.remote.api.GitHubC...
+onClick
+$this$null
+HIGH
+KEY_COMPONENT_ACTIVITY_PENDING_RESULT
+kotlin.Pair
+LineHeightStyle.Trim.FirstLineTop
+com.pocketdev.domain.model.GeminiContent
+mVisibleInsets
+ContinueTraversal
+com.pocketdev.domain.model.GeminiPart
+Build
+SCALA
+host
+selected
+HTTP_2
+Accept
+SaveAllFiles
+https://generativelanguage.googleapis...
+task
+buildHistory
+true
+Save
+Compiling
+position
+TLS_RSA_WITH_NULL_SHA256
+SSHORT
+G3112
+Symbol
+ACTION_SCROLL_RIGHT
+G3116
+cSerializer
+delete
+sendersAndCloseStatus
+TypeScript
+asyncTraceEnd
+foreach
+transform
+TLS_KRB5_EXPORT_WITH_RC4_40_MD5
+systemBarsIgnoringVisibility
+android.permission.ACCESS_NETWORK_STATE
+STARTED
+NeverEqualPolicy
+RateLimited
+ShortArray
+timeUnit
+selectedBranch
+G3121
+G3123
+G3125
+Blackview
+master
+generationConfig
+androidx.datastore.preferences.protob...
+Closed
+Completed
+remote_editor/
+callback
+writer
+socket
+ACTION_PASTE
+android.graphics.FontFamily
+SINT32_LIST
+PUBLICATION
+SELECT_LEFT_CHAR
+apiKey
+OLLAMA
+themeMode
+$language
+Unknown
+java.lang.Long
+com.pocketdev.agent.protocol.Security...
+negligible
+imeAnimationSource
+android.intent.action.OPEN_DOCUMENT_TREE
+0x%02x
+Float
+wss:
+index_messages_conversationId
+Expand
+except
+Retry
+SSL_DH_anon_WITH_3DES_EDE_CBC_SHA
+TLS_PSK_WITH_RC4_128_SHA
+suspendAndThrow
+com.pocketdev.domain.model.GeminiSafe...
+TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384
+kotlin.Function
+One
+dagger.hilt.android.components.ViewWi...
+global
+boundaryByteString
+Filled.Code
+MEMORY
+ACTION_PAGE_DOWN
+classes_to_restore
+tlsVersions
+unless
+isTraversalGroup
+temperature
+onNavigateToChat
+FIXED64_LIST
+RowsPerStrip
+SECONDS
+p.second
+selectProtocol
+TLS_DH_anon_WITH_AES_128_GCM_SHA256
+GPSDestDistance
+/proc/self/fd
+LocalFontLoader
+coproc
+ShuttingDown
+PasteText
+onZoomOut
+DESC
+FontFamily.Default
+TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+nativeCanvas
+getAccessibilityViewId
+kotlinx.coroutines.io.parallelism
+com.pocketdev.agent.protocol.Implemen...
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+PADDED
+aiRepository
+constructor
+collection
+BOOLEAN
+Stack
+include_once
+com.pocketdev.agent.protocol.AgentCon...
+extends
+GainControl
+androidx.lifecycle.internal.SavedStat...
+conflict
+TLS_RSA_WITH_AES_128_CBC_SHA256
+expires
+TLS_
+innerPadding
+Func
+SELECT_LINE_START
+rule
+Properties
+evert
+Empty
+onBackPressedCallback
+android.view.accessibility.extra.EXTR...
+SetProgress
+DELETE_NEXT_WORD
+OffsetTimeDigitized
+dynamic_color
+input_tokens
+PUT
+trustManager.acceptedIssuers
+AutoMirrored.Filled.MenuBook
+comment
+Editor
+Location
+com.pocketdev.domain.model.PcFileResp...
+setUseSessionTickets
+Strictness.Normal
+prefix
+HTTP_1_1_REQUIRED
+getMethod
+LiveRegion
+rune
+getViewRootImpl
+superclass
+PocketDev
+delimiter
+repoFullName
+application/json
+nestedName
+sslSocketSession
+LEFT_CHAR
+java.util.Set
+readIfAbsent
+Suffix
+Switch
+result_code
+int64_t
+DELETE_SKIP_FILE
+SSL_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_ECDH_anon_WITH_RC4_128_SHA
+androidx.compose.ui.semantics.id
+createFromFamiliesWithDefault
+ActivityResultRegistry
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+SByte
+Clip
+NO_THREAD_ELEMENTS
+Visible
+DOUBLE
+event
+repoOwner
+TLS_EMPTY_RENEGOTIATION_INFO_SCSV
+PENDING
+abstract
+androidx.profileinstaller.action.BENC...
+$this$Canvas
+gitVersion
+SensorTopBorder
+java.lang.Comparable
+onShowLineNumbersChange
+DstAtop
+first
+UnfocusedEmpty
+caCerts
+Done
+hostLifecycleState
+BitsPerSample
+reference
+SINT64
+GPSVersionID
+progressBarRangeInfo
+noinline
+from
+android.permission.POST_NOTIFICATIONS
+localCertificates
+Strategy.Balanced
+bottom
+decoder
+0123456789abcdef
+strictfp
+Softlight
+fileprivate
+Content
+ThumbnailImage
+file_id
+Software
+INSERT
+replacement
+Filled.Edit
+$onBackInvoked
+ime
+AndroidOwner:measureAndLayout
+androidx.datastore.preferences.protob...
+android.text.EmojiConsistency
+wordWrap
+ACTION_CUT
+LIMIT
+error
+kotlin.Byte
+bufferEnd
+operations
+public
+array
+SelectableGroup
+journalMode
+value
+onRedo
+REUSABLE_CLAIMED
+0x%08x
+TestTag
+resources
+TitleLarge
+gradleExecutor
+Filled.Settings
+int
+performance
+TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA
+Xmp
+Gradle
+requestedPathSegments
+STRING_LIST
+IsTraversalGroup
+String
+$this$LazyColumn
+TreeSet
+androidx.view.accessibility.Accessibi...
+getUncaughtExceptionPreHandler
+VerbatimTts
+AndroidOwner:onTouch
+Filled.KeyboardArrowUp
+ACCEPT_MERGE
+active_connection_id
+LEFT
+onBackProgressed
+doc_writer
+DATABASE
+kotlin.jvm.functions.
+failedRoute
+Xor
+clientProviderClass
+metrics
+originalContent
+ANTHROPIC
+com.pocketdev.domain.model.OllamaProg...
+VerticalScrollAxisRange
+CHANGED
+publicsuffixes.gz
+zsh
+ContentOrLtr
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+$this$ModalDrawerSheet
+TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA
+close
+EmojiCompat.EmojiCompatInitializer.run
+repoId
+$this$Badge
+onSave
+com.pocketdev.ui.screens.settings.Set...
+RESULT_PARSE_EXCEPTION
+CameraOwnerName
+Z2_PRO
+Compose:recompose
+rationale
+action_mode
+coil.request.GlobalLifecycle
+V0330WW
+Initial
+register
+acc
+HeadlineLarge
+Email
+referent
+ImageUniqueID
+github_token
+androidx.profileinstaller.action.SKIP...
+downloadProgress
+document_id
+JsonNull
+ref
+addSuppressed
+ThumbnailImageWidth
+CancelEdit
+RESULT_OK
+macro_rules
+androidx.core.view.inputmethod.Editor...
+protocols
+com.google.android.gms.org.conscrypt
+swift
+DocumentFile
+delegateFactory
+Protected
+TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+com.pocketdev.domain.model.OllamaMessage
+llmRepository
+LIGHT
+TypefaceCompatUtil
+com.pocketdev.agent.protocol.Subagent...
+port
+exchange
+exec
+textSubstitution
+finalizing
+ACTION_CLEAR_FOCUS
+PixelYDimension
+stop_reason
+ACTION_SCROLL_BACKWARD
+parent_ids
+onNavigateToOllama
+WordBreak.Phrase
+FlashpixVersion
+nonlocal
+WhiteBalance
+kotlinx.serialization.json.JsonNull
+com.pocketdev.domain.model.AiResponse
+SCHEMA
+android.graphics.drawable.VectorDrawable
+scope
+vnd.android.document/directory
+oldValue
+ToggleFileTree
+:authority
+Down
+androidx.view.accessibility.Accessibi...
+label
+message
+Avatar
+ACTION_DRAG_DROP
+Offset.Unspecified
+clone
+ImeAction
+ROOM
+age
+username
+openTabs
+testCoverage
+UNDEFINED
+G3412
+isShowingTextSubstitution
+G3416
+NOT_INSTALLED
+BYTE
+property
+Back
+androidx.view.accessibility.Accessibi...
+usageMetadata
+createSegment
+CodeLlama
+Settings
+i128
+UINT64_LIST_PACKED
+LITERAL
+FileSource
+G3421
+FocalLengthIn35mmFilm
+G3423
+handle
+G3426
+animation
+putFloat
+exit
+system
+showLineNumbers
+FLOA
+insertIndex
+com.pocketdev.domain.model.GitHubComm...
+.dp
+dagger.hilt.android.internal.builders...
+ImageBitmap
+Snackbar
+RESULT_INSTALL_SKIP_FILE_SUCCESS
+Strictness.Loose
+other
+created_at
+CASCADE
+putDouble
+routeDatabase
+local
+androidx.view.accessibility.Accessibi...
+.em
+PING
+yield
+CHARACTER_PALETTE
+UPDATE
+Width
+ALIGN_LEFT
+Focused
+TLS_AES_128_CCM_8_SHA256
+endswitch
+One_Pro
+Text
+Appearance
+__LINE__
+SELECT
+deinit
+insteadof
+Xyz
+DESTROYED
+NORMAL
+outputs
+GPSLatitude
+referer
+Compression
+Null
+kotlin.collections.Collection
+getAlpnSelectedProtocol
+body
+mode
+resolvedState
+Hyphens.Auto
+buffer
+FNumber
+ali
+border
+ACCEPT_REMOTE
+read
+systemGestures
+OpenSSLSocketImpl
+MagnifierPositionInRoot
+uintptr_t
+technicalDebt
+unit
+java.util.List
+Ollama
+SaveProvider
+imeAnimationTarget
+kotlin.Int
+com.pocketdev.agent.protocol.AgentReq...
+Option
+queryParam
+okio.Okio
+COMPLETING_ALREADY
+%2e.
+POLY_OBJ
+TLS_KRB5_WITH_RC4_128_SHA
+redo
+java.lang.Iterable
+MANUAL_RESOLUTION
+MakerNote
+kotlinx.coroutines.DefaultExecutor.ke...
+and
+ShowAiAssist
+ClearFileSelection
+YCbCrPositioning
+row
+Modifier
+TitleSmall
+Collapse
+Conscrypt
+HistoryNext
+Keyboard
+any
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+suggested
+paddingValues
+unsigned
+SLONG
+until
+Main
+REFERENCES
+workingDirectory
+rootDir
+ownerId
+tableName
+ANIM
+TLS_KRB5_WITH_DES_CBC_MD5
+androidx.datastore.preferences.protob...
+dagger.hilt.android.components.Servic...
+QUIC
+ERROR
+kotlin.collections.LinkedHashMap
+using
+margin
+maxState
+editorPreferences
+Trailers
+Make
+completed
+com.pocketdev.domain.model.AnthropicM...
+_COROUTINE.
+TaskStackBuilder
+choices
+peekInt
+SSL_RSA_WITH_3DES_EDE_CBC_SHA
+androidx.savedstate.Restarter
+DROP_SHADER_CACHE
+Open
+kotlin.collections.ListIterator
+GROUP
+GPSLatitudeRef
+putByte
+where
+:status
+TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256
+typeof
+LocalSavedStateRegistryOwner
+ACTION_SELECT
+onDynamicColorChange
+pc_connections
+blockingTasksInBuffer
+sessionId
+Int8
+com.pocketdev.agent.protocol.Subagent...
+call
+com.pocketdev.domain.model.OllamaPull...
+onContentChange
+kotlin.Char
+UNION
+SrcOver
+_decisionAndIndex
+.%2e
+navigationIcon
+rue
+TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA
+DefaultDispatcher
+kotlin.Double
+com.pocketdev.agent.protocol.BuildFix...
+GPSMapDatum
+view
+.OpenSSLSocketFactoryImpl
+ANMF
+results
+yaml
+androidx.lifecycle.ViewModelCoroutine...
+com.pocketdev.domain.model.Usage
+androidx.core.view.inputmethod.Editor...
+PreviewImageStart
+FULL
+BOTTOM_UP
+finalException
+byteString
+GPSDestLongitude
+AccessibilityDelegate
+name
+Long
+TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA
+author_name
+bool
+distance
+IFD
+android
+description
+java.lang.module.ModuleDescriptor
+encodedValues
+Justify
+navigationBarStyle
+dotted
+com.pocketdev.domain.model.ThemeMode
+$queryInterceptorProgram
+Dispatchers.Main
+file_name
+TraversalIndex
+collectionInfo
+Cancelled
+callbackName
+getEmptyRegistry
+target
+PrimaryChromaticities
+$command
+TLS_DH_anon_WITH_AES_256_GCM_SHA384
+MainContent
+usage
+_isCompleted
+.sp
+Math
+conversationDao
+peerName
+endwhile
+ACTION_ARGUMENT_SELECTION_END_INT
+END_HEADERS
+ExposureTime
+int64
+SINT64_LIST
+case
+SFIXED64
+ShowCommitDialog
+Darken
+Login
+GEMINI
+access_token
+Daemon
+kotlin.Short
+com.pocketdev.data.repository.PullPro...
+sticky
+org.openjsse.net.ssl.OpenJSSE
+style
+COUNT
+GPSTrack
+BOOL_LIST_PACKED
+Dispatchers.Unconfined
+tappableElementIgnoringVisibility
+repo
+guard
+pattern
+HideSearch
+networkResponse
+DELETE_FROM_LINE_START
+usize
+okhttp3.
+mContentInsets
+resuming_sender
+ENUM_LIST
+architecture
+SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+FRAME_SIZE_ERROR
+java.util.Map$Entry
+willSet
+display
+LensModel
+UNIX_LINES
+journal.tmp
+int32
+Clamp
+sendSegment
+./gradlew
+StartInput
+com.pocketdev.domain.model.ChatComple...
+SFIXED32
+modifiedAt
+fileRepository
+kotlin.Any
+backStackEntryId
+ISOSpeed
+elementDesc
+alse
+SSL_DH_anon_EXPORT_WITH_RC4_40_MD5
+LocalLayoutDirection
+_reusableCancellableContinuation
+android.view.View
+keyboardActions
+contentType
+connections
+android.view.accessibility.action.ARG...
+package
+putInt
+sizeof
+kind
+updateEnabledCallbacks
+com.pocketdev.agent.protocol.CodeMetrics
+AutoMirrored.Filled.KeyboardArrowRight
+FontFamily.SansSerif
+int16
+gitHubRepository
+important
+CANCELLED
+DropdownList
+editableText
+PUSH_PROMISE
+CLOSED_EMPTY
+kotlin.collections.Iterator
+SecureOn
+collaborationWebSocket
+job
+RCT6A03W13
+enumDescriptor
+systemBars
+preferencesMap
+SupportSQLite
+PageRight
+INT
+database
+kotlin.Enum
+FINALIZING
+backEvent
+SSL_
+TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA
+SensorBottomBorder
+Flash
+$this$navOptions
+ACTION_PREVIOUS_HTML_ELEMENT
+move
+original
+CLOB
+ILA_X1
+filePath
+login/oauth/access_token
+androidx.lifecycle.savedstate.vm.tag
+WindowInsetsCompat
+INT32_LIST
+inline
+HeadlineMedium
+MEMORY_CACHE
+com.pocketdev.ui.screens.editor.Edito...
+TLS_DHE_DSS_WITH_AES_256_GCM_SHA384
+projects
+Stop
+SETTINGS_TIMEOUT
+com.pocketdev.agent.protocol.Implemen...
+popUpTo
+onReplaceAll
+RecommendedExposureIndex
+complex
+getSuppressed
+kotlinx.serialization.json.JsonElement
+httponly
+SHOULD_BUFFER
+publicSuffixListBytes
+setparam
+traceCounter
+canceled
+kotlin.Unit
+onClose
+ptrdiff_t
+transient
+ContentDescription
+DpOffset.Unspecified
+onThemeModeChange
+view.resources
+scheme
+$this$Card
+com.pocketdev.data.remote.api.GitHubB...
+icon
+VULNERABILITY
+associatedtype
+java.
+updated_at
+RIGHT_CHAR
+Selected
+androidx.compose.text.SpanStyle
+seq
+completion
+LINE_END
+java.io.tmpdir
+configuring
+set
+COMPRESSION_ERROR
+ISO
+column
+ACK
+totalTokens
+Repository
+evert_n
+DOUB
+com.pocketdev.domain.model.GitHubComm...
+ACTION_NEXT_AT_MOVEMENT_GRANULARITY
+room_fts_content_sync_
+ReferentialEqualityPolicy
+journal.bkp
+DOWN
+PROPERTIES
+AnyVal
+INT64_LIST
+NavController
+INFO
+gradlew.bat
+ACTION_DRAG_CANCEL
+composable
+androidx.view.accessibility.Accessibi...
+Underline
+Filled.Person
+RegExp
+Failed
+preferences_
+Color
+sha
+BRANCH_DIVERGENCE
+SELECT_END
+RectangleShape
+androidx.datastore.preferences.protob...
+ShowTextSubstitution
+parts
+cursor
+ACTION_LONG_CLICK
+SRATIONAL
+getFloat
+4dd9dd4435fad3f0be8fe8b0025e1d5d
+putLong
+Filled.Chat
+timeout
+await
+client
+Hue
+java.vm.name
+valueSerializer
+false
+com.pocketdev.domain.model.PcGitCommi...
+totalTokenCount
+SubSecTimeDigitized
+workerCtl
+Loading...
+Ascii
+TREAT_AS_VIEW_TREE_APPEARED
+endforeach
+ACTION_MOVE_WINDOW
+select
+Edison_CKT
+dagger.hilt.android.internal.builders...
+TEXT
+Image
+clipboard
+DateTime
+output
+publicSuffixExceptionListBytes
+BottomBar
+java.lang.Character
+model
+tasks
+params
+com.pocketdev.agent.protocol.CodeAnal...
+getInt
+NavigateBack
+OpenAI
+Cmyk
+begin
+com.pocketdev.domain.model.GitHubComm...
+SSL_DHE_DSS_WITH_DES_CBC_SHA
+extras
+requestId
+lateinit
+exitCode
+u16
+bundle
+table
+TLS_ECDHE_RSA_WITH_RC4_128_SHA
+break
+composer
+change
+AnyObject
+android.widget.ScrollView
+THUMB
+currentTimeMillis
+ALL
+auto
+http://localhost/
+annotations
+suffix
+encodedNames
+unset
+Nothing
+_size
+high
+download
+oauth/authorize
+argName
+u32
+TLS_NULL_WITH_NULL_NULL
+ByteArray
+TextFieldInputState
+android.resource://
+Cell
+Polite
+gradlew
+pokeInt
+ThumbnailOrientation
+NULL
+TOO_LATE_TO_CANCEL
+TLS_DHE_DSS_WITH_AES_256_CBC_SHA
+.preferences_pb
+onBranchSelected
+CompressedBitsPerPixel
+throws
+Double
+trailers
+multipart/mixed
+TLS_ECDH_RSA_WITH_AES_128_CBC_SHA
+com.pocketdev.agent.protocol.Subagent...
+conversationRepository
+AND
+focused
+Exif
+LINE_LEFT
+com.pocketdev.agent.protocol.CodeFix
+$this$NavHost
+consumed
+Dictionary
+TLS_ECDH_anon_WITH_NULL_SHA
+SYMLINK
+peekByteArray
+sql
+switch
+total
+SupportSQLiteLock
+receivers
+ACTION_SCROLL_LEFT
+HTTP/1.
+kotlin.Comparable
+Height
+groupSlotIndex
+console
+UserComment
+_Imaginary
+Scala
+10%
+LensSpecification
+api/tags
+TLS_DH_anon_WITH_AES_128_CBC_SHA256
+TRACK
+GPSInfoIFDPointer
+TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+u64
+DefaultCropSize
+_LifecycleAdapter
+pulse
+ENABLED
+CLEAN
+Artist
+EditableText
+handler
+metadata
+vary
+setHostname
+INITIALIZING
+CreateSession
+.Companion
+Never
+Overlay
+proxyAddress
+CODE_SMELL
+TextDecoration.None
+RSA
+SpectralSensitivity
+enqIdx
+invoker
+accept
+ACTION_COLLAPSE
+str
+CONDITION_FALSE
+entryPoint
+com.pocketdev.domain.model.UnifiedCha...
+hostName
+INTO
+ExposureBiasValue
+primitive
+TLS_RSA_WITH_AES_128_GCM_SHA256
+blob_id
+h2_prior_knowledge
+terminalRepository
+https://generativelanguage.googleapis...
+ASC
+current
+audio
+key
+com.pocketdev.agent.protocol.Implemen...
+LONG
+ReplaceOne
+Java
+onZoomIn
+GPSAreaInformation
+dagger.hilt.android.EarlyEntryPoint
+kotlin.Float
+store
+S70
+CSHARP
+SSL_RSA_WITH_NULL_MD5
+bug
+parameterAnnotations
+_prev
+C210AE
+WeakMap
+declare
+SINT32_LIST_PACKED
+dest
+pairs
+frozenset
+com.pocketdev.agent.protocol.BuildFix...
+dynamic
+BROKEN
+Hyphens.Unspecified
+NETWORK
+TLS_AES_128_GCM_SHA256
+sink
+query
+java.util.Collection
+user/repos
+CLOSE_HANDLER_CLOSED
+stderr
+N5002LA
+image_cache
+AVG
+ffff0000
+hint
+NOT_IN_STACK
+OffsetTimeOriginal
+rethrows
+Mirror
+desc
+implements
+v1/chat/completions
+Action
+code_reviewer
+parentTaskId
+Filled.Menu
+PREV_PARAGRAPH
+removeObserver
+pending
+REFACTOR_CLEANER
+TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384
+commit_message
+FLOAT_LIST
+forSome
+ImageProcessingIFDPointer
+api/shell/execute
+Proxy
+com.pocketdev.domain.model.PcFileRead...
+SSL_RSA_EXPORT_WITH_RC4_40_MD5
+backing
+param
+TLS_ECDH_anon_WITH_AES_128_CBC_SHA
+text/plain
+normal
+TextLayout:initLayout
+Saturation
+fullName
+DELETE_PREV_WORD
+classmethod
+SSL_3_0
+web_url
+Compose:onRemembered
+statusBarsIgnoringVisibility
+doc_updater
+REMOVED_TASK
+SrcOut
+com.pocketdev.data.remote.api.GitLabU...
+ACTION_PREVIOUS_AT_MOVEMENT_GRANULARITY
+onNavigateToEditor
+Filled.CloudUpload
+INT64_LIST_PACKED
+OpenJSSE
+triggerName
+Index:
+baseClass
+elsif
+STREAM_CLOSED
+RefreshGradleInfo
+FocalPlaneResolutionUnit
+eventListener
+JsonLiteral
+author_email
+cbuf
+Finished
+IsShowingTextSubstitution
+ACTION_ARGUMENT_MOVEMENT_GRANULARITY_INT
+CONSUMED
+PreviewImageLength
+android.support.text.emoji.emojiCompa...
+nonisolated
+Next
+ACTION_FOCUS
+java.lang.Double
+james
+range
+com.pocketdev.domain.model.PcApiError
+tokenProvider
+assert
+c.columnNames
+output_tokens
+$this$create
+expect
+LocalTextToolbar
+ShutterSpeedValue
+elements
+rootFile
+URI_MASKABLE
+SelectionEnd
+ON_CREATE
+com.pocketdev.agent.protocol.RiskLevel
+argument
+ON_RESUME
+TLS_ECDHE_RSA_WITH_NULL_SHA
+HTML
+NEXT_PARAGRAPH
+asyncTraceBegin
+JpgFromRaw
+InteroperabilityIFDPointer
+tab
+LocalUriHandler
+tag
+FIXED64_LIST_PACKED
+NewSubfileType
+Inherit
+EmojiCompat.FontRequestEmojiCompatCon...
+SYNCHRONIZED
+PageUp
+SUBMODULE
+TOP_DOWN
+indirect
+RESULT_UNSUPPORTED_ART_VERSION
+innerTextField
+ACTION_COPY
+Pragma
+typedef
+controlState
+TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA
+HideAiAssist
+Active
+kotlin.collections.Iterable
+Filled.KeyboardArrowRight
+files
+endVelocityVector
+CameraSettingsIFDPointer
+EXECUTING
+ISOSpeedLatitudeyyy
+ScrollBy
+Screen
+aljeter_n
+Int
+ExposureIndex
+PhotometricInterpretation
+flex
+tappableElement
+LineHeightStyle.Trim.LastLineBottom
+idle
+gitHubApi
+com.pocketdev.data.remote.api.GitHubR...
+com.pocketdev.agent.protocol.FindingType
+match
+jar:file:
+Supporting
+removeIndex
+ON_STOP
+kotlin.CharSequence
+.path
+findTrustAnchorByIssuerAndSignature
+fragment
+migrations
+response
+FLOAT_LIST_PACKED
+SrcAtop
+namespace
+Popup:
+arguments
+category
+LocalWindowInfo
+Marking string:splash_tagline:2131427576 used because it matches string pool constant splash
+Marking id:blocking:2131165224 used because it matches string pool constant block
+Marking string:font_size:2131427428 used because it matches string pool constant font_size
+Marking attr:shortcutMatchRequired:2130903074 used because it matches string pool constant short
+Marking string:build_build:2131427342 used because it matches string pool constant build
+Marking string:build_daemon_running:2131427343 used because it matches string pool constant build
+Marking string:build_daemon_stopped:2131427344 used because it matches string pool constant build
+Marking string:build_debug:2131427345 used because it matches string pool constant build
+Marking string:build_gradle_home:2131427346 used because it matches string pool constant build
+Marking string:build_gradle_not_found:2131427347 used because it matches string pool constant build
+Marking string:build_gradle_version:2131427348 used because it matches string pool constant build
+Marking string:build_no_history:2131427349 used because it matches string pool constant build
+Marking string:build_phase:2131427350 used because it matches string pool constant build
+Marking string:build_project_path:2131427351 used because it matches string pool constant build
+Marking string:build_refresh:2131427352 used because it matches string pool constant build
+Marking string:build_release:2131427353 used because it matches string pool constant build
+Marking string:build_run_to_see:2131427354 used because it matches string pool constant build
+Marking string:build_stop:2131427355 used because it matches string pool constant build
+Marking string:build_type:2131427356 used because it matches string pool constant build
+Marking string:default_error_message:2131427388 used because it matches string pool constant def
+Marking string:default_popup_window_title:2131427389 used because it matches string pool constant def
+Marking id:right_icon:2131165255 used because it matches string pool constant right
+Marking id:right_side:2131165256 used because it matches string pool constant right
+Marking id:info:2131165242 used because it matches string pool constant info
+Marking attr:graph:2130903059 used because it matches string pool constant graph
+Marking id:title:2131165274 used because it matches string pool constant title
+Marking string:retry:2131427543 used because it matches string pool constant retry
+Marking string:navigation_menu:2131427497 used because it matches string pool constant navigation
+Marking id:text:2131165271 used because it matches string pool constant text
+Marking id:text2:2131165272 used because it matches string pool constant text
+Marking integer:status_bar_notification_info_maxnum:2131230720 used because it matches string pool constant status
+Marking string:status_bar_notification_info_overflow:2131427577 used because it matches string pool constant status
+Marking attr:uri:2130903078 used because it matches string pool constant uri
+Marking attr:nullable:2130903065 used because it matches string pool constant null
+Marking string:commit_commit:2131427382 used because it matches string pool constant commit
+Marking string:commit_message_hint:2131427383 used because it matches string pool constant commit
+Marking string:commit_message_label:2131427384 used because it matches string pool constant commit
+Marking string:commit_title:2131427385 used because it matches string pool constant commit
+Marking string:commit_update_file:2131427386 used because it matches string pool constant commit
+Marking string:dynamic_color:2131427395 used because it matches string pool constant dyn
+Marking string:dynamic_color_subtitle:2131427396 used because it matches string pool constant dyn
+Marking string:tab_size:2131427580 used because it matches string pool constant tab_size
+Marking id:async:2131165223 used because it matches string pool constant async
+Marking string:branch_default:2131427339 used because it matches string pool constant branch
+Marking string:branch_protected:2131427340 used because it matches string pool constant branch
+Marking string:branch_select_title:2131427341 used because it matches string pool constant branch
+Marking string:settings_about:2131427553 used because it matches string pool constant settings
+Marking string:settings_ai_action_mode:2131427554 used because it matches string pool constant settings
+Marking string:settings_ai_providers:2131427555 used because it matches string pool constant settings
+Marking string:settings_api_key_masked:2131427556 used because it matches string pool constant settings
+Marking string:settings_appearance:2131427557 used because it matches string pool constant settings
+Marking string:settings_cancel:2131427558 used because it matches string pool constant settings
+Marking string:settings_edit:2131427559 used because it matches string pool constant settings
+Marking string:settings_editor:2131427560 used because it matches string pool constant settings
+Marking string:settings_local_ai:2131427561 used because it matches string pool constant settings
+Marking string:settings_ollama_subtitle:2131427562 used because it matches string pool constant settings
+Marking string:settings_ollama_title:2131427563 used because it matches string pool constant settings
+Marking string:settings_pc_subtitle:2131427564 used because it matches string pool constant settings
+Marking string:settings_pc_title:2131427565 used because it matches string pool constant settings
+Marking string:settings_provider_active:2131427566 used because it matches string pool constant settings
+Marking string:settings_provider_saved:2131427567 used because it matches string pool constant settings
+Marking string:settings_provider_setup:2131427568 used because it matches string pool constant settings
+Marking string:settings_remote_control:2131427569 used because it matches string pool constant settings
+Marking string:settings_save:2131427570 used because it matches string pool constant settings
+Marking string:settings_saving:2131427571 used because it matches string pool constant settings
+Marking string:settings_storage:2131427572 used because it matches string pool constant settings
+Marking string:settings_title:2131427573 used because it matches string pool constant settings
+Marking string:default_error_message:2131427388 used because it matches string pool constant default
+Marking string:default_popup_window_title:2131427389 used because it matches string pool constant default
+Marking string:ollama_available_models:2131427502 used because it matches string pool constant ollama
+Marking string:ollama_download:2131427503 used because it matches string pool constant ollama
+Marking string:ollama_installed:2131427504 used because it matches string pool constant ollama
+Marking string:ollama_installed_models:2131427505 used because it matches string pool constant ollama
+Marking string:ollama_not_running:2131427506 used because it matches string pool constant ollama
+Marking string:ollama_refresh:2131427507 used because it matches string pool constant ollama
+Marking string:ollama_retry:2131427508 used because it matches string pool constant ollama
+Marking string:ollama_running_port:2131427509 used because it matches string pool constant ollama
+Marking string:ollama_server:2131427510 used because it matches string pool constant ollama
+Marking string:ollama_server_off:2131427511 used because it matches string pool constant ollama
+Marking string:ollama_server_on:2131427512 used because it matches string pool constant ollama
+Marking string:ollama_start:2131427513 used because it matches string pool constant ollama
+Marking string:ollama_stop:2131427514 used because it matches string pool constant ollama
+Marking string:ollama_title:2131427515 used because it matches string pool constant ollama
+Marking color:notification_action_color_filter:2130968585 used because it matches string pool constant not
+Marking color:notification_icon_bg_color:2130968586 used because it matches string pool constant not
+Marking dimen:notification_action_icon_size:2131034121 used because it matches string pool constant not
+Marking dimen:notification_action_text_size:2131034122 used because it matches string pool constant not
+Marking dimen:notification_big_circle_margin:2131034123 used because it matches string pool constant not
+Marking dimen:notification_content_margin_start:2131034124 used because it matches string pool constant not
+Marking dimen:notification_large_icon_height:2131034125 used because it matches string pool constant not
+Marking dimen:notification_large_icon_width:2131034126 used because it matches string pool constant not
+Marking dimen:notification_main_column_padding_top:2131034127 used because it matches string pool constant not
+Marking dimen:notification_media_narrow_margin:2131034128 used because it matches string pool constant not
+Marking dimen:notification_right_icon_size:2131034129 used because it matches string pool constant not
+Marking dimen:notification_right_side_padding_top:2131034130 used because it matches string pool constant not
+Marking dimen:notification_small_icon_background_padding:2131034131 used because it matches string pool constant not
+Marking dimen:notification_small_icon_size_as_large:2131034132 used because it matches string pool constant not
+Marking dimen:notification_subtext_size:2131034133 used because it matches string pool constant not
+Marking dimen:notification_top_pad:2131034134 used because it matches string pool constant not
+Marking dimen:notification_top_pad_large_text:2131034135 used because it matches string pool constant not
+Marking drawable:notification_action_background:2131099655 used because it matches string pool constant not
+Marking drawable:notification_bg:2131099656 used because it matches string pool constant not
+Marking drawable:notification_bg_low:2131099657 used because it matches string pool constant not
+Marking drawable:notification_bg_low_normal:2131099658 used because it matches string pool constant not
+Marking drawable:notification_bg_low_pressed:2131099659 used because it matches string pool constant not
+Marking drawable:notification_bg_normal:2131099660 used because it matches string pool constant not
+Marking drawable:notification_bg_normal_pressed:2131099661 used because it matches string pool constant not
+Marking drawable:notification_icon_background:2131099662 used because it matches string pool constant not
+Marking drawable:notification_oversize_large_icon_bg:2131099663 used because it matches string pool constant not
+Marking drawable:notification_template_icon_bg:2131099664 used because it matches string pool constant not
+Marking drawable:notification_template_icon_low_bg:2131099665 used because it matches string pool constant not
+Marking drawable:notification_tile_bg:2131099666 used because it matches string pool constant not
+Marking drawable:notify_panel_notification_icon_bg:2131099667 used because it matches string pool constant not
+Marking id:notification_background:2131165250 used because it matches string pool constant not
+Marking id:notification_main_column:2131165251 used because it matches string pool constant not
+Marking id:notification_main_column_container:2131165252 used because it matches string pool constant not
+Marking layout:notification_action:2131296261 used because it matches string pool constant not
+Marking layout:notification_action_tombstone:2131296262 used because it matches string pool constant not
+Marking layout:notification_template_custom_big:2131296263 used because it matches string pool constant not
+Marking layout:notification_template_icon_group:2131296264 used because it matches string pool constant not
+Marking layout:notification_template_part_chronometer:2131296265 used because it matches string pool constant not
+Marking layout:notification_template_part_time:2131296266 used because it matches string pool constant not
+Marking string:not_selected:2131427498 used because it matches string pool constant not
+Marking string:not_signed_in:2131427499 used because it matches string pool constant not
+Marking color:notification_action_color_filter:2130968585 used because it matches string pool constant notification
+Marking color:notification_icon_bg_color:2130968586 used because it matches string pool constant notification
+Marking dimen:notification_action_icon_size:2131034121 used because it matches string pool constant notification
+Marking dimen:notification_action_text_size:2131034122 used because it matches string pool constant notification
+Marking dimen:notification_big_circle_margin:2131034123 used because it matches string pool constant notification
+Marking dimen:notification_content_margin_start:2131034124 used because it matches string pool constant notification
+Marking dimen:notification_large_icon_height:2131034125 used because it matches string pool constant notification
+Marking dimen:notification_large_icon_width:2131034126 used because it matches string pool constant notification
+Marking dimen:notification_main_column_padding_top:2131034127 used because it matches string pool constant notification
+Marking dimen:notification_media_narrow_margin:2131034128 used because it matches string pool constant notification
+Marking dimen:notification_right_icon_size:2131034129 used because it matches string pool constant notification
+Marking dimen:notification_right_side_padding_top:2131034130 used because it matches string pool constant notification
+Marking dimen:notification_small_icon_background_padding:2131034131 used because it matches string pool constant notification
+Marking dimen:notification_small_icon_size_as_large:2131034132 used because it matches string pool constant notification
+Marking dimen:notification_subtext_size:2131034133 used because it matches string pool constant notification
+Marking dimen:notification_top_pad:2131034134 used because it matches string pool constant notification
+Marking dimen:notification_top_pad_large_text:2131034135 used because it matches string pool constant notification
+Marking drawable:notification_action_background:2131099655 used because it matches string pool constant notification
+Marking drawable:notification_bg:2131099656 used because it matches string pool constant notification
+Marking drawable:notification_bg_low:2131099657 used because it matches string pool constant notification
+Marking drawable:notification_bg_low_normal:2131099658 used because it matches string pool constant notification
+Marking drawable:notification_bg_low_pressed:2131099659 used because it matches string pool constant notification
+Marking drawable:notification_bg_normal:2131099660 used because it matches string pool constant notification
+Marking drawable:notification_bg_normal_pressed:2131099661 used because it matches string pool constant notification
+Marking drawable:notification_icon_background:2131099662 used because it matches string pool constant notification
+Marking drawable:notification_oversize_large_icon_bg:2131099663 used because it matches string pool constant notification
+Marking drawable:notification_template_icon_bg:2131099664 used because it matches string pool constant notification
+Marking drawable:notification_template_icon_low_bg:2131099665 used because it matches string pool constant notification
+Marking drawable:notification_tile_bg:2131099666 used because it matches string pool constant notification
+Marking id:notification_background:2131165250 used because it matches string pool constant notification
+Marking id:notification_main_column:2131165251 used because it matches string pool constant notification
+Marking id:notification_main_column_container:2131165252 used because it matches string pool constant notification
+Marking layout:notification_action:2131296261 used because it matches string pool constant notification
+Marking layout:notification_action_tombstone:2131296262 used because it matches string pool constant notification
+Marking layout:notification_template_custom_big:2131296263 used because it matches string pool constant notification
+Marking layout:notification_template_icon_group:2131296264 used because it matches string pool constant notification
+Marking layout:notification_template_part_chronometer:2131296265 used because it matches string pool constant notification
+Marking layout:notification_template_part_time:2131296266 used because it matches string pool constant notification
+Marking id:visible_removing_fragment_view_tag:2131165279 used because it matches string pool constant visible
+Marking string:terminal_create_session:2131427582 used because it matches string pool constant terminal
+Marking string:terminal_input_hint:2131427583 used because it matches string pool constant terminal
+Marking string:terminal_local:2131427584 used because it matches string pool constant terminal
+Marking string:terminal_new_session:2131427585 used because it matches string pool constant terminal
+Marking string:terminal_next:2131427586 used because it matches string pool constant terminal
+Marking string:terminal_no_active:2131427587 used because it matches string pool constant terminal
+Marking string:terminal_previous:2131427588 used because it matches string pool constant terminal
+Marking string:terminal_remote_pc:2131427589 used because it matches string pool constant terminal
+Marking id:async:2131165223 used because it matches string pool constant as
+Marking string:search_all:2131427544 used because it matches string pool constant search
+Marking string:search_close:2131427545 used because it matches string pool constant search
+Marking string:search_find:2131427546 used because it matches string pool constant search
+Marking string:search_find_next:2131427547 used because it matches string pool constant search
+Marking string:search_one:2131427548 used because it matches string pool constant search
+Marking string:search_placeholder:2131427549 used because it matches string pool constant search
+Marking string:search_replace:2131427550 used because it matches string pool constant search
+Marking string:search_replace_with:2131427551 used because it matches string pool constant search
+Marking attr:font:2130903048 used because it matches string pool constant font
+Marking attr:fontProviderAuthority:2130903049 used because it matches string pool constant font
+Marking attr:fontProviderCerts:2130903050 used because it matches string pool constant font
+Marking attr:fontProviderFetchStrategy:2130903051 used because it matches string pool constant font
+Marking attr:fontProviderFetchTimeout:2130903052 used because it matches string pool constant font
+Marking attr:fontProviderPackage:2130903053 used because it matches string pool constant font
+Marking attr:fontProviderQuery:2130903054 used because it matches string pool constant font
+Marking attr:fontProviderSystemFontFamily:2130903055 used because it matches string pool constant font
+Marking attr:fontStyle:2130903056 used because it matches string pool constant font
+Marking attr:fontVariationSettings:2130903057 used because it matches string pool constant font
+Marking attr:fontWeight:2130903058 used because it matches string pool constant font
+Marking string:font_size:2131427428 used because it matches string pool constant font
+Marking string:file_browser_no_files:2131427425 used because it matches string pool constant fi
+Marking string:file_loading:2131427426 used because it matches string pool constant fi
+Marking string:file_no_files:2131427427 used because it matches string pool constant fi
+Marking id:forever:2131165236 used because it matches string pool constant for
+Marking id:info:2131165242 used because it matches string pool constant in
+Marking id:inspection_slot_table_set:2131165243 used because it matches string pool constant in
+Marking string:in_progress:2131427433 used because it matches string pool constant in
+Marking string:indeterminate:2131427434 used because it matches string pool constant in
+Marking id:is_pooling_container_tag:2131165244 used because it matches string pool constant is
+Marking id:italic:2131165245 used because it matches string pool constant it
+Marking string:word_wrap:2131427593 used because it matches string pool constant word_wrap
+Marking id:dialog_button:2131165234 used because it matches string pool constant dialog
+Marking string:dialog_api_key:2131427390 used because it matches string pool constant dialog
+Marking string:dialog_base_url:2131427391 used because it matches string pool constant dialog
+Marking string:dialog_configure_provider:2131427392 used because it matches string pool constant dialog
+Marking string:dialog_model_name:2131427393 used because it matches string pool constant dialog
+Marking string:off:2131427500 used because it matches string pool constant of
+Marking attr:shortcutMatchRequired:2130903074 used because it matches string pool constant sh
+Marking string:show_line_numbers:2131427574 used because it matches string pool constant sh
+Marking id:special_effects_controller_view_tag:2131165257 used because it matches string pool constant sp
+Marking string:splash_tagline:2131427576 used because it matches string pool constant sp
+Marking id:text:2131165271 used because it matches string pool constant te
+Marking id:text2:2131165272 used because it matches string pool constant te
+Marking string:template_percent:2131427581 used because it matches string pool constant te
+Marking string:terminal_create_session:2131427582 used because it matches string pool constant te
+Marking string:terminal_input_hint:2131427583 used because it matches string pool constant te
+Marking string:terminal_local:2131427584 used because it matches string pool constant te
+Marking string:terminal_new_session:2131427585 used because it matches string pool constant te
+Marking string:terminal_next:2131427586 used because it matches string pool constant te
+Marking string:terminal_no_active:2131427587 used because it matches string pool constant te
+Marking string:terminal_previous:2131427588 used because it matches string pool constant te
+Marking string:terminal_remote_pc:2131427589 used because it matches string pool constant te
+Marking string:tooltip_description:2131427591 used because it matches string pool constant to
+Marking string:tooltip_label:2131427592 used because it matches string pool constant to
+Marking attr:destination:2130903045 used because it matches string pool constant destination
+Marking attr:data:2130903043 used because it matches string pool constant data
+Marking attr:dataPattern:2130903044 used because it matches string pool constant data
+Marking id:line1:2131165246 used because it matches string pool constant line
+Marking id:line3:2131165247 used because it matches string pool constant line
+Marking string:show_line_numbers:2131427574 used because it matches string pool constant show_line_numbers
+Marking id:accessibility_action_clickable_span:2131165184 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_0:2131165185 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_1:2131165186 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_10:2131165187 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_11:2131165188 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_12:2131165189 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_13:2131165190 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_14:2131165191 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_15:2131165192 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_16:2131165193 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_17:2131165194 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_18:2131165195 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_19:2131165196 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_2:2131165197 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_20:2131165198 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_21:2131165199 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_22:2131165200 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_23:2131165201 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_24:2131165202 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_25:2131165203 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_26:2131165204 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_27:2131165205 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_28:2131165206 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_29:2131165207 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_3:2131165208 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_30:2131165209 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_31:2131165210 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_4:2131165211 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_5:2131165212 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_6:2131165213 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_7:2131165214 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_8:2131165215 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_9:2131165216 used because it matches string pool constant accessibility
+Marking id:actions:2131165221 used because it matches string pool constant actions
+Marking string:theme_mode:2131427590 used because it matches string pool constant theme_mode
+Marking id:time:2131165273 used because it matches string pool constant time
+Marking string:editor_ai_assist:2131427397 used because it matches string pool constant editor
+Marking string:editor_ai_response:2131427398 used because it matches string pool constant editor
+Marking string:editor_ask_ai:2131427399 used because it matches string pool constant editor
+Marking string:editor_auto_save:2131427400 used because it matches string pool constant editor
+Marking string:editor_insert_cursor:2131427401 used because it matches string pool constant editor
+Marking string:editor_more_options:2131427402 used because it matches string pool constant editor
+Marking string:editor_no_file_open:2131427403 used because it matches string pool constant editor
+Marking string:editor_off:2131427404 used because it matches string pool constant editor
+Marking string:editor_on:2131427405 used because it matches string pool constant editor
+Marking string:editor_open_folder:2131427406 used because it matches string pool constant editor
+Marking string:editor_open_folder_hint:2131427407 used because it matches string pool constant editor
+Marking string:editor_open_folder_tooltip:2131427408 used because it matches string pool constant editor
+Marking string:editor_redo:2131427409 used because it matches string pool constant editor
+Marking string:editor_save:2131427410 used because it matches string pool constant editor
+Marking string:editor_search:2131427411 used because it matches string pool constant editor
+Marking string:editor_selected_code:2131427412 used because it matches string pool constant editor
+Marking string:editor_toggle_filetree:2131427413 used because it matches string pool constant editor
+Marking string:editor_undo:2131427414 used because it matches string pool constant editor
+Marking string:editor_zoom_in:2131427415 used because it matches string pool constant editor
+Marking string:editor_zoom_out:2131427416 used because it matches string pool constant editor
+Marking string:chat_context_repo:2131427368 used because it matches string pool constant chat
+Marking string:chat_conversations:2131427369 used because it matches string pool constant chat
+Marking string:chat_delete:2131427370 used because it matches string pool constant chat
+Marking string:chat_input_placeholder:2131427371 used because it matches string pool constant chat
+Marking string:chat_new_conversation:2131427372 used because it matches string pool constant chat
+Marking string:chat_no_conversations:2131427373 used because it matches string pool constant chat
+Marking string:chat_send:2131427374 used because it matches string pool constant chat
+Marking string:chat_thinking:2131427375 used because it matches string pool constant chat
+Marking string:chat_title:2131427376 used because it matches string pool constant chat
+Marking string:chat_welcome:2131427377 used because it matches string pool constant chat
+Marking string:chat_welcome_subtitle:2131427378 used because it matches string pool constant chat
+Marking attr:route:2130903073 used because it matches string pool constant route
+Marking attr:startDestination:2130903075 used because it matches string pool constant startDestination
+Marking attr:action:2130903040 used because it matches string pool constant action
+Marking id:action_container:2131165217 used because it matches string pool constant action
+Marking id:action_divider:2131165218 used because it matches string pool constant action
+Marking id:action_image:2131165219 used because it matches string pool constant action
+Marking id:action_text:2131165220 used because it matches string pool constant action
+Marking id:actions:2131165221 used because it matches string pool constant action
+Marking string:action_mode_autoedit:2131427329 used because it matches string pool constant action
+Marking string:action_mode_autoedit_desc:2131427330 used because it matches string pool constant action
+Marking string:action_mode_bypass:2131427331 used because it matches string pool constant action
+Marking string:action_mode_bypass_desc:2131427332 used because it matches string pool constant action
+Marking string:action_mode_plan:2131427333 used because it matches string pool constant action
+Marking string:action_mode_plan_desc:2131427334 used because it matches string pool constant action
+Marking string:repos_connect_github:2131427539 used because it matches string pool constant repos
+Marking string:repos_login_github:2131427540 used because it matches string pool constant repos
+Marking string:repos_sign_in:2131427541 used because it matches string pool constant repos
+Marking string:repos_title:2131427542 used because it matches string pool constant repos
+Marking string:file_browser_no_files:2131427425 used because it matches string pool constant file
+Marking string:file_loading:2131427426 used because it matches string pool constant file
+Marking string:file_no_files:2131427427 used because it matches string pool constant file
+Marking string:selected:2131427552 used because it matches string pool constant selected
+Marking style:FloatingDialogTheme:2131492865 used because it matches string pool constant Float
+Marking style:FloatingDialogWindowTheme:2131492866 used because it matches string pool constant Float
+Marking string:dynamic_color:2131427395 used because it matches string pool constant dynamic_color
+Marking string:dynamic_color_subtitle:2131427396 used because it matches string pool constant dynamic_color
+Marking layout:ime_base_split_test_activity:2131296259 used because it matches string pool constant ime
+Marking layout:ime_secondary_split_test_activity:2131296260 used because it matches string pool constant ime
+Marking string:close:2131427379 used because it matches string pool constant close
+Marking string:close_drawer:2131427380 used because it matches string pool constant close
+Marking string:close_sheet:2131427381 used because it matches string pool constant close
+Marking string:action_mode_autoedit:2131427329 used because it matches string pool constant action_mode
+Marking string:action_mode_autoedit_desc:2131427330 used because it matches string pool constant action_mode
+Marking string:action_mode_bypass:2131427331 used because it matches string pool constant action_mode
+Marking string:action_mode_bypass_desc:2131427332 used because it matches string pool constant action_mode
+Marking string:action_mode_plan:2131427333 used because it matches string pool constant action_mode
+Marking string:action_mode_plan_desc:2131427334 used because it matches string pool constant action_mode
+Marking id:accessibility_action_clickable_span:2131165184 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_0:2131165185 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_1:2131165186 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_10:2131165187 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_11:2131165188 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_12:2131165189 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_13:2131165190 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_14:2131165191 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_15:2131165192 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_16:2131165193 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_17:2131165194 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_18:2131165195 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_19:2131165196 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_2:2131165197 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_20:2131165198 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_21:2131165199 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_22:2131165200 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_23:2131165201 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_24:2131165202 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_25:2131165203 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_26:2131165204 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_27:2131165205 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_28:2131165206 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_29:2131165207 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_3:2131165208 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_30:2131165209 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_31:2131165210 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_4:2131165211 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_5:2131165212 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_6:2131165213 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_7:2131165214 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_8:2131165215 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_9:2131165216 used because it matches string pool constant acc
+Marking attr:exitAnim:2130903047 used because it matches string pool constant exit
+Marking style:TextAppearance_Compat_Notification:2131492867 used because it matches string pool constant Text
+Marking style:TextAppearance_Compat_Notification_Info:2131492868 used because it matches string pool constant Text
+Marking style:TextAppearance_Compat_Notification_Line2:2131492869 used because it matches string pool constant Text
+Marking style:TextAppearance_Compat_Notification_Time:2131492870 used because it matches string pool constant Text
+Marking style:TextAppearance_Compat_Notification_Title:2131492871 used because it matches string pool constant Text
+Marking color:androidx_core_ripple_material_light:2130968576 used because it matches string pool constant and
+Marking color:androidx_core_secondary_text_default_material_light:2130968577 used because it matches string pool constant and
+Marking id:androidx_compose_ui_view_composition_context:2131165222 used because it matches string pool constant and
+Marking string:androidx_startup:2131427335 used because it matches string pool constant and
+Marking color:call_notification_answer_color:2130968582 used because it matches string pool constant call
+Marking color:call_notification_decline_color:2130968583 used because it matches string pool constant call
+Marking string:call_notification_answer_action:2131427360 used because it matches string pool constant call
+Marking string:call_notification_answer_video_action:2131427361 used because it matches string pool constant call
+Marking string:call_notification_decline_action:2131427362 used because it matches string pool constant call
+Marking string:call_notification_hang_up_action:2131427363 used because it matches string pool constant call
+Marking string:call_notification_incoming_text:2131427364 used because it matches string pool constant call
+Marking string:call_notification_ongoing_text:2131427365 used because it matches string pool constant call
+Marking string:call_notification_screening_text:2131427366 used because it matches string pool constant call
+Marking id:view_tree_lifecycle_owner:2131165275 used because it matches string pool constant view
+Marking id:view_tree_on_back_pressed_dispatcher_owner:2131165276 used because it matches string pool constant view
+Marking id:view_tree_saved_state_registry_owner:2131165277 used because it matches string pool constant view
+Marking id:view_tree_view_model_store_owner:2131165278 used because it matches string pool constant view
+Marking color:androidx_core_ripple_material_light:2130968576 used because it matches string pool constant android
+Marking color:androidx_core_secondary_text_default_material_light:2130968577 used because it matches string pool constant android
+Marking id:androidx_compose_ui_view_composition_context:2131165222 used because it matches string pool constant android
+Marking string:androidx_startup:2131427335 used because it matches string pool constant android
+Marking attr:targetPackage:2130903076 used because it matches string pool constant target
+Marking id:report_drawn:2131165254 used because it matches string pool constant repo
+Marking string:repo_detail_back:2131427535 used because it matches string pool constant repo
+Marking string:repo_detail_edit:2131427536 used because it matches string pool constant repo
+Marking string:repo_detail_select_branch:2131427537 used because it matches string pool constant repo
+Marking string:repo_detail_title:2131427538 used because it matches string pool constant repo
+Marking string:repos_connect_github:2131427539 used because it matches string pool constant repo
+Marking string:repos_login_github:2131427540 used because it matches string pool constant repo
+Marking string:repos_sign_in:2131427541 used because it matches string pool constant repo
+Marking string:repos_title:2131427542 used because it matches string pool constant repo
+Marking attr:popUpTo:2130903068 used because it matches string pool constant popUpTo
+Marking attr:popUpToInclusive:2130903069 used because it matches string pool constant popUpTo
+Marking attr:popUpToSaveState:2130903070 used because it matches string pool constant popUpTo
+Marking id:icon:2131165240 used because it matches string pool constant icon
+Marking id:icon_group:2131165241 used because it matches string pool constant icon
+Marking string:settings_about:2131427553 used because it matches string pool constant set
+Marking string:settings_ai_action_mode:2131427554 used because it matches string pool constant set
+Marking string:settings_ai_providers:2131427555 used because it matches string pool constant set
+Marking string:settings_api_key_masked:2131427556 used because it matches string pool constant set
+Marking string:settings_appearance:2131427557 used because it matches string pool constant set
+Marking string:settings_cancel:2131427558 used because it matches string pool constant set
+Marking string:settings_edit:2131427559 used because it matches string pool constant set
+Marking string:settings_editor:2131427560 used because it matches string pool constant set
+Marking string:settings_local_ai:2131427561 used because it matches string pool constant set
+Marking string:settings_ollama_subtitle:2131427562 used because it matches string pool constant set
+Marking string:settings_ollama_title:2131427563 used because it matches string pool constant set
+Marking string:settings_pc_subtitle:2131427564 used because it matches string pool constant set
+Marking string:settings_pc_title:2131427565 used because it matches string pool constant set
+Marking string:settings_provider_active:2131427566 used because it matches string pool constant set
+Marking string:settings_provider_saved:2131427567 used because it matches string pool constant set
+Marking string:settings_provider_setup:2131427568 used because it matches string pool constant set
+Marking string:settings_remote_control:2131427569 used because it matches string pool constant set
+Marking string:settings_save:2131427570 used because it matches string pool constant set
+Marking string:settings_saving:2131427571 used because it matches string pool constant set
+Marking string:settings_storage:2131427572 used because it matches string pool constant set
+Marking string:settings_title:2131427573 used because it matches string pool constant set
+Marking string:selected:2131427552 used because it matches string pool constant select
+Marking string:switch_role:2131427578 used because it matches string pool constant switch
+Marking attr:destination:2130903045 used because it matches string pool constant dest
+Marking string:dynamic_color:2131427395 used because it matches string pool constant dynamic
+Marking string:dynamic_color_subtitle:2131427396 used because it matches string pool constant dynamic
+Marking attr:queryPatterns:2130903071 used because it matches string pool constant query
+Marking string:commit_message_hint:2131427383 used because it matches string pool constant commit_message
+Marking string:commit_message_label:2131427384 used because it matches string pool constant commit_message
+Marking id:normal:2131165249 used because it matches string pool constant normal
+Marking string:range_end:2131427533 used because it matches string pool constant range
+Marking string:range_start:2131427534 used because it matches string pool constant range
+Marking string:tab:2131427579 used because it matches string pool constant tab
+Marking string:tab_size:2131427580 used because it matches string pool constant tab
+Marking id:tag_accessibility_actions:2131165258 used because it matches string pool constant tag
+Marking id:tag_accessibility_clickable_spans:2131165259 used because it matches string pool constant tag
+Marking id:tag_accessibility_heading:2131165260 used because it matches string pool constant tag
+Marking id:tag_accessibility_pane_title:2131165261 used because it matches string pool constant tag
+Marking id:tag_on_apply_window_listener:2131165262 used because it matches string pool constant tag
+Marking id:tag_on_receive_content_listener:2131165263 used because it matches string pool constant tag
+Marking id:tag_on_receive_content_mime_types:2131165264 used because it matches string pool constant tag
+Marking id:tag_screen_reader_focusable:2131165265 used because it matches string pool constant tag
+Marking id:tag_state_description:2131165266 used because it matches string pool constant tag
+Marking id:tag_transition_group:2131165267 used because it matches string pool constant tag
+Marking id:tag_unhandled_key_event_manager:2131165268 used because it matches string pool constant tag
+Marking id:tag_unhandled_key_listeners:2131165269 used because it matches string pool constant tag
+Marking id:tag_window_insets_animation_callback:2131165270 used because it matches string pool constant tag
+Marking anim:fragment_fast_out_extra_slow_in:2130771968 used because it matches string pool constant fragment
+Marking animator:fragment_close_enter:2130837504 used because it matches string pool constant fragment
+Marking animator:fragment_close_exit:2130837505 used because it matches string pool constant fragment
+Marking animator:fragment_fade_enter:2130837506 used because it matches string pool constant fragment
+Marking animator:fragment_fade_exit:2130837507 used because it matches string pool constant fragment
+Marking animator:fragment_open_enter:2130837508 used because it matches string pool constant fragment
+Marking animator:fragment_open_exit:2130837509 used because it matches string pool constant fragment
+Marking id:fragment_container_view_tag:2131165237 used because it matches string pool constant fragment
+@anim/fragment_fast_out_extra_slow_in : reachable=true
+@animator/fragment_close_enter : reachable=true
+    @anim/fragment_fast_out_extra_slow_in
+@animator/fragment_close_exit : reachable=true
+    @anim/fragment_fast_out_extra_slow_in
+@animator/fragment_fade_enter : reachable=true
+@animator/fragment_fade_exit : reachable=true
+@animator/fragment_open_enter : reachable=true
+    @anim/fragment_fast_out_extra_slow_in
+@animator/fragment_open_exit : reachable=true
+    @anim/fragment_fast_out_extra_slow_in
+@attr/action : reachable=true
+@attr/alpha : reachable=false
+@attr/argType : reachable=false
+@attr/data : reachable=true
+@attr/dataPattern : reachable=true
+@attr/destination : reachable=true
+@attr/enterAnim : reachable=false
+@attr/exitAnim : reachable=true
+@attr/font : reachable=true
+@attr/fontProviderAuthority : reachable=true
+@attr/fontProviderCerts : reachable=true
+@attr/fontProviderFetchStrategy : reachable=true
+@attr/fontProviderFetchTimeout : reachable=true
+@attr/fontProviderPackage : reachable=true
+@attr/fontProviderQuery : reachable=true
+@attr/fontProviderSystemFontFamily : reachable=true
+@attr/fontStyle : reachable=true
+@attr/fontVariationSettings : reachable=true
+@attr/fontWeight : reachable=true
+@attr/graph : reachable=true
+@attr/lStar : reachable=false
+@attr/launchSingleTop : reachable=false
+@attr/mimeType : reachable=false
+@attr/navGraph : reachable=false
+@attr/nestedScrollViewStyle : reachable=false
+@attr/nullable : reachable=true
+@attr/popEnterAnim : reachable=false
+@attr/popExitAnim : reachable=false
+@attr/popUpTo : reachable=true
+@attr/popUpToInclusive : reachable=true
+@attr/popUpToSaveState : reachable=true
+@attr/queryPatterns : reachable=true
+@attr/restoreState : reachable=false
+@attr/route : reachable=true
+@attr/shortcutMatchRequired : reachable=true
+@attr/startDestination : reachable=true
+@attr/targetPackage : reachable=true
+@attr/ttcIndex : reachable=false
+@attr/uri : reachable=true
+@color/androidx_core_ripple_material_light : reachable=true
+@color/androidx_core_secondary_text_default_material_light : reachable=true
+@color/browser_actions_bg_grey : reachable=false
+@color/browser_actions_divider_color : reachable=false
+@color/browser_actions_text_color : reachable=false
+@color/browser_actions_title_color : reachable=false
+@color/call_notification_answer_color : reachable=true
+@color/call_notification_decline_color : reachable=true
+@color/ic_launcher_background : reachable=false
+@color/notification_action_color_filter : reachable=true
+    @color/androidx_core_secondary_text_default_material_light
+@color/notification_icon_bg_color : reachable=true
+@color/vector_tint_color : reachable=false
+@color/vector_tint_theme_color : reachable=false
+@dimen/browser_actions_context_menu_max_width : reachable=true
+@dimen/browser_actions_context_menu_min_padding : reachable=true
+@dimen/compat_button_inset_horizontal_material : reachable=false
+@dimen/compat_button_inset_vertical_material : reachable=false
+@dimen/compat_button_padding_horizontal_material : reachable=false
+@dimen/compat_button_padding_vertical_material : reachable=false
+@dimen/compat_control_corner_material : reachable=false
+@dimen/compat_notification_large_icon_max_height : reachable=false
+@dimen/compat_notification_large_icon_max_width : reachable=false
+@dimen/notification_action_icon_size : reachable=true
+@dimen/notification_action_text_size : reachable=true
+@dimen/notification_big_circle_margin : reachable=true
+@dimen/notification_content_margin_start : reachable=true
+@dimen/notification_large_icon_height : reachable=true
+@dimen/notification_large_icon_width : reachable=true
+@dimen/notification_main_column_padding_top : reachable=true
+@dimen/notification_media_narrow_margin : reachable=true
+@dimen/notification_right_icon_size : reachable=true
+@dimen/notification_right_side_padding_top : reachable=true
+@dimen/notification_small_icon_background_padding : reachable=true
+@dimen/notification_small_icon_size_as_large : reachable=true
+@dimen/notification_subtext_size : reachable=true
+@dimen/notification_top_pad : reachable=true
+@dimen/notification_top_pad_large_text : reachable=true
+@drawable/abc_vector_test : reachable=true
+@drawable/ic_call_answer : reachable=false
+@drawable/ic_call_answer_low : reachable=false
+@drawable/ic_call_answer_video : reachable=false
+@drawable/ic_call_answer_video_low : reachable=false
+@drawable/ic_call_decline : reachable=false
+@drawable/ic_call_decline_low : reachable=false
+@drawable/notification_action_background : reachable=true
+    @color/androidx_core_ripple_material_light
+    @dimen/compat_button_inset_horizontal_material
+    @dimen/compat_button_inset_vertical_material
+    @dimen/compat_control_corner_material
+    @dimen/compat_button_padding_vertical_material
+    @dimen/compat_button_padding_horizontal_material
+@drawable/notification_bg : reachable=true
+    @drawable/notification_bg_normal_pressed
+    @drawable/notification_bg_normal
+@drawable/notification_bg_low : reachable=true
+    @drawable/notification_bg_low_pressed
+    @drawable/notification_bg_low_normal
+@drawable/notification_bg_low_normal : reachable=true
+@drawable/notification_bg_low_pressed : reachable=true
+@drawable/notification_bg_normal : reachable=true
+@drawable/notification_bg_normal_pressed : reachable=true
+@drawable/notification_icon_background : reachable=true
+    @color/notification_icon_bg_color
+@drawable/notification_oversize_large_icon_bg : reachable=true
+@drawable/notification_template_icon_bg : reachable=true
+@drawable/notification_template_icon_low_bg : reachable=true
+@drawable/notification_tile_bg : reachable=true
+    @drawable/notify_panel_notification_icon_bg
+@drawable/notify_panel_notification_icon_bg : reachable=true
+@id/accessibility_action_clickable_span : reachable=true
+@id/accessibility_custom_action_0 : reachable=true
+@id/accessibility_custom_action_1 : reachable=true
+@id/accessibility_custom_action_10 : reachable=true
+@id/accessibility_custom_action_11 : reachable=true
+@id/accessibility_custom_action_12 : reachable=true
+@id/accessibility_custom_action_13 : reachable=true
+@id/accessibility_custom_action_14 : reachable=true
+@id/accessibility_custom_action_15 : reachable=true
+@id/accessibility_custom_action_16 : reachable=true
+@id/accessibility_custom_action_17 : reachable=true
+@id/accessibility_custom_action_18 : reachable=true
+@id/accessibility_custom_action_19 : reachable=true
+@id/accessibility_custom_action_2 : reachable=true
+@id/accessibility_custom_action_20 : reachable=true
+@id/accessibility_custom_action_21 : reachable=true
+@id/accessibility_custom_action_22 : reachable=true
+@id/accessibility_custom_action_23 : reachable=true
+@id/accessibility_custom_action_24 : reachable=true
+@id/accessibility_custom_action_25 : reachable=true
+@id/accessibility_custom_action_26 : reachable=true
+@id/accessibility_custom_action_27 : reachable=true
+@id/accessibility_custom_action_28 : reachable=true
+@id/accessibility_custom_action_29 : reachable=true
+@id/accessibility_custom_action_3 : reachable=true
+@id/accessibility_custom_action_30 : reachable=true
+@id/accessibility_custom_action_31 : reachable=true
+@id/accessibility_custom_action_4 : reachable=true
+@id/accessibility_custom_action_5 : reachable=true
+@id/accessibility_custom_action_6 : reachable=true
+@id/accessibility_custom_action_7 : reachable=true
+@id/accessibility_custom_action_8 : reachable=true
+@id/accessibility_custom_action_9 : reachable=true
+@id/action_container : reachable=true
+@id/action_divider : reachable=true
+@id/action_image : reachable=true
+@id/action_text : reachable=true
+@id/actions : reachable=true
+@id/androidx_compose_ui_view_composition_context : reachable=true
+@id/async : reachable=true
+@id/blocking : reachable=true
+@id/browser_actions_header_text : reachable=false
+@id/browser_actions_menu_item_icon : reachable=false
+@id/browser_actions_menu_item_text : reachable=false
+@id/browser_actions_menu_items : reachable=false
+@id/browser_actions_menu_view : reachable=false
+@id/chronometer : reachable=false
+@id/coil_request_manager : reachable=false
+@id/compose_view_saveable_id_tag : reachable=true
+@id/consume_window_insets_tag : reachable=true
+@id/dialog_button : reachable=true
+@id/edit_text_id : reachable=false
+@id/forever : reachable=true
+@id/fragment_container_view_tag : reachable=true
+@id/hide_ime_id : reachable=false
+@id/hide_in_inspector_tag : reachable=true
+@id/icon : reachable=true
+@id/icon_group : reachable=true
+@id/info : reachable=true
+@id/inspection_slot_table_set : reachable=true
+@id/is_pooling_container_tag : reachable=true
+@id/italic : reachable=true
+@id/line1 : reachable=true
+@id/line3 : reachable=true
+@id/nav_controller_view_tag : reachable=false
+@id/normal : reachable=true
+@id/notification_background : reachable=true
+@id/notification_main_column : reachable=true
+@id/notification_main_column_container : reachable=true
+@id/pooling_container_listener_holder_tag : reachable=true
+@id/report_drawn : reachable=true
+@id/right_icon : reachable=true
+@id/right_side : reachable=true
+@id/special_effects_controller_view_tag : reachable=true
+@id/tag_accessibility_actions : reachable=true
+@id/tag_accessibility_clickable_spans : reachable=true
+@id/tag_accessibility_heading : reachable=true
+@id/tag_accessibility_pane_title : reachable=true
+@id/tag_on_apply_window_listener : reachable=true
+@id/tag_on_receive_content_listener : reachable=true
+@id/tag_on_receive_content_mime_types : reachable=true
+@id/tag_screen_reader_focusable : reachable=true
+@id/tag_state_description : reachable=true
+@id/tag_transition_group : reachable=true
+@id/tag_unhandled_key_event_manager : reachable=true
+@id/tag_unhandled_key_listeners : reachable=true
+@id/tag_window_insets_animation_callback : reachable=true
+@id/text : reachable=true
+@id/text2 : reachable=true
+@id/time : reachable=true
+@id/title : reachable=true
+@id/view_tree_lifecycle_owner : reachable=true
+@id/view_tree_on_back_pressed_dispatcher_owner : reachable=true
+@id/view_tree_saved_state_registry_owner : reachable=true
+@id/view_tree_view_model_store_owner : reachable=true
+@id/visible_removing_fragment_view_tag : reachable=true
+@id/wrapped_composition_tag : reachable=true
+@integer/status_bar_notification_info_maxnum : reachable=true
+@layout/browser_actions_context_menu_page : reachable=false
+    @color/browser_actions_bg_grey
+    @color/browser_actions_title_color
+    @color/browser_actions_divider_color
+@layout/browser_actions_context_menu_row : reachable=false
+    @color/browser_actions_text_color
+@layout/custom_dialog : reachable=false
+@layout/ime_base_split_test_activity : reachable=true
+@layout/ime_secondary_split_test_activity : reachable=true
+@layout/notification_action : reachable=true
+    @style/Widget_Compat_NotificationActionContainer
+    @dimen/notification_action_icon_size
+    @style/Widget_Compat_NotificationActionText
+@layout/notification_action_tombstone : reachable=true
+    @style/Widget_Compat_NotificationActionContainer
+    @dimen/notification_action_icon_size
+    @style/Widget_Compat_NotificationActionText
+@layout/notification_template_custom_big : reachable=true
+    @layout/notification_template_icon_group
+    @dimen/notification_large_icon_width
+    @dimen/notification_large_icon_height
+    @dimen/notification_right_side_padding_top
+    @layout/notification_template_part_time
+    @layout/notification_template_part_chronometer
+    @style/TextAppearance_Compat_Notification_Info
+@layout/notification_template_icon_group : reachable=true
+    @dimen/notification_large_icon_width
+    @dimen/notification_large_icon_height
+    @dimen/notification_big_circle_margin
+    @dimen/notification_right_icon_size
+@layout/notification_template_part_chronometer : reachable=true
+    @style/TextAppearance_Compat_Notification_Time
+@layout/notification_template_part_time : reachable=true
+    @style/TextAppearance_Compat_Notification_Time
+@mipmap/ic_launcher : reachable=true
+    @color/ic_launcher_background
+    @mipmap/ic_launcher_foreground
+@mipmap/ic_launcher_foreground : reachable=false
+@mipmap/ic_launcher_round : reachable=true
+    @color/ic_launcher_background
+    @mipmap/ic_launcher_foreground
+@string/about_app_name : reachable=true
+@string/action_mode_autoedit : reachable=true
+@string/action_mode_autoedit_desc : reachable=true
+@string/action_mode_bypass : reachable=true
+@string/action_mode_bypass_desc : reachable=true
+@string/action_mode_plan : reachable=true
+@string/action_mode_plan_desc : reachable=true
+@string/androidx_startup : reachable=true
+@string/app_description : reachable=true
+@string/app_name : reachable=true
+@string/app_version : reachable=true
+@string/branch_default : reachable=true
+@string/branch_protected : reachable=true
+@string/branch_select_title : reachable=true
+@string/build_build : reachable=true
+@string/build_daemon_running : reachable=true
+@string/build_daemon_stopped : reachable=true
+@string/build_debug : reachable=true
+@string/build_gradle_home : reachable=true
+@string/build_gradle_not_found : reachable=true
+@string/build_gradle_version : reachable=true
+@string/build_no_history : reachable=true
+@string/build_phase : reachable=true
+@string/build_project_path : reachable=true
+@string/build_refresh : reachable=true
+@string/build_release : reachable=true
+@string/build_run_to_see : reachable=true
+@string/build_stop : reachable=true
+@string/build_type : reachable=true
+@string/cache : reachable=true
+@string/cache_clear : reachable=true
+@string/cache_size : reachable=true
+@string/call_notification_answer_action : reachable=true
+@string/call_notification_answer_video_action : reachable=true
+@string/call_notification_decline_action : reachable=true
+@string/call_notification_hang_up_action : reachable=true
+@string/call_notification_incoming_text : reachable=true
+@string/call_notification_ongoing_text : reachable=true
+@string/call_notification_screening_text : reachable=true
+@string/cancel : reachable=false
+@string/chat_context_repo : reachable=true
+@string/chat_conversations : reachable=true
+@string/chat_delete : reachable=true
+@string/chat_input_placeholder : reachable=true
+@string/chat_new_conversation : reachable=true
+@string/chat_no_conversations : reachable=true
+@string/chat_send : reachable=true
+@string/chat_thinking : reachable=true
+@string/chat_title : reachable=true
+@string/chat_welcome : reachable=true
+@string/chat_welcome_subtitle : reachable=true
+@string/close : reachable=true
+@string/close_drawer : reachable=true
+@string/close_sheet : reachable=true
+@string/commit_commit : reachable=true
+@string/commit_message_hint : reachable=true
+@string/commit_message_label : reachable=true
+@string/commit_title : reachable=true
+@string/commit_update_file : reachable=true
+@string/copy_toast_msg : reachable=false
+@string/default_error_message : reachable=true
+@string/default_popup_window_title : reachable=true
+@string/dialog_api_key : reachable=true
+@string/dialog_base_url : reachable=true
+@string/dialog_configure_provider : reachable=true
+@string/dialog_model_name : reachable=true
+@string/dropdown_menu : reachable=false
+@string/dynamic_color : reachable=true
+@string/dynamic_color_subtitle : reachable=true
+@string/editor_ai_assist : reachable=true
+@string/editor_ai_response : reachable=true
+@string/editor_ask_ai : reachable=true
+@string/editor_auto_save : reachable=true
+@string/editor_insert_cursor : reachable=true
+@string/editor_more_options : reachable=true
+@string/editor_no_file_open : reachable=true
+@string/editor_off : reachable=true
+@string/editor_on : reachable=true
+@string/editor_open_folder : reachable=true
+@string/editor_open_folder_hint : reachable=true
+@string/editor_open_folder_tooltip : reachable=true
+@string/editor_redo : reachable=true
+@string/editor_save : reachable=true
+@string/editor_search : reachable=true
+@string/editor_selected_code : reachable=true
+@string/editor_toggle_filetree : reachable=true
+@string/editor_undo : reachable=true
+@string/editor_zoom_in : reachable=true
+@string/editor_zoom_out : reachable=true
+@string/fab_chat : reachable=false
+@string/fab_editor : reachable=false
+@string/fab_ollama : reachable=false
+@string/fab_pc : reachable=false
+@string/fab_terminal : reachable=false
+@string/fallback_menu_item_copy_link : reachable=false
+@string/fallback_menu_item_open_in_browser : reachable=false
+@string/fallback_menu_item_share_link : reachable=false
+@string/file_browser_no_files : reachable=true
+@string/file_loading : reachable=true
+@string/file_no_files : reachable=true
+@string/font_size : reachable=true
+@string/help_anthropic : reachable=false
+@string/help_deepseek_openai : reachable=false
+@string/help_gemini : reachable=false
+@string/help_ollama : reachable=false
+@string/in_progress : reachable=true
+@string/indeterminate : reachable=true
+@string/m3c_bottom_sheet_collapse_description : reachable=false
+@string/m3c_bottom_sheet_dismiss_description : reachable=false
+@string/m3c_bottom_sheet_drag_handle_description : reachable=false
+@string/m3c_bottom_sheet_expand_description : reachable=false
+@string/m3c_bottom_sheet_pane_title : reachable=false
+@string/m3c_date_input_headline : reachable=false
+@string/m3c_date_input_headline_description : reachable=false
+@string/m3c_date_input_invalid_for_pattern : reachable=false
+@string/m3c_date_input_invalid_not_allowed : reachable=false
+@string/m3c_date_input_invalid_year_range : reachable=false
+@string/m3c_date_input_label : reachable=false
+@string/m3c_date_input_no_input_description : reachable=false
+@string/m3c_date_input_title : reachable=false
+@string/m3c_date_picker_headline : reachable=false
+@string/m3c_date_picker_headline_description : reachable=false
+@string/m3c_date_picker_navigate_to_year_description : reachable=false
+@string/m3c_date_picker_no_selection_description : reachable=false
+@string/m3c_date_picker_scroll_to_earlier_years : reachable=false
+@string/m3c_date_picker_scroll_to_later_years : reachable=false
+@string/m3c_date_picker_switch_to_calendar_mode : reachable=false
+@string/m3c_date_picker_switch_to_day_selection : reachable=false
+@string/m3c_date_picker_switch_to_input_mode : reachable=false
+@string/m3c_date_picker_switch_to_next_month : reachable=false
+@string/m3c_date_picker_switch_to_previous_month : reachable=false
+@string/m3c_date_picker_switch_to_year_selection : reachable=false
+@string/m3c_date_picker_title : reachable=false
+@string/m3c_date_picker_today_description : reachable=false
+@string/m3c_date_picker_year_picker_pane_title : reachable=false
+@string/m3c_date_range_input_invalid_range_input : reachable=false
+@string/m3c_date_range_input_title : reachable=false
+@string/m3c_date_range_picker_day_in_range : reachable=false
+@string/m3c_date_range_picker_end_headline : reachable=false
+@string/m3c_date_range_picker_scroll_to_next_month : reachable=false
+@string/m3c_date_range_picker_scroll_to_previous_month : reachable=false
+@string/m3c_date_range_picker_start_headline : reachable=false
+@string/m3c_date_range_picker_title : reachable=false
+@string/m3c_dialog : reachable=true
+@string/m3c_dropdown_menu_collapsed : reachable=false
+@string/m3c_dropdown_menu_expanded : reachable=false
+@string/m3c_search_bar_search : reachable=false
+@string/m3c_snackbar_dismiss : reachable=true
+@string/m3c_suggestions_available : reachable=false
+@string/m3c_time_picker_am : reachable=false
+@string/m3c_time_picker_hour : reachable=false
+@string/m3c_time_picker_hour_24h_suffix : reachable=false
+@string/m3c_time_picker_hour_selection : reachable=false
+@string/m3c_time_picker_hour_suffix : reachable=false
+@string/m3c_time_picker_hour_text_field : reachable=false
+@string/m3c_time_picker_minute : reachable=false
+@string/m3c_time_picker_minute_selection : reachable=false
+@string/m3c_time_picker_minute_suffix : reachable=false
+@string/m3c_time_picker_minute_text_field : reachable=false
+@string/m3c_time_picker_period_toggle_description : reachable=false
+@string/m3c_time_picker_pm : reachable=false
+@string/m3c_tooltip_long_press_label : reachable=false
+@string/m3c_tooltip_pane_description : reachable=false
+@string/nav_build : reachable=true
+@string/nav_chat : reachable=true
+@string/nav_editor : reachable=true
+@string/nav_repos : reachable=true
+@string/nav_settings : reachable=true
+@string/nav_terminal : reachable=true
+@string/navigation_menu : reachable=true
+@string/not_selected : reachable=true
+@string/not_signed_in : reachable=true
+@string/off : reachable=true
+@string/ok : reachable=false
+@string/ollama_available_models : reachable=true
+@string/ollama_download : reachable=true
+@string/ollama_installed : reachable=true
+@string/ollama_installed_models : reachable=true
+@string/ollama_not_running : reachable=true
+@string/ollama_refresh : reachable=true
+@string/ollama_retry : reachable=true
+@string/ollama_running_port : reachable=true
+@string/ollama_server : reachable=true
+@string/ollama_server_off : reachable=true
+@string/ollama_server_on : reachable=true
+@string/ollama_start : reachable=true
+@string/ollama_stop : reachable=true
+@string/ollama_title : reachable=true
+@string/on : reachable=true
+@string/pc_active : reachable=false
+@string/pc_add : reachable=false
+@string/pc_add_connection : reachable=false
+@string/pc_add_pc_title : reachable=false
+@string/pc_api_key_optional : reachable=false
+@string/pc_connected : reachable=false
+@string/pc_delete : reachable=false
+@string/pc_disconnected : reachable=false
+@string/pc_host_ip : reachable=false
+@string/pc_install_cli : reachable=false
+@string/pc_name : reachable=false
+@string/pc_no_pc_connected : reachable=false
+@string/pc_port : reachable=false
+@string/pc_select : reachable=false
+@string/pc_test_connection : reachable=false
+@string/pc_title : reachable=false
+@string/range_end : reachable=true
+@string/range_start : reachable=true
+@string/repo_detail_back : reachable=true
+@string/repo_detail_edit : reachable=true
+@string/repo_detail_select_branch : reachable=true
+@string/repo_detail_title : reachable=true
+@string/repos_connect_github : reachable=true
+@string/repos_login_github : reachable=true
+@string/repos_sign_in : reachable=true
+@string/repos_title : reachable=true
+@string/retry : reachable=true
+@string/search_all : reachable=true
+@string/search_close : reachable=true
+@string/search_find : reachable=true
+@string/search_find_next : reachable=true
+@string/search_one : reachable=true
+@string/search_placeholder : reachable=true
+@string/search_replace : reachable=true
+@string/search_replace_with : reachable=true
+@string/selected : reachable=true
+@string/settings_about : reachable=true
+@string/settings_ai_action_mode : reachable=true
+@string/settings_ai_providers : reachable=true
+@string/settings_api_key_masked : reachable=true
+@string/settings_appearance : reachable=true
+@string/settings_cancel : reachable=true
+@string/settings_edit : reachable=true
+@string/settings_editor : reachable=true
+@string/settings_local_ai : reachable=true
+@string/settings_ollama_subtitle : reachable=true
+@string/settings_ollama_title : reachable=true
+@string/settings_pc_subtitle : reachable=true
+@string/settings_pc_title : reachable=true
+@string/settings_provider_active : reachable=true
+@string/settings_provider_saved : reachable=true
+@string/settings_provider_setup : reachable=true
+@string/settings_remote_control : reachable=true
+@string/settings_save : reachable=true
+@string/settings_saving : reachable=true
+@string/settings_storage : reachable=true
+@string/settings_title : reachable=true
+@string/show_line_numbers : reachable=true
+@string/sign_out : reachable=false
+@string/splash_tagline : reachable=true
+@string/status_bar_notification_info_overflow : reachable=true
+@string/switch_role : reachable=true
+@string/tab : reachable=true
+@string/tab_size : reachable=true
+@string/template_percent : reachable=true
+@string/terminal_create_session : reachable=true
+@string/terminal_input_hint : reachable=true
+@string/terminal_local : reachable=true
+@string/terminal_new_session : reachable=true
+@string/terminal_next : reachable=true
+@string/terminal_no_active : reachable=true
+@string/terminal_previous : reachable=true
+@string/terminal_remote_pc : reachable=true
+@string/theme_mode : reachable=true
+@string/tooltip_description : reachable=true
+@string/tooltip_label : reachable=true
+@string/word_wrap : reachable=true
+@style/DialogWindowTheme : reachable=true
+@style/FloatingDialogTheme : reachable=true
+@style/FloatingDialogWindowTheme : reachable=true
+    @style/FloatingDialogTheme
+@style/TextAppearance_Compat_Notification : reachable=true
+@style/TextAppearance_Compat_Notification_Info : reachable=true
+@style/TextAppearance_Compat_Notification_Line2 : reachable=true
+    @style/TextAppearance_Compat_Notification_Info
+@style/TextAppearance_Compat_Notification_Time : reachable=true
+@style/TextAppearance_Compat_Notification_Title : reachable=true
+@style/Theme_PocketDev : reachable=true
+@style/Widget_Compat_NotificationActionContainer : reachable=false
+    @drawable/notification_action_background
+@style/Widget_Compat_NotificationActionText : reachable=false
+    @color/androidx_core_secondary_text_default_material_light
+    @dimen/notification_action_text_size
+@xml/image_share_filepaths : reachable=false
+
+The root reachable resources are:
+ anim:fragment_fast_out_extra_slow_in:2130771968
+ animator:fragment_close_enter:2130837504
+ animator:fragment_close_exit:2130837505
+ animator:fragment_fade_enter:2130837506
+ animator:fragment_fade_exit:2130837507
+ animator:fragment_open_enter:2130837508
+ animator:fragment_open_exit:2130837509
+ attr:action:2130903040
+ attr:data:2130903043
+ attr:dataPattern:2130903044
+ attr:destination:2130903045
+ attr:exitAnim:2130903047
+ attr:font:2130903048
+ attr:fontProviderAuthority:2130903049
+ attr:fontProviderCerts:2130903050
+ attr:fontProviderFetchStrategy:2130903051
+ attr:fontProviderFetchTimeout:2130903052
+ attr:fontProviderPackage:2130903053
+ attr:fontProviderQuery:2130903054
+ attr:fontProviderSystemFontFamily:2130903055
+ attr:fontStyle:2130903056
+ attr:fontVariationSettings:2130903057
+ attr:fontWeight:2130903058
+ attr:graph:2130903059
+ attr:nullable:2130903065
+ attr:popUpTo:2130903068
+ attr:popUpToInclusive:2130903069
+ attr:popUpToSaveState:2130903070
+ attr:queryPatterns:2130903071
+ attr:route:2130903073
+ attr:shortcutMatchRequired:2130903074
+ attr:startDestination:2130903075
+ attr:targetPackage:2130903076
+ attr:uri:2130903078
+ color:androidx_core_ripple_material_light:2130968576
+ color:androidx_core_secondary_text_default_material_light:2130968577
+ color:call_notification_answer_color:2130968582
+ color:call_notification_decline_color:2130968583
+ color:notification_action_color_filter:2130968585
+ color:notification_icon_bg_color:2130968586
+ dimen:browser_actions_context_menu_max_width:2131034112
+ dimen:browser_actions_context_menu_min_padding:2131034113
+ dimen:notification_action_icon_size:2131034121
+ dimen:notification_action_text_size:2131034122
+ dimen:notification_big_circle_margin:2131034123
+ dimen:notification_content_margin_start:2131034124
+ dimen:notification_large_icon_height:2131034125
+ dimen:notification_large_icon_width:2131034126
+ dimen:notification_main_column_padding_top:2131034127
+ dimen:notification_media_narrow_margin:2131034128
+ dimen:notification_right_icon_size:2131034129
+ dimen:notification_right_side_padding_top:2131034130
+ dimen:notification_small_icon_background_padding:2131034131
+ dimen:notification_small_icon_size_as_large:2131034132
+ dimen:notification_subtext_size:2131034133
+ dimen:notification_top_pad:2131034134
+ dimen:notification_top_pad_large_text:2131034135
+ drawable:abc_vector_test:2131099648
+ drawable:notification_action_background:2131099655
+ drawable:notification_bg:2131099656
+ drawable:notification_bg_low:2131099657
+ drawable:notification_bg_low_normal:2131099658
+ drawable:notification_bg_low_pressed:2131099659
+ drawable:notification_bg_normal:2131099660
+ drawable:notification_bg_normal_pressed:2131099661
+ drawable:notification_icon_background:2131099662
+ drawable:notification_oversize_large_icon_bg:2131099663
+ drawable:notification_template_icon_bg:2131099664
+ drawable:notification_template_icon_low_bg:2131099665
+ drawable:notification_tile_bg:2131099666
+ drawable:notify_panel_notification_icon_bg:2131099667
+ id:accessibility_action_clickable_span:2131165184
+ id:accessibility_custom_action_0:2131165185
+ id:accessibility_custom_action_1:2131165186
+ id:accessibility_custom_action_10:2131165187
+ id:accessibility_custom_action_11:2131165188
+ id:accessibility_custom_action_12:2131165189
+ id:accessibility_custom_action_13:2131165190
+ id:accessibility_custom_action_14:2131165191
+ id:accessibility_custom_action_15:2131165192
+ id:accessibility_custom_action_16:2131165193
+ id:accessibility_custom_action_17:2131165194
+ id:accessibility_custom_action_18:2131165195
+ id:accessibility_custom_action_19:2131165196
+ id:accessibility_custom_action_2:2131165197
+ id:accessibility_custom_action_20:2131165198
+ id:accessibility_custom_action_21:2131165199
+ id:accessibility_custom_action_22:2131165200
+ id:accessibility_custom_action_23:2131165201
+ id:accessibility_custom_action_24:2131165202
+ id:accessibility_custom_action_25:2131165203
+ id:accessibility_custom_action_26:2131165204
+ id:accessibility_custom_action_27:2131165205
+ id:accessibility_custom_action_28:2131165206
+ id:accessibility_custom_action_29:2131165207
+ id:accessibility_custom_action_3:2131165208
+ id:accessibility_custom_action_30:2131165209
+ id:accessibility_custom_action_31:2131165210
+ id:accessibility_custom_action_4:2131165211
+ id:accessibility_custom_action_5:2131165212
+ id:accessibility_custom_action_6:2131165213
+ id:accessibility_custom_action_7:2131165214
+ id:accessibility_custom_action_8:2131165215
+ id:accessibility_custom_action_9:2131165216
+ id:action_container:2131165217
+ id:action_divider:2131165218
+ id:action_image:2131165219
+ id:action_text:2131165220
+ id:actions:2131165221
+ id:androidx_compose_ui_view_composition_context:2131165222
+ id:async:2131165223
+ id:blocking:2131165224
+ id:compose_view_saveable_id_tag:2131165232
+ id:consume_window_insets_tag:2131165233
+ id:dialog_button:2131165234
+ id:forever:2131165236
+ id:fragment_container_view_tag:2131165237
+ id:hide_in_inspector_tag:2131165239
+ id:icon:2131165240
+ id:icon_group:2131165241
+ id:info:2131165242
+ id:inspection_slot_table_set:2131165243
+ id:is_pooling_container_tag:2131165244
+ id:italic:2131165245
+ id:line1:2131165246
+ id:line3:2131165247
+ id:normal:2131165249
+ id:notification_background:2131165250
+ id:notification_main_column:2131165251
+ id:notification_main_column_container:2131165252
+ id:pooling_container_listener_holder_tag:2131165253
+ id:report_drawn:2131165254
+ id:right_icon:2131165255
+ id:right_side:2131165256
+ id:special_effects_controller_view_tag:2131165257
+ id:tag_accessibility_actions:2131165258
+ id:tag_accessibility_clickable_spans:2131165259
+ id:tag_accessibility_heading:2131165260
+ id:tag_accessibility_pane_title:2131165261
+ id:tag_on_apply_window_listener:2131165262
+ id:tag_on_receive_content_listener:2131165263
+ id:tag_on_receive_content_mime_types:2131165264
+ id:tag_screen_reader_focusable:2131165265
+ id:tag_state_description:2131165266
+ id:tag_transition_group:2131165267
+ id:tag_unhandled_key_event_manager:2131165268
+ id:tag_unhandled_key_listeners:2131165269
+ id:tag_window_insets_animation_callback:2131165270
+ id:text:2131165271
+ id:text2:2131165272
+ id:time:2131165273
+ id:title:2131165274
+ id:view_tree_lifecycle_owner:2131165275
+ id:view_tree_on_back_pressed_dispatcher_owner:2131165276
+ id:view_tree_saved_state_registry_owner:2131165277
+ id:view_tree_view_model_store_owner:2131165278
+ id:visible_removing_fragment_view_tag:2131165279
+ id:wrapped_composition_tag:2131165280
+ integer:status_bar_notification_info_maxnum:2131230720
+ layout:ime_base_split_test_activity:2131296259
+ layout:ime_secondary_split_test_activity:2131296260
+ layout:notification_action:2131296261
+ layout:notification_action_tombstone:2131296262
+ layout:notification_template_custom_big:2131296263
+ layout:notification_template_icon_group:2131296264
+ layout:notification_template_part_chronometer:2131296265
+ layout:notification_template_part_time:2131296266
+ mipmap:ic_launcher:2131361792
+ mipmap:ic_launcher_round:2131361794
+ string:about_app_name:2131427328
+ string:action_mode_autoedit:2131427329
+ string:action_mode_autoedit_desc:2131427330
+ string:action_mode_bypass:2131427331
+ string:action_mode_bypass_desc:2131427332
+ string:action_mode_plan:2131427333
+ string:action_mode_plan_desc:2131427334
+ string:androidx_startup:2131427335
+ string:app_description:2131427336
+ string:app_name:2131427337
+ string:app_version:2131427338
+ string:branch_default:2131427339
+ string:branch_protected:2131427340
+ string:branch_select_title:2131427341
+ string:build_build:2131427342
+ string:build_daemon_running:2131427343
+ string:build_daemon_stopped:2131427344
+ string:build_debug:2131427345
+ string:build_gradle_home:2131427346
+ string:build_gradle_not_found:2131427347
+ string:build_gradle_version:2131427348
+ string:build_no_history:2131427349
+ string:build_phase:2131427350
+ string:build_project_path:2131427351
+ string:build_refresh:2131427352
+ string:build_release:2131427353
+ string:build_run_to_see:2131427354
+ string:build_stop:2131427355
+ string:build_type:2131427356
+ string:cache:2131427357
+ string:cache_clear:2131427358
+ string:cache_size:2131427359
+ string:call_notification_answer_action:2131427360
+ string:call_notification_answer_video_action:2131427361
+ string:call_notification_decline_action:2131427362
+ string:call_notification_hang_up_action:2131427363
+ string:call_notification_incoming_text:2131427364
+ string:call_notification_ongoing_text:2131427365
+ string:call_notification_screening_text:2131427366
+ string:chat_context_repo:2131427368
+ string:chat_conversations:2131427369
+ string:chat_delete:2131427370
+ string:chat_input_placeholder:2131427371
+ string:chat_new_conversation:2131427372
+ string:chat_no_conversations:2131427373
+ string:chat_send:2131427374
+ string:chat_thinking:2131427375
+ string:chat_title:2131427376
+ string:chat_welcome:2131427377
+ string:chat_welcome_subtitle:2131427378
+ string:close:2131427379
+ string:close_drawer:2131427380
+ string:close_sheet:2131427381
+ string:commit_commit:2131427382
+ string:commit_message_hint:2131427383
+ string:commit_message_label:2131427384
+ string:commit_title:2131427385
+ string:commit_update_file:2131427386
+ string:default_error_message:2131427388
+ string:default_popup_window_title:2131427389
+ string:dialog_api_key:2131427390
+ string:dialog_base_url:2131427391
+ string:dialog_configure_provider:2131427392
+ string:dialog_model_name:2131427393
+ string:dynamic_color:2131427395
+ string:dynamic_color_subtitle:2131427396
+ string:editor_ai_assist:2131427397
+ string:editor_ai_response:2131427398
+ string:editor_ask_ai:2131427399
+ string:editor_auto_save:2131427400
+ string:editor_insert_cursor:2131427401
+ string:editor_more_options:2131427402
+ string:editor_no_file_open:2131427403
+ string:editor_off:2131427404
+ string:editor_on:2131427405
+ string:editor_open_folder:2131427406
+ string:editor_open_folder_hint:2131427407
+ string:editor_open_folder_tooltip:2131427408
+ string:editor_redo:2131427409
+ string:editor_save:2131427410
+ string:editor_search:2131427411
+ string:editor_selected_code:2131427412
+ string:editor_toggle_filetree:2131427413
+ string:editor_undo:2131427414
+ string:editor_zoom_in:2131427415
+ string:editor_zoom_out:2131427416
+ string:file_browser_no_files:2131427425
+ string:file_loading:2131427426
+ string:file_no_files:2131427427
+ string:font_size:2131427428
+ string:in_progress:2131427433
+ string:indeterminate:2131427434
+ string:m3c_dialog:2131427471
+ string:m3c_snackbar_dismiss:2131427475
+ string:nav_build:2131427491
+ string:nav_chat:2131427492
+ string:nav_editor:2131427493
+ string:nav_repos:2131427494
+ string:nav_settings:2131427495
+ string:nav_terminal:2131427496
+ string:navigation_menu:2131427497
+ string:not_selected:2131427498
+ string:not_signed_in:2131427499
+ string:off:2131427500
+ string:ollama_available_models:2131427502
+ string:ollama_download:2131427503
+ string:ollama_installed:2131427504
+ string:ollama_installed_models:2131427505
+ string:ollama_not_running:2131427506
+ string:ollama_refresh:2131427507
+ string:ollama_retry:2131427508
+ string:ollama_running_port:2131427509
+ string:ollama_server:2131427510
+ string:ollama_server_off:2131427511
+ string:ollama_server_on:2131427512
+ string:ollama_start:2131427513
+ string:ollama_stop:2131427514
+ string:ollama_title:2131427515
+ string:on:2131427516
+ string:range_end:2131427533
+ string:range_start:2131427534
+ string:repo_detail_back:2131427535
+ string:repo_detail_edit:2131427536
+ string:repo_detail_select_branch:2131427537
+ string:repo_detail_title:2131427538
+ string:repos_connect_github:2131427539
+ string:repos_login_github:2131427540
+ string:repos_sign_in:2131427541
+ string:repos_title:2131427542
+ string:retry:2131427543
+ string:search_all:2131427544
+ string:search_close:2131427545
+ string:search_find:2131427546
+ string:search_find_next:2131427547
+ string:search_one:2131427548
+ string:search_placeholder:2131427549
+ string:search_replace:2131427550
+ string:search_replace_with:2131427551
+ string:selected:2131427552
+ string:settings_about:2131427553
+ string:settings_ai_action_mode:2131427554
+ string:settings_ai_providers:2131427555
+ string:settings_api_key_masked:2131427556
+ string:settings_appearance:2131427557
+ string:settings_cancel:2131427558
+ string:settings_edit:2131427559
+ string:settings_editor:2131427560
+ string:settings_local_ai:2131427561
+ string:settings_ollama_subtitle:2131427562
+ string:settings_ollama_title:2131427563
+ string:settings_pc_subtitle:2131427564
+ string:settings_pc_title:2131427565
+ string:settings_provider_active:2131427566
+ string:settings_provider_saved:2131427567
+ string:settings_provider_setup:2131427568
+ string:settings_remote_control:2131427569
+ string:settings_save:2131427570
+ string:settings_saving:2131427571
+ string:settings_storage:2131427572
+ string:settings_title:2131427573
+ string:show_line_numbers:2131427574
+ string:splash_tagline:2131427576
+ string:status_bar_notification_info_overflow:2131427577
+ string:switch_role:2131427578
+ string:tab:2131427579
+ string:tab_size:2131427580
+ string:template_percent:2131427581
+ string:terminal_create_session:2131427582
+ string:terminal_input_hint:2131427583
+ string:terminal_local:2131427584
+ string:terminal_new_session:2131427585
+ string:terminal_next:2131427586
+ string:terminal_no_active:2131427587
+ string:terminal_previous:2131427588
+ string:terminal_remote_pc:2131427589
+ string:theme_mode:2131427590
+ string:tooltip_description:2131427591
+ string:tooltip_label:2131427592
+ string:word_wrap:2131427593
+ style:DialogWindowTheme:2131492864
+ style:FloatingDialogTheme:2131492865
+ style:FloatingDialogWindowTheme:2131492866
+ style:TextAppearance_Compat_Notification:2131492867
+ style:TextAppearance_Compat_Notification_Info:2131492868
+ style:TextAppearance_Compat_Notification_Line2:2131492869
+ style:TextAppearance_Compat_Notification_Time:2131492870
+ style:TextAppearance_Compat_Notification_Title:2131492871
+ style:Theme_PocketDev:2131492872
+Unused resources are: 
+ color:browser_actions_bg_grey:2130968578
+ color:browser_actions_divider_color:2130968579
+ color:browser_actions_text_color:2130968580
+ color:browser_actions_title_color:2130968581
+ color:vector_tint_color:2130968587
+ color:vector_tint_theme_color:2130968588
+ dimen:compat_notification_large_icon_max_height:2131034119
+ dimen:compat_notification_large_icon_max_width:2131034120
+ drawable:ic_call_answer:2131099649
+ drawable:ic_call_answer_low:2131099650
+ drawable:ic_call_answer_video:2131099651
+ drawable:ic_call_answer_video_low:2131099652
+ drawable:ic_call_decline:2131099653
+ drawable:ic_call_decline_low:2131099654
+ id:browser_actions_header_text:2131165225
+ id:browser_actions_menu_item_icon:2131165226
+ id:browser_actions_menu_item_text:2131165227
+ id:browser_actions_menu_items:2131165228
+ id:browser_actions_menu_view:2131165229
+ id:chronometer:2131165230
+ id:coil_request_manager:2131165231
+ id:edit_text_id:2131165235
+ id:hide_ime_id:2131165238
+ id:nav_controller_view_tag:2131165248
+ layout:browser_actions_context_menu_page:2131296256
+ layout:browser_actions_context_menu_row:2131296257
+ layout:custom_dialog:2131296258
+ string:cancel:2131427367
+ string:copy_toast_msg:2131427387
+ string:dropdown_menu:2131427394
+ string:fab_chat:2131427417
+ string:fab_editor:2131427418
+ string:fab_ollama:2131427419
+ string:fab_pc:2131427420
+ string:fab_terminal:2131427421
+ string:fallback_menu_item_copy_link:2131427422
+ string:fallback_menu_item_open_in_browser:2131427423
+ string:fallback_menu_item_share_link:2131427424
+ string:help_anthropic:2131427429
+ string:help_deepseek_openai:2131427430
+ string:help_gemini:2131427431
+ string:help_ollama:2131427432
+ string:m3c_bottom_sheet_collapse_description:2131427435
+ string:m3c_bottom_sheet_dismiss_description:2131427436
+ string:m3c_bottom_sheet_drag_handle_description:2131427437
+ string:m3c_bottom_sheet_expand_description:2131427438
+ string:m3c_bottom_sheet_pane_title:2131427439
+ string:m3c_date_input_headline:2131427440
+ string:m3c_date_input_headline_description:2131427441
+ string:m3c_date_input_invalid_for_pattern:2131427442
+ string:m3c_date_input_invalid_not_allowed:2131427443
+ string:m3c_date_input_invalid_year_range:2131427444
+ string:m3c_date_input_label:2131427445
+ string:m3c_date_input_no_input_description:2131427446
+ string:m3c_date_input_title:2131427447
+ string:m3c_date_picker_headline:2131427448
+ string:m3c_date_picker_headline_description:2131427449
+ string:m3c_date_picker_navigate_to_year_description:2131427450
+ string:m3c_date_picker_no_selection_description:2131427451
+ string:m3c_date_picker_scroll_to_earlier_years:2131427452
+ string:m3c_date_picker_scroll_to_later_years:2131427453
+ string:m3c_date_picker_switch_to_calendar_mode:2131427454
+ string:m3c_date_picker_switch_to_day_selection:2131427455
+ string:m3c_date_picker_switch_to_input_mode:2131427456
+ string:m3c_date_picker_switch_to_next_month:2131427457
+ string:m3c_date_picker_switch_to_previous_month:2131427458
+ string:m3c_date_picker_switch_to_year_selection:2131427459
+ string:m3c_date_picker_title:2131427460
+ string:m3c_date_picker_today_description:2131427461
+ string:m3c_date_picker_year_picker_pane_title:2131427462
+ string:m3c_date_range_input_invalid_range_input:2131427463
+ string:m3c_date_range_input_title:2131427464
+ string:m3c_date_range_picker_day_in_range:2131427465
+ string:m3c_date_range_picker_end_headline:2131427466
+ string:m3c_date_range_picker_scroll_to_next_month:2131427467
+ string:m3c_date_range_picker_scroll_to_previous_month:2131427468
+ string:m3c_date_range_picker_start_headline:2131427469
+ string:m3c_date_range_picker_title:2131427470
+ string:m3c_dropdown_menu_collapsed:2131427472
+ string:m3c_dropdown_menu_expanded:2131427473
+ string:m3c_search_bar_search:2131427474
+ string:m3c_suggestions_available:2131427476
+ string:m3c_time_picker_am:2131427477
+ string:m3c_time_picker_hour:2131427478
+ string:m3c_time_picker_hour_24h_suffix:2131427479
+ string:m3c_time_picker_hour_selection:2131427480
+ string:m3c_time_picker_hour_suffix:2131427481
+ string:m3c_time_picker_hour_text_field:2131427482
+ string:m3c_time_picker_minute:2131427483
+ string:m3c_time_picker_minute_selection:2131427484
+ string:m3c_time_picker_minute_suffix:2131427485
+ string:m3c_time_picker_minute_text_field:2131427486
+ string:m3c_time_picker_period_toggle_description:2131427487
+ string:m3c_time_picker_pm:2131427488
+ string:m3c_tooltip_long_press_label:2131427489
+ string:m3c_tooltip_pane_description:2131427490
+ string:ok:2131427501
+ string:pc_active:2131427517
+ string:pc_add:2131427518
+ string:pc_add_connection:2131427519
+ string:pc_add_pc_title:2131427520
+ string:pc_api_key_optional:2131427521
+ string:pc_connected:2131427522
+ string:pc_delete:2131427523
+ string:pc_disconnected:2131427524
+ string:pc_host_ip:2131427525
+ string:pc_install_cli:2131427526
+ string:pc_name:2131427527
+ string:pc_no_pc_connected:2131427528
+ string:pc_port:2131427529
+ string:pc_select:2131427530
+ string:pc_test_connection:2131427531
+ string:pc_title:2131427532
+ string:sign_out:2131427575
+ xml:image_share_filepaths:2131623936
+Skipped unused resource res/color/vector_tint_color.xml: 177 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/vector_tint_theme_color.xml: 221 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-ldpi-v4/ic_call_answer.png: 270 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-ldpi-v4/ic_call_answer_low.png: 270 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-ldpi-v4/ic_call_answer_video.png: 199 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-ldpi-v4/ic_call_answer_video_low.png: 199 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-ldpi-v4/ic_call_decline.png: 201 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-ldpi-v4/ic_call_decline_low.png: 201 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-mdpi-v4/ic_call_answer.png: 317 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-mdpi-v4/ic_call_answer_low.png: 317 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-mdpi-v4/ic_call_answer_video.png: 206 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-mdpi-v4/ic_call_answer_video_low.png: 206 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-mdpi-v4/ic_call_decline.png: 264 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-mdpi-v4/ic_call_decline_low.png: 264 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-hdpi-v4/ic_call_answer.png: 472 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-hdpi-v4/ic_call_answer_low.png: 472 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-hdpi-v4/ic_call_answer_video.png: 254 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-hdpi-v4/ic_call_answer_video_low.png: 254 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-hdpi-v4/ic_call_decline.png: 375 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-hdpi-v4/ic_call_decline_low.png: 375 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xhdpi-v4/ic_call_answer.png: 623 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xhdpi-v4/ic_call_answer_low.png: 623 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xhdpi-v4/ic_call_answer_video.png: 290 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xhdpi-v4/ic_call_answer_video_low.png: 290 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xhdpi-v4/ic_call_decline.png: 452 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xhdpi-v4/ic_call_decline_low.png: 452 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxhdpi-v4/ic_call_answer.png: 884 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxhdpi-v4/ic_call_answer_low.png: 884 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxhdpi-v4/ic_call_answer_video.png: 384 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxhdpi-v4/ic_call_answer_video_low.png: 384 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxhdpi-v4/ic_call_decline.png: 628 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxhdpi-v4/ic_call_decline_low.png: 628 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxxhdpi-v4/ic_call_answer.png: 1171 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxxhdpi-v4/ic_call_answer_low.png: 1171 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxxhdpi-v4/ic_call_answer_video.png: 465 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxxhdpi-v4/ic_call_answer_video_low.png: 465 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxxhdpi-v4/ic_call_decline.png: 823 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxxhdpi-v4/ic_call_decline_low.png: 823 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-anydpi-v21/ic_call_answer.xml: 1515 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-anydpi-v21/ic_call_answer_low.xml: 1373 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-anydpi-v21/ic_call_answer_video.xml: 931 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-anydpi-v21/ic_call_answer_video_low.xml: 789 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-anydpi-v21/ic_call_decline.xml: 1689 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-anydpi-v21/ic_call_decline_low.xml: 1547 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/browser_actions_context_menu_page.xml: 3165 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/browser_actions_context_menu_row.xml: 2211 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/custom_dialog.xml: 828 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/xml/image_share_filepaths.xml: 93 bytes (replaced with small dummy file of size 9 bytes)

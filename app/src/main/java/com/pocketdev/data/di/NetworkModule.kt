@@ -4,6 +4,7 @@ import com.pocketdev.data.local.UserSettingsDataStore
 import com.pocketdev.data.remote.api.AnthropicApi
 import com.pocketdev.data.remote.api.GeminiApi
 import com.pocketdev.data.remote.api.GitHubApi
+import com.pocketdev.data.remote.api.GitHubAuthApi
 import com.pocketdev.data.remote.api.GitLabApi
 import com.pocketdev.data.remote.api.LlmApi
 import com.pocketdev.data.remote.api.OllamaApi
@@ -213,6 +214,23 @@ object NetworkModule {
             .addConverterFactory(json.asConverterFactory(contentType))
             .build()
             .create(GitLabApi::class.java)
+    }
+
+    @Provides
+    @Singleton
+    fun provideGitHubAuthApi(): GitHubAuthApi {
+        val client = OkHttpClient.Builder()
+            .connectTimeout(30, TimeUnit.SECONDS)
+            .readTimeout(30, TimeUnit.SECONDS)
+            .build()
+
+        val contentType = "application/json".toMediaType()
+        return Retrofit.Builder()
+            .baseUrl("https://github.com/")
+            .client(client)
+            .addConverterFactory(json.asConverterFactory(contentType))
+            .build()
+            .create(GitHubAuthApi::class.java)
     }
 
     @Provides

@@ -141,11 +141,15 @@ class SecurityReviewerAgent @Inject constructor() : Agent {
         )
     }
 
-    private fun scanForVulnerabilities(file: String): List<Vulnerability> {
-        // This would typically read and scan the file content
-        // For now, returning empty list as file content scanning
-        // would need file I/O integration
-        return emptyList()
+    private fun scanForVulnerabilities(filePath: String): List<Vulnerability> {
+        return try {
+            val file = java.io.File(filePath)
+            if (!file.exists() || !file.isFile) return emptyList()
+            val content = file.readText()
+            checkContent(content, filePath)
+        } catch (e: Exception) {
+            emptyList()
+        }
     }
 
     fun checkContent(content: String, file: String): List<Vulnerability> {

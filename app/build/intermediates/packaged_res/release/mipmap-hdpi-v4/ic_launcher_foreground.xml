@@ -4,17 +4,18 @@
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <!-- Dark circular background -->
+    <!-- White circular background -->
     <path
-        android:fillColor="#1C1B1F"
+        android:fillColor="#FFFFFF"
         android:pathData="M54,54m-40,0a40,40 0,1 1,80 0a40,40 0,1 1,-80 0"/>
-    <!-- > symbol - bold chevron representing terminal prompt -->
+    <!-- Three horizontal purple bars representing menu/list items -->
     <path
-        android:fillColor="#D0BCFF"
-        android:pathData="M38,30L72,54L38,78V30Z"/>
-    <!-- Cursor blink accent line -->
+        android:fillColor="#6750A4"
+        android:pathData="M46,42h16v6h-16z"/>
     <path
-        android:fillColor="#D0BCFF"
-        android:fillAlpha="0.4"
-        android:pathData="M74,32L78,32L78,76L74,76Z"/>
+        android:fillColor="#6750A4"
+        android:pathData="M46,51h16v6h-16z"/>
+    <path
+        android:fillColor="#6750A4"
+        android:pathData="M46,60h10v6h-10z"/>
 </vector>

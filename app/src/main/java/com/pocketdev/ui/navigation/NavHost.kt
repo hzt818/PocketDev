@@ -21,6 +21,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.stringResource
+import com.pocketdev.R
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.compose.NavHost
@@ -41,16 +43,16 @@ import com.pocketdev.ui.screens.terminal.TerminalScreen
 data class BottomNavItem(
     val screen: Screen,
     val icon: ImageVector,
-    val label: String
+    val labelResId: Int
 )
 
 val bottomNavItems = listOf(
-    BottomNavItem(Screen.Chat, Icons.Default.Chat, "Chat"),
-    BottomNavItem(Screen.Repos, Icons.Default.Source, "Repos"),
-    BottomNavItem(Screen.Editor, Icons.Default.Code, "Editor"),
-    BottomNavItem(Screen.Build, Icons.Default.Build, "Build"),
-    BottomNavItem(Screen.Terminal, Icons.Default.Terminal, "Terminal"),
-    BottomNavItem(Screen.Settings, Icons.Default.Settings, "Settings")
+    BottomNavItem(Screen.Chat, Icons.Default.Chat, R.string.nav_chat),
+    BottomNavItem(Screen.Repos, Icons.Default.Source, R.string.nav_repos),
+    BottomNavItem(Screen.Editor, Icons.Default.Code, R.string.nav_editor),
+    BottomNavItem(Screen.Build, Icons.Default.Build, R.string.nav_build),
+    BottomNavItem(Screen.Terminal, Icons.Default.Terminal, R.string.nav_terminal),
+    BottomNavItem(Screen.Settings, Icons.Default.Settings, R.string.nav_settings)
 )
 
 @Composable
@@ -64,8 +66,8 @@ fun PocketDevNavHost() {
             NavigationBar {
                 bottomNavItems.forEach { item ->
                     NavigationBarItem(
-                        icon = { Icon(item.icon, contentDescription = item.label) },
-                        label = { Text(item.label) },
+                        icon = { Icon(item.icon, contentDescription = stringResource(item.labelResId)) },
+                        label = { Text(stringResource(item.labelResId)) },
                         selected = currentDestination?.hierarchy?.any { it.route == item.screen.route } == true,
                         onClick = {
                             navController.navigate(item.screen.route) {

@@ -138,12 +138,59 @@ class BuildErrorResolverAgent @Inject constructor() : Agent {
         return when (error.type) {
             ErrorType.MISSING_SYMBOL -> {
                 val symbol = error.groups.getOrNull(1) ?: return null
+                val isKotlin = error.message.contains(".kt:")
+                val isClass = symbol[0].isUpperCase()
+                val isInterface = symbol.endsWith("Listener") || symbol.endsWith("Callback")
+                val isViewModel = symbol.endsWith("ViewModel")
+                val isRepository = symbol.endsWith("Repository")
+                val isUseCase = symbol.endsWith("UseCase")
+
+                val fixed = when {
+                    isInterface -> """
+                        |interface $symbol {
+                        |    fun onResult(data: Any)
+                        |}
+                    """.trimMargin()
+                    isViewModel -> """
+                        |@HiltViewModel
+                        |class $symbol @Inject constructor(
+                        |    private val repository: com.pocketdev.domain.repository.FileRepository
+                        |) : ViewModel() {
+                        |    // TODO: Implement ViewModel logic
+                        |}
+                    """.trimMargin()
+                    isRepository -> """
+                        |class $symbol @Inject constructor() {
+                        |    // TODO: Implement repository logic
+                        |}
+                    """.trimMargin()
+                    isUseCase -> """
+                        |class $symbol @Inject constructor(
+                        |    private val repository: com.pocketdev.domain.repository.FileRepository
+                        |) {
+                        |    suspend operator fun invoke(): Result<Any> {
+                        |        TODO("Implement $symbol")
+                        |    }
+                        |}
+                    """.trimMargin()
+                    isClass -> """
+                        |class $symbol {
+                        |    // TODO: Implement class
+                        |}
+                    """.trimMargin()
+                    else -> """
+                        |fun $symbol(): Any {
+                        |    TODO("Implement $symbol")
+                        |}
+                    """.trimMargin()
+                }
+
                 CodeFix(
                     file = extractFileFromError(error.message),
                     line = extractLineFromError(error.message),
                     original = "// TODO: Implement $symbol",
-                    fixed = "fun $symbol() {\n    TODO()\n}",
-                    explanation = "Add the missing symbol declaration"
+                    fixed = fixed,
+                    explanation = "Add the missing $symbol declaration"
                 )
             }
             ErrorType.UNRESOLVED_REFERENCE -> {

@@ -9,8 +9,10 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import com.pocketdev.R
 
 @Composable
 fun AboutCard(
@@ -37,12 +39,12 @@ fun AboutCard(
                 Spacer(modifier = Modifier.width(12.dp))
                 Column {
                     Text(
-                        text = "PocketDev",
+                        text = stringResource(R.string.about_app_name),
                         style = MaterialTheme.typography.titleMedium,
                         fontWeight = FontWeight.Medium
                     )
                     Text(
-                        text = "Version $version",
+                        text = stringResource(R.string.app_version, version),
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
@@ -66,7 +68,7 @@ fun AboutCard(
                 )
                 Spacer(modifier = Modifier.width(8.dp))
                 Text(
-                    text = "AI-powered mobile coding assistant",
+                    text = stringResource(R.string.app_description),
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )

@@ -8,10 +8,14 @@ import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.remember
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import com.pocketdev.domain.model.AppSettings
 import com.pocketdev.domain.model.ThemeMode
+import com.pocketdev.ui.i18n.AndroidStrings
+import com.pocketdev.ui.i18n.LocalStrings
 
 private val LightColorScheme = lightColorScheme(
     primary = Color(0xFF6750A4),
@@ -85,9 +89,14 @@ fun PocketDevTheme(
         else -> LightColorScheme
     }
 
-    MaterialTheme(
-        colorScheme = colorScheme,
-        typography = Typography,
-        content = content
-    )
+    val context = LocalContext.current
+    val strings = remember { AndroidStrings(context) }
+
+    CompositionLocalProvider(LocalStrings provides strings) {
+        MaterialTheme(
+            colorScheme = colorScheme,
+            typography = Typography,
+            content = content
+        )
+    }
 }

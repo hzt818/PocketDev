@@ -229,7 +229,6 @@ private fun FileContentView(
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(horizontal = 16.dp)
-                        .height(400.dp)
                 ) {
                     Text(
                         text = it,

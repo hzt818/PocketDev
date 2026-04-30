@@ -3,6 +3,7 @@ package com.pocketdev.data.repository
 import android.util.Base64
 import com.pocketdev.data.local.UserSettingsDataStore
 import com.pocketdev.data.remote.api.GitHubApi
+import com.pocketdev.data.remote.api.GitHubAuthApi
 import com.pocketdev.data.remote.api.GitHubCommitResponse as ApiCommitResponse
 import com.pocketdev.domain.model.GitHubCommitAuthor
 import com.pocketdev.domain.model.GitHubCommitInfo
@@ -26,6 +27,7 @@ import javax.inject.Singleton
 @Singleton
 class GitHubRepositoryImpl @Inject constructor(
     private val gitHubApi: GitHubApi,
+    private val gitHubAuthApi: GitHubAuthApi,
     private val userSettingsDataStore: UserSettingsDataStore,
     @Named("github_token_provider") private val tokenProvider: () -> String?
 ) : GitHubRepository {
@@ -141,7 +143,30 @@ class GitHubRepositoryImpl @Inject constructor(
     }
 
     override suspend fun handleCallback(code: String): Result<String> {
-        return Result.failure(Exception("OAuth callback handling not implemented - use Chrome Custom Tabs"))
+        return try {
+            // Attempt token exchange with GitHub's OAuth endpoint
+            val clientSecret = userSettingsDataStore.getGitHubClientSecret()
+                ?: return Result.failure(Exception(
+                    "GitHub OAuth client secret not configured. " +
+                        "Set it in Settings > GitHub or add github_client_secret to local.properties"
+                ))
+
+            val response = gitHubAuthApi.exchangeCodeForToken(
+                clientId = CLIENT_ID,
+                clientSecret = clientSecret,
+                code = code
+            )
+
+            if (response.accessToken != null) {
+                userSettingsDataStore.setGitHubToken(response.accessToken)
+                Result.success(response.accessToken)
+            } else {
+                val errorMsg = response.errorDescription ?: response.error ?: "Unknown error"
+                Result.failure(Exception("GitHub OAuth failed: $errorMsg"))
+            }
+        } catch (e: Exception) {
+            Result.failure(e)
+        }
     }
 
     override suspend fun getBranches(owner: String, repo: String): Result<List<RemoteBranch>> {

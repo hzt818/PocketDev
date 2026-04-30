@@ -123,7 +123,9 @@ fun ChatScreen(
                         if (uiState.selectedRepo != null) {
                             Text(
                                 text = "${uiState.selectedRepo?.owner}/${uiState.selectedRepo?.repo}",
-                                style = MaterialTheme.typography.bodySmall
+                                style = MaterialTheme.typography.bodySmall,
+                                maxLines = 1,
+                                overflow = TextOverflow.Ellipsis
                             )
                             Spacer(modifier = Modifier.width(8.dp))
                         }

@@ -5,7 +5,9 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.pocketdev.R
 import com.pocketdev.domain.model.ThemeMode
 
 @Composable
@@ -23,7 +25,7 @@ fun ThemeSettingsCard(
             modifier = Modifier.padding(16.dp)
         ) {
             Text(
-                text = "Theme Mode",
+                text = stringResource(R.string.theme_mode),
                 style = MaterialTheme.typography.labelLarge,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
@@ -52,11 +54,11 @@ fun ThemeSettingsCard(
             ) {
                 Column(modifier = Modifier.weight(1f)) {
                     Text(
-                        text = "Dynamic Color",
+                        text = stringResource(R.string.dynamic_color),
                         style = MaterialTheme.typography.bodyLarge
                     )
                     Text(
-                        text = "Use Material You colors from wallpaper",
+                        text = stringResource(R.string.dynamic_color_subtitle),
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
